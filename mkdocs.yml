@@ -1,0 +1,127 @@
+site_name: "Mi Curso de Claude"
+site_description: "Curso estructurado, vivo y actualizable sobre Claude (Anthropic) — base de conocimiento personal."
+site_author: "ma.fernandez"
+# site_url se rellena automáticamente en el despliegue de GitHub Pages.
+
+# La carpeta docs/ contiene enlaces simbólicos a los ficheros reales del repo,
+# así no duplicamos contenido ni rompemos las rutas definidas en CLAUDE.md.
+docs_dir: docs
+site_dir: site
+
+# Evita avisos por ficheros .md que no están en la navegación pero sí son accesibles.
+not_in_nav: |
+  plantillas/*.md
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: "Enlace permanente"
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang: es
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mafernandez-create
+  generator: true
+
+# Navegación explícita — refleja la estructura pedagógica del curso.
+nav:
+  - Inicio: README.md
+  - Plan de estudio: plan-de-estudio.md
+  - Módulos:
+      - Visión general: modulos/00-guia-proyecto/README.md
+      - "01 · Fundamentos de IA y LLMs":
+          - Descripción: modulos/01-fundamentos-ia/README.md
+          - "01 · Qué es un LLM": modulos/01-fundamentos-ia/01-que-es-un-llm.md
+      - "02 · AI Fluency": modulos/02-ai-fluency/README.md
+      - "03 · Claude básico": modulos/03-claude-basico/README.md
+      - "04 · Productividad": modulos/04-productividad/README.md
+      - "05 · Prompt Engineering": modulos/05-prompt-engineering/README.md
+      - "06 · Claude Code": modulos/06-claude-code/README.md
+      - "07 · API de Claude": modulos/07-api-claude/README.md
+      - "08 · MCP": modulos/08-mcp/README.md
+      - "09 · Skills y subagentes": modulos/09-skills-agentes/README.md
+      - "10 · Cloud (AWS / GCP)": modulos/10-cloud/README.md
+      - "11 · Casos avanzados": modulos/11-casos-avanzados/README.md
+      - "12 · Formación y docencia": modulos/12-formacion-docencia/README.md
+      - "13 · Seguridad y ética": modulos/13-seguridad-etica/README.md
+  - Recursos:
+      - Catálogo (YAML): recursos/enlaces.yaml
+      - Cursos externos: recursos/cursos-externos.md
+      - Libros: recursos/libros.md
+      - Repositorios GitHub: recursos/github-repositorios.md
+      - Newsletters: recursos/newsletters.md
+      - Creadores en español: recursos/creadores-espanol.md
+      - Papers de investigación: recursos/papers-investigacion.md
+      - Comunidades: recursos/comunidades.md
+  - Changelog: changelog/CHANGELOG.md

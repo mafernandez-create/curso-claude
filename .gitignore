@@ -1,0 +1,20 @@
+# MkDocs build output
+/site/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editores
+.idea/
+.vscode/
+*.swp
+
+# Local overrides de Claude Code (se mantienen fuera del repo público)
+.claude/settings.local.json

@@ -1,0 +1,4 @@
+# Dependencias para generar el sitio web del curso.
+# Instalar con: pip3 install --user -r requirements.txt
+# Arrancar servidor local con: python3 -m mkdocs serve
+mkdocs-material>=9.5,<10

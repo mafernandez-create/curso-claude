@@ -1,0 +1,660 @@
+# enlaces.yaml — Catálogo central de recursos del curso
+# Fuente de verdad para todos los recursos externos.
+# Formato: cada entrada tiene id único, categoría, metadatos y estado.
+# Al modificar, actualizar siempre el campo `revisado`.
+
+meta:
+  version: "1.0.0"
+  ultima_revision: "2026-04-23"
+  total_recursos: 64
+
+# ============================================================
+# 1. RECURSOS OFICIALES DE ANTHROPIC
+# ============================================================
+oficial_anthropic:
+  - id: anthropic-academy
+    nombre: "Anthropic Academy (Skilljar)"
+    url: "https://anthropic.skilljar.com/"
+    tipo: plataforma-cursos
+    idioma: en
+    subtitulos_es: parcial
+    gratis: true
+    modulos_relacionados: [02, 03, 04, 06, 07, 08, 09, 10, 12]
+    descripcion: "Plataforma oficial con los 15 cursos gratuitos de Anthropic. Certificación al completar."
+    revisado: "2026-04-23"
+
+  - id: claude-101
+    nombre: "Claude 101"
+    url: "https://anthropic.skilljar.com/claude-101"
+    tipo: curso
+    idioma: en
+    gratis: true
+    duracion_horas: 1
+    modulos_relacionados: [03]
+    descripcion: "Curso de entrada: proyectos, artefactos, skills, conectores, modo investigación."
+    revisado: "2026-04-23"
+
+  - id: ai-fluency-framework
+    nombre: "AI Fluency: Framework & Foundations"
+    url: "https://anthropic.skilljar.com/ai-fluency-framework-foundations"
+    tipo: curso
+    idioma: en
+    gratis: true
+    modulos_relacionados: [02]
+    descripcion: "Base de alfabetización IA. Creado con expertos académicos. Requisito para los demás AI Fluency."
+    revisado: "2026-04-23"
+
+  - id: ai-fluency-students
+    nombre: "AI Fluency for Students"
+    url: "https://anthropic.skilljar.com/ai-fluency-for-students"
+    tipo: curso
+    idioma: en
+    gratis: true
+    prerequisitos: [ai-fluency-framework]
+    modulos_relacionados: [02, 12]
+    descripcion: "Adaptación para universitarios."
+    revisado: "2026-04-23"
+
+  - id: ai-fluency-educators
+    nombre: "AI Fluency for Educators"
+    url: "https://anthropic.skilljar.com/ai-fluency-for-educators"
+    tipo: curso
+    idioma: en
+    gratis: true
+    prerequisitos: [ai-fluency-framework]
+    modulos_relacionados: [12]
+    descripcion: "Para docentes y diseño instruccional."
+    revisado: "2026-04-23"
+
+  - id: teaching-ai-fluency
+    nombre: "Teaching AI Fluency"
+    url: "https://anthropic.skilljar.com/teaching-ai-fluency"
+    tipo: curso
+    idioma: en
+    gratis: true
+    modulos_relacionados: [12]
+    descripcion: "Para instructores que enseñen alfabetización IA."
+    revisado: "2026-04-23"
+
+  - id: ai-fluency-nonprofits
+    nombre: "AI Fluency for Nonprofits"
+    url: "https://anthropic.skilljar.com/ai-fluency-for-nonprofits"
+    tipo: curso
+    idioma: en
+    gratis: true
+    modulos_relacionados: [12]
+    descripcion: "Desarrollado con GivingTuesday."
+    revisado: "2026-04-23"
+
+  - id: introduction-claude-cowork
+    nombre: "Introduction to Claude Cowork"
+    url: "https://anthropic.skilljar.com/introduction-to-claude-cowork"
+    tipo: curso
+    idioma: en
+    gratis: true
+    modulos_relacionados: [04]
+    descripcion: "Claude como agente que usa tu ordenador. Plugins, tareas programadas, flujos con documentos."
+    revisado: "2026-04-23"
+
+  - id: claude-code-in-action
+    nombre: "Claude Code in Action"
+    url: "https://anthropic.skilljar.com/claude-code-in-action"
+    tipo: curso
+    idioma: en
+    subtitulos_es: confirmado
+    gratis: true
+    duracion_horas: 1
+    modulos_relacionados: [06]
+    descripcion: "Curso completo de Claude Code: instalación, MCPs, Agent Skills, Hooks, GitHub."
+    revisado: "2026-04-23"
+
+  - id: introduction-agent-skills
+    nombre: "Introduction to Agent Skills"
+    url: "https://anthropic.skilljar.com/introduction-to-agent-skills"
+    tipo: curso
+    idioma: en
+    gratis: true
+    modulos_relacionados: [09]
+    descripcion: "Crear, configurar y compartir skills en Claude Code."
+    revisado: "2026-04-23"
+
+  - id: introduction-subagents
+    nombre: "Introduction to Subagents"
+    url: "https://anthropic.skilljar.com/introduction-to-subagents"
+    tipo: curso
+    idioma: en
+    gratis: true
+    modulos_relacionados: [09]
+    descripcion: "Uso de subagentes en Claude Code para delegar tareas."
+    revisado: "2026-04-23"
+
+  - id: building-with-claude-api
+    nombre: "Building with the Claude API"
+    url: "https://anthropic.skilljar.com/claude-with-the-anthropic-api"
+    tipo: curso
+    idioma: en
+    gratis: true
+    modulos_relacionados: [07]
+    descripcion: "Curso técnico exhaustivo para desarrolladores. API básica a avanzada, prompting, tool use, RAG."
+    revisado: "2026-04-23"
+
+  - id: introduction-mcp
+    nombre: "Introduction to Model Context Protocol"
+    url: "https://anthropic.skilljar.com/introduction-to-model-context-protocol"
+    tipo: curso
+    idioma: en
+    gratis: true
+    modulos_relacionados: [08]
+    descripcion: "Construir servidores y clientes MCP desde cero con Python."
+    revisado: "2026-04-23"
+
+  - id: mcp-advanced
+    nombre: "Model Context Protocol: Advanced Topics"
+    url: "https://anthropic.skilljar.com/model-context-protocol-advanced-topics"
+    tipo: curso
+    idioma: en
+    gratis: true
+    prerequisitos: [introduction-mcp]
+    modulos_relacionados: [08]
+    descripcion: "Sampling, notificaciones, transports, control de acceso a filesystem."
+    revisado: "2026-04-23"
+
+  - id: claude-amazon-bedrock
+    nombre: "Claude with Amazon Bedrock"
+    url: "https://anthropic.skilljar.com/claude-in-amazon-bedrock"
+    tipo: curso
+    idioma: en
+    gratis: true
+    prerequisitos_conocimiento: ["Python", "AWS"]
+    modulos_relacionados: [10]
+    descripcion: "Integración y despliegue en AWS Bedrock. RAG, agentes, Claude Code en AWS."
+    revisado: "2026-04-23"
+
+  - id: claude-google-vertex
+    nombre: "Claude with Google Cloud's Vertex AI"
+    url: "https://anthropic.skilljar.com/claude-with-google-vertex"
+    tipo: curso
+    idioma: en
+    gratis: true
+    prerequisitos_conocimiento: ["Python", "GCP", "JSON"]
+    modulos_relacionados: [10]
+    descripcion: "Equivalente del curso anterior para Google Cloud."
+    revisado: "2026-04-23"
+
+  - id: docs-claude
+    nombre: "Documentación oficial del desarrollador"
+    url: "https://docs.claude.com/"
+    tipo: documentacion
+    idioma: en
+    gratis: true
+    modulos_relacionados: [06, 07, 08, 09]
+    descripcion: "Referencia canónica técnica. Se actualiza continuamente."
+    revisado: "2026-04-23"
+
+  - id: platform-claude-docs
+    nombre: "Claude Platform Docs"
+    url: "https://platform.claude.com/docs/en/home"
+    tipo: documentacion
+    idioma: en
+    gratis: true
+    modulos_relacionados: [07]
+    descripcion: "Documentación de la plataforma: API, SDKs, quickstart, guías."
+    revisado: "2026-04-23"
+
+  - id: prompting-best-practices
+    nombre: "Prompting best practices (Claude)"
+    url: "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+    tipo: documentacion
+    idioma: en
+    gratis: true
+    modulos_relacionados: [05]
+    descripcion: "Guía oficial de prompt engineering para modelos actuales (Opus 4.7, 4.6, Sonnet 4.6, Haiku 4.5)."
+    revisado: "2026-04-23"
+
+  - id: anthropic-research
+    nombre: "Anthropic Research"
+    url: "https://www.anthropic.com/research"
+    tipo: blog-investigacion
+    idioma: en
+    gratis: true
+    modulos_relacionados: [01, 13]
+    descripcion: "Publicaciones de los equipos de Interpretability, Alignment, Societal Impacts y Frontier Red Team."
+    revisado: "2026-04-23"
+
+  - id: anthropic-news
+    nombre: "Anthropic News"
+    url: "https://www.anthropic.com/news"
+    tipo: blog-producto
+    idioma: en
+    gratis: true
+    modulos_relacionados: [03, 04, 06]
+    descripcion: "Novedades de producto, releases de modelos, anuncios."
+    revisado: "2026-04-23"
+
+  - id: anthropic-economic-index
+    nombre: "Anthropic Economic Index"
+    url: "https://www.anthropic.com/economic-index"
+    tipo: informe
+    idioma: en
+    gratis: true
+    modulos_relacionados: [01, 13]
+    descripcion: "Informes trimestrales sobre cómo se usa Claude en la economía real."
+    revisado: "2026-04-23"
+
+  - id: transformer-circuits
+    nombre: "Transformer Circuits Thread"
+    url: "https://transformer-circuits.pub/"
+    tipo: blog-investigacion
+    idioma: en
+    gratis: true
+    nivel: avanzado
+    modulos_relacionados: [13]
+    descripcion: "Publicaciones técnicas del equipo de interpretabilidad de Anthropic."
+    revisado: "2026-04-23"
+
+# ============================================================
+# 2. REPOSITORIOS GITHUB OFICIALES
+# ============================================================
+github_oficial:
+  - id: claude-cookbooks
+    nombre: "anthropics/claude-cookbooks"
+    url: "https://github.com/anthropics/claude-cookbooks"
+    tipo: repo-codigo
+    idioma: en
+    gratis: true
+    modulos_relacionados: [07, 11]
+    descripcion: "Notebooks ejecutables con recetas: RAG, tool use, caching, sub-agentes, PDFs, moderación."
+    revisado: "2026-04-23"
+
+  - id: claude-quickstarts
+    nombre: "anthropics/claude-quickstarts"
+    url: "https://github.com/anthropics/claude-quickstarts"
+    tipo: repo-codigo
+    idioma: en
+    gratis: true
+    modulos_relacionados: [07, 11]
+    descripcion: "Proyectos listos: agente soporte, analista financiero, control de ordenador, automatización navegador."
+    revisado: "2026-04-23"
+
+  - id: anthropic-skills
+    nombre: "anthropics/skills"
+    url: "https://github.com/anthropics/skills"
+    tipo: repo-codigo
+    idioma: en
+    gratis: true
+    modulos_relacionados: [09]
+    descripcion: "Repositorio público oficial de Agent Skills."
+    revisado: "2026-04-23"
+
+  - id: claude-code-sdk-python
+    nombre: "anthropics/claude-code-sdk-python"
+    url: "https://github.com/anthropics/claude-code-sdk-python"
+    tipo: repo-codigo
+    idioma: en
+    gratis: true
+    modulos_relacionados: [06]
+    descripcion: "SDK oficial de Claude Code en Python."
+    revisado: "2026-04-23"
+
+  - id: claude-plugins-official
+    nombre: "anthropics/claude-plugins-official"
+    url: "https://github.com/anthropics/claude-plugins-official"
+    tipo: repo-codigo
+    idioma: en
+    gratis: true
+    modulos_relacionados: [06]
+    descripcion: "Directorio oficial de plugins de Claude Code."
+    revisado: "2026-04-23"
+
+  - id: anthropic-sdk-python
+    nombre: "anthropics/anthropic-sdk-python"
+    url: "https://github.com/anthropics/anthropic-sdk-python"
+    tipo: repo-codigo
+    idioma: en
+    gratis: true
+    modulos_relacionados: [07]
+    descripcion: "SDK oficial de la Claude API en Python."
+    revisado: "2026-04-23"
+
+  - id: mcp-spec
+    nombre: "Model Context Protocol (spec y SDKs)"
+    url: "https://modelcontextprotocol.io/"
+    tipo: documentacion
+    idioma: en
+    gratis: true
+    modulos_relacionados: [08]
+    descripcion: "Especificación oficial, SDKs y quickstart del protocolo MCP."
+    revisado: "2026-04-23"
+
+# ============================================================
+# 3. LISTAS CURADAS DE LA COMUNIDAD (se actualizan solas)
+# ============================================================
+listas_comunidad:
+  - id: awesome-claude-code
+    nombre: "hesreallyhim/awesome-claude-code"
+    url: "https://github.com/hesreallyhim/awesome-claude-code"
+    tipo: lista-awesome
+    idioma: en
+    gratis: true
+    modulos_relacionados: [06, 09]
+    descripcion: "Lista de referencia de facto: skills, hooks, slash-commands, orquestadores, apps, plugins. ~28.5k estrellas."
+    revisado: "2026-04-23"
+
+  - id: awesome-claude-code-jquery
+    nombre: "jqueryscript/awesome-claude-code"
+    url: "https://github.com/jqueryscript/awesome-claude-code"
+    tipo: lista-awesome
+    idioma: en
+    gratis: true
+    modulos_relacionados: [06]
+    descripcion: "Lista alternativa con herramientas, integraciones IDE y frameworks."
+    revisado: "2026-04-23"
+
+  - id: awesome-claude-skills
+    nombre: "travisvn/awesome-claude-skills"
+    url: "https://github.com/travisvn/awesome-claude-skills"
+    tipo: lista-awesome
+    idioma: en
+    gratis: true
+    modulos_relacionados: [09]
+    descripcion: "Centrada específicamente en Skills."
+    revisado: "2026-04-23"
+
+  - id: awesome-claude-skills-composio
+    nombre: "ComposioHQ/awesome-claude-skills"
+    url: "https://github.com/ComposioHQ/awesome-claude-skills"
+    tipo: lista-awesome
+    idioma: en
+    gratis: true
+    modulos_relacionados: [09]
+    descripcion: "Otra colección curada de Skills, con buen criterio."
+    revisado: "2026-04-23"
+
+  - id: awesome-claude-subagents
+    nombre: "VoltAgent/awesome-claude-code-subagents"
+    url: "https://github.com/VoltAgent/awesome-claude-code-subagents"
+    tipo: lista-awesome
+    idioma: en
+    gratis: true
+    modulos_relacionados: [09]
+    descripcion: "Especializada en subagentes de Claude Code."
+    revisado: "2026-04-23"
+
+  - id: awesome-claude-prompts
+    nombre: "langgptai/awesome-claude-prompts"
+    url: "https://github.com/langgptai/awesome-claude-prompts"
+    tipo: lista-awesome
+    idioma: en
+    gratis: true
+    modulos_relacionados: [05]
+    descripcion: "Colección de prompts para Claude."
+    revisado: "2026-04-23"
+
+  - id: awesome-mcp-servers
+    nombre: "punkpeye/awesome-mcp-servers"
+    url: "https://github.com/punkpeye/awesome-mcp-servers"
+    tipo: lista-awesome
+    idioma: en
+    gratis: true
+    modulos_relacionados: [08]
+    descripcion: "Servidores MCP de la comunidad. ~83k estrellas."
+    revisado: "2026-04-23"
+
+  - id: awesomeclaude-directory
+    nombre: "awesomeclaude.ai"
+    url: "https://awesomeclaude.ai/"
+    tipo: directorio-web
+    idioma: en
+    gratis: true
+    modulos_relacionados: [06, 08, 09]
+    descripcion: "Portal web que agrupa muchas de las listas anteriores en categorías navegables."
+    revisado: "2026-04-23"
+
+# ============================================================
+# 4. CURSOS NO-ANTHROPIC (terceros serios)
+# ============================================================
+cursos_externos:
+  - id: deeplearning-claude
+    nombre: "DeepLearning.AI — Cursos cortos con Anthropic"
+    url: "https://www.deeplearning.ai/courses/"
+    tipo: plataforma-cursos
+    idioma: en
+    subtitulos_es: mayoria
+    gratis: true
+    modulos_relacionados: [05, 07, 08, 11]
+    descripcion: "Cursos cortos gratuitos creados con Anthropic: computer use, MCP, prompt engineering. Muy buena pedagogía (Andrew Ng)."
+    revisado: "2026-04-23"
+
+  - id: coursera-prompt-specialization
+    nombre: "Prompt Engineering Specialization (Vanderbilt, Coursera)"
+    url: "https://www.coursera.org/specializations/prompt-engineering"
+    tipo: especializacion
+    idioma: en
+    subtitulos_es: si
+    gratis: con_prueba
+    modulos_relacionados: [05]
+    descripcion: "Especialización universitaria sobre prompt engineering. Modelo-agnóstica pero aplicable a Claude."
+    revisado: "2026-04-23"
+
+  - id: huggingface-learn
+    nombre: "Hugging Face Learn"
+    url: "https://huggingface.co/learn"
+    tipo: plataforma-cursos
+    idioma: en
+    gratis: true
+    modulos_relacionados: [01, 11]
+    descripcion: "Cursos gratuitos de NLP, LLMs, agentes. Base teórica excelente."
+    revisado: "2026-04-23"
+
+# ============================================================
+# 5. LIBROS RECOMENDADOS (editoriales serias)
+# Ver libros.md para reseñas completas
+# ============================================================
+libros:
+  - id: book-prompt-eng-llms
+    titulo: "Prompt Engineering for LLMs"
+    autor: "John Berryman & Albert Ziegler"
+    editorial: "O'Reilly"
+    anio: 2024
+    isbn: "9781098156152"
+    modulos_relacionados: [05, 07]
+    nivel: intermedio
+    idioma: en
+    descripcion: "Escrito por arquitectos de GitHub Copilot. La referencia técnica más sólida sobre prompting aplicado."
+
+  - id: book-ai-engineering
+    titulo: "AI Engineering"
+    autor: "Chip Huyen"
+    editorial: "O'Reilly"
+    anio: 2024
+    modulos_relacionados: [07, 11]
+    nivel: intermedio
+    idioma: en
+    descripcion: "Ingeniería de sistemas IA en producción. Imprescindible para quien construya productos."
+
+  - id: book-hands-on-llms
+    titulo: "Hands-On Large Language Models"
+    autor: "Jay Alammar & Maarten Grootendorst"
+    editorial: "O'Reilly"
+    anio: 2024
+    modulos_relacionados: [01]
+    nivel: introductorio
+    idioma: en
+    descripcion: "Excelente para entender LLMs con intuición visual."
+
+  - id: book-build-llm
+    titulo: "Build a Large Language Model (From Scratch)"
+    autor: "Sebastian Raschka"
+    editorial: "Manning"
+    anio: 2024
+    modulos_relacionados: [01]
+    nivel: avanzado
+    idioma: en
+    descripcion: "Construir un LLM paso a paso. Para comprender desde los fundamentos."
+
+  - id: book-prompt-eng-generative
+    titulo: "Prompt Engineering for Generative AI"
+    autor: "James Phoenix & Mike Taylor"
+    editorial: "O'Reilly"
+    anio: 2024
+    modulos_relacionados: [05]
+    nivel: intermedio
+    idioma: en
+    descripcion: "Abarca texto, imagen y código, con énfasis en aplicaciones de negocio."
+
+  - id: book-building-agentic
+    titulo: "Building Agentic AI Systems"
+    autor: "Anjanava Biswas & Wrick Talukdar"
+    editorial: "Packt"
+    anio: 2025
+    modulos_relacionados: [09, 11]
+    nivel: intermedio
+    idioma: en
+    descripcion: "Sobre la construcción de sistemas agénticos que razonan, planifican y se adaptan."
+
+# ============================================================
+# 6. NEWSLETTERS (mantenimiento activo del conocimiento)
+# Ver newsletters.md para reseñas completas
+# ============================================================
+newsletters:
+  - id: import-ai
+    nombre: "Import AI"
+    autor: "Jack Clark (cofundador de Anthropic)"
+    url: "https://importai.substack.com/"
+    idioma: en
+    frecuencia: semanal
+    descripcion: "Newsletter de referencia sobre IA. Perspectiva desde dentro del sector."
+    revisado: "2026-04-23"
+
+  - id: simonwillison
+    nombre: "Simon Willison's Weblog"
+    autor: "Simon Willison"
+    url: "https://simonwillison.net/"
+    idioma: en
+    frecuencia: diaria
+    descripcion: "Uno de los mejores análisis técnicos públicos sobre LLMs y Claude."
+    revisado: "2026-04-23"
+
+  - id: the-neuron
+    nombre: "The Neuron"
+    url: "https://www.theneuron.ai/"
+    idioma: en
+    frecuencia: diaria
+    descripcion: "Noticias IA bien resumidas. Sección dedicada a Claude a menudo."
+    revisado: "2026-04-23"
+
+  - id: ia-en-espanol
+    nombre: "IA en Español"
+    url: "https://iaenespanol.substack.com/"
+    idioma: es
+    frecuencia: regular
+    descripcion: "Mayor newsletter de IA en español (>40k suscriptores)."
+    revisado: "2026-04-23"
+
+  - id: ia-al-dia
+    nombre: "IA al Día"
+    idioma: es
+    frecuencia: diaria
+    descripcion: "Newsletter diaria de IA, tecnología y medios en español."
+    revisado: "2026-04-23"
+
+# ============================================================
+# 7. CREADORES EN ESPAÑOL (YouTube y similares)
+# ============================================================
+creadores_espanol:
+  - id: midudev
+    nombre: "midudev (Miguel Ángel Durán)"
+    url: "https://www.youtube.com/@midudev"
+    plataforma: YouTube
+    enfoque: "Desarrollo web y AI, especialmente Claude Code"
+    relevancia: alta
+    modulos_relacionados: [06]
+
+  - id: dotcsv
+    nombre: "DotCSV (Carlos Santana)"
+    url: "https://www.youtube.com/@DotCSV"
+    plataforma: YouTube
+    enfoque: "Divulgación técnica de IA con rigor"
+    relevancia: alta
+    modulos_relacionados: [01, 13]
+
+  - id: xavier-mitjana
+    nombre: "Xavier Mitjana"
+    url: "https://www.youtube.com/@xaviermitjana"
+    plataforma: YouTube
+    enfoque: "IA práctica, comparativas de modelos, tutoriales"
+    relevancia: alta
+    modulos_relacionados: [03, 04]
+
+  - id: jon-hernandez
+    nombre: "Jon Hernández"
+    plataforma: YouTube
+    enfoque: "Análisis semanales de IA"
+    relevancia: media
+
+  - id: javi-manzano
+    nombre: "Javi Manzano"
+    plataforma: YouTube
+    enfoque: "IA aplicada, tutoriales accesibles"
+    relevancia: media
+
+# ============================================================
+# 8. COMUNIDADES Y FOROS
+# ============================================================
+comunidades:
+  - id: discord-anthropic
+    nombre: "Anthropic Discord (oficial)"
+    url_referencia: "https://docs.claude.com/"
+    tipo: discord
+    idioma: en
+    descripcion: "Canal oficial, acceso desde la documentación. Comunicación directa con el equipo."
+
+  - id: reddit-claudeai
+    nombre: "r/ClaudeAI"
+    url: "https://www.reddit.com/r/ClaudeAI/"
+    tipo: reddit
+    idioma: en
+    descripcion: "Comunidad Reddit muy activa. Tendencias reales de uso, bugs, feedback."
+
+  - id: reddit-anthropic
+    nombre: "r/Anthropic"
+    url: "https://www.reddit.com/r/Anthropic/"
+    tipo: reddit
+    idioma: en
+    descripcion: "Más centrada en la empresa y noticias."
+
+  - id: reddit-localllama
+    nombre: "r/LocalLLaMA"
+    url: "https://www.reddit.com/r/LocalLLaMA/"
+    tipo: reddit
+    idioma: en
+    descripcion: "Comparativas técnicas con otros modelos."
+
+  - id: hackernews
+    nombre: "Hacker News"
+    url: "https://news.ycombinator.com/"
+    tipo: foro
+    idioma: en
+    descripcion: "Discusiones técnicas cuando Anthropic publica algo."
+
+# ============================================================
+# 9. FUENTES ACADÉMICAS
+# ============================================================
+academicas:
+  - id: arxiv
+    nombre: "arXiv.org (categorías cs.CL, cs.AI)"
+    url: "https://arxiv.org/"
+    tipo: preprints
+    idioma: en
+    descripcion: "Papers de Anthropic y otros. Seguir autores clave: Dario Amodei, Chris Olah, Jared Kaplan."
+
+  - id: nature-ai
+    nombre: "Nature (sección Machine Intelligence)"
+    url: "https://www.nature.com/natmachintell/"
+    tipo: revista-cientifica
+    idioma: en
+    descripcion: "Publicaciones peer-reviewed. Anthropic publica ocasionalmente."
+
+# ============================================================
+# FIN
+# ============================================================
