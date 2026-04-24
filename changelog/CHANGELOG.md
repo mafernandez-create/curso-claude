@@ -11,6 +11,26 @@ Tipos de entrada:
 
 ---
 
+## 2026-04-24 — Migración a Cloudflare Pages con protección Basic Auth
+
+### Añadido
+- `functions/_middleware.js` — middleware de Cloudflare Pages Functions que exige HTTP Basic Auth en cada petición. Credenciales almacenadas en variables de entorno (`BASIC_AUTH_USER` en plaintext, `BASIC_AUTH_PASS` como secret) configuradas en el dashboard de Cloudflare Pages.
+- Proyecto `curso-claude` creado en Cloudflare Pages con auto-deploy desde el repo.
+- Sitio privado en https://curso-claude.pages.dev/ (pide usuario y contraseña).
+
+### Eliminado
+- `.github/workflows/deploy.yml` — el deploy lo hace Cloudflare Pages directamente desde el repo; ya no necesitamos GitHub Actions.
+- GitHub Pages del repo desactivado (la URL `https://mafernandez-create.github.io/curso-claude/` ya no sirve contenido).
+
+### Actualizado
+- `README.md` — reemplaza la URL pública de GitHub Pages por la URL privada de Cloudflare Pages, documenta usuario/contraseña y cómo rotarla.
+
+### Notas
+- Motivo del cambio: GitHub Pages sobre repo público no permite autenticación nativa. Cloudflare Pages con middleware de Basic Auth es 100 % gratis (sin tarjeta) y cumple la necesidad de "solo para mí".
+- Zero Trust con One-Time PIN quedó descartado porque Cloudflare pide método de pago incluso en el plan Free.
+
+---
+
 ## 2026-04-24 — Publicación del curso como sitio web
 
 ### Añadido
