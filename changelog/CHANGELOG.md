@@ -11,6 +11,22 @@ Tipos de entrada:
 
 ---
 
+## 2026-04-24 — Publicación del curso como sitio web
+
+### Añadido
+- `mkdocs.yml` — configuración de [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) en español, con búsqueda, modo oscuro y navegación completa por los 14 módulos.
+- `requirements.txt` — dependencia `mkdocs-material`.
+- `docs/` — carpeta con enlaces simbólicos al contenido real (sin duplicar ficheros). **No editar directamente.**
+- `.github/workflows/deploy.yml` — despliegue automático a GitHub Pages en cada push a `main`.
+- `.gitignore` — excluye `site/`, macOS y overrides locales.
+- Repo publicado en https://github.com/mafernandez-create/curso-claude.
+- Sitio en vivo: https://mafernandez-create.github.io/curso-claude/.
+
+### Actualizado
+- `README.md` — instrucciones para consultar el curso online y localmente con `mkdocs serve`.
+
+---
+
 ## 2026-04-23 — Primera lección del Módulo 01
 
 ### Añadido

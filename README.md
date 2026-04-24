@@ -2,8 +2,25 @@
 
 > Base de conocimiento personal sobre Claude (Anthropic) diseñada para crecer contigo y mantenerse actualizada en el tiempo.
 
-**Última revisión del índice:** 2026-04-23
+**Última revisión del índice:** 2026-04-24
 **Modelo de referencia actual:** Claude Opus 4.7
+**Sitio web del curso:** https://mafernandez-create.github.io/curso-claude/
+
+---
+
+## Ver el curso como sitio web
+
+El curso está publicado como sitio estático con [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). Tienes dos formas de consultarlo:
+
+- **Online:** https://mafernandez-create.github.io/curso-claude/ (se actualiza solo con cada `git push` a `main`).
+- **Local:** desde la raíz del repo, ejecuta:
+  ```bash
+  pip3 install --user -r requirements.txt   # primera vez
+  python3 -m mkdocs serve                   # abre http://localhost:8000
+  ```
+  Cualquier cambio en los `.md` se refleja en caliente.
+
+Los contenidos siguen siendo Markdown editable en `modulos/`, `recursos/`, etc. La carpeta `docs/` solo contiene enlaces simbólicos para que MkDocs los encuentre; **no edites nada dentro de `docs/`**.
 
 ---
 
