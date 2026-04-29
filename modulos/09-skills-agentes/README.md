@@ -23,10 +23,11 @@ Crear, empaquetar y distribuir Skills propias para Claude Code y Claude.ai. Ente
 | 08 | Diseñar buenas `description` para triggering | pendiente | 30 min |
 | 09 | Testing de Skills: evaluación sistemática | pendiente | 35 min |
 | 10 | Empaquetar y compartir Skills | pendiente | 25 min |
-| 11 | Subagentes: qué son y cuándo usarlos | pendiente | 30 min |
-| 12 | Gestión de contexto con subagentes | pendiente | 30 min |
-| 13 | Orquestación multi-agente: patrones | pendiente | 40 min |
-| 14 | Antipatrones: cuándo NO usar subagentes | pendiente | 25 min |
+| 11 | Publicar tu Skill (o MCP server) en GitHub: estructura del repo y descubribilidad | pendiente | 30 min |
+| 12 | Subagentes: qué son y cuándo usarlos | pendiente | 30 min |
+| 13 | Gestión de contexto con subagentes | pendiente | 30 min |
+| 14 | Orquestación multi-agente: patrones | pendiente | 40 min |
+| 15 | Antipatrones: cuándo NO usar subagentes | pendiente | 25 min |
 
 ## Recursos clave
 

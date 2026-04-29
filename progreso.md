@@ -32,19 +32,19 @@
 | 00 | [Guía del proyecto](modulos/00-guia-proyecto/) | Meta | ⚪ | 0/3 |
 | 01 | [Fundamentos de IA y LLMs](modulos/01-fundamentos-ia/) | Base | 🔵 En curso | 1/9 |
 | 02 | [AI Fluency](modulos/02-ai-fluency/) | Base | ⚪ | 0/8 |
-| 03 | [Claude básico](modulos/03-claude-basico/) | Usuario | ⚪ | 0/9 |
-| 04 | [Productividad con Claude](modulos/04-productividad/) | Usuario | ⚪ | 0/9 |
-| 05 | [Prompt Engineering](modulos/05-prompt-engineering/) | Transversal | ⚪ | 0/9 |
-| 06 | [Claude Code](modulos/06-claude-code/) | Dev | ⚪ | 0/9 |
-| 07 | [API de Claude](modulos/07-api-claude/) | Dev | ⚪ | 0/9 |
-| 08 | [Model Context Protocol (MCP)](modulos/08-mcp/) | Dev | ⚪ | 0/9 |
-| 09 | [Skills y subagentes](modulos/09-skills-agentes/) | Dev | ⚪ | 0/9 |
-| 10 | [Cloud (AWS / GCP)](modulos/10-cloud/) | Dev | ⚪ | 0/9 |
-| 11 | [Casos avanzados](modulos/11-casos-avanzados/) | Integración | ⚪ | 0/9 |
-| 12 | [Formación y docencia](modulos/12-formacion-docencia/) | Formador | ⚪ | 0/9 |
-| 13 | [Seguridad y ética](modulos/13-seguridad-etica/) | Transversal | ⚪ | 0/9 |
+| 03 | [Claude básico](modulos/03-claude-basico/) | Usuario | ⚪ | 0/10 |
+| 04 | [Productividad con Claude](modulos/04-productividad/) | Usuario | ⚪ | 0/11 |
+| 05 | [Prompt Engineering](modulos/05-prompt-engineering/) | Transversal | ⚪ | 0/13 |
+| 06 | [Claude Code](modulos/06-claude-code/) | Dev | ⚪ | 0/15 |
+| 07 | [API de Claude](modulos/07-api-claude/) | Dev | ⚪ | 0/17 |
+| 08 | [Model Context Protocol (MCP)](modulos/08-mcp/) | Dev | ⚪ | 0/15 |
+| 09 | [Skills y subagentes](modulos/09-skills-agentes/) | Dev | ⚪ | 0/15 |
+| 10 | [Cloud (AWS / GCP)](modulos/10-cloud/) | Dev | ⚪ | 0/13 |
+| 11 | [Casos avanzados](modulos/11-casos-avanzados/) | Integración | ⚪ | 0/10 |
+| 12 | [Formación y docencia](modulos/12-formacion-docencia/) | Formador | ⚪ | 0/10 |
+| 13 | [Seguridad y ética](modulos/13-seguridad-etica/) | Transversal | ⚪ | 0/12 |
 
-**Total: 1/118 lecciones completadas.**
+**Total: 1/161 lecciones completadas.**
 
 ---
 

@@ -11,6 +11,20 @@ Tipos de entrada:
 
 ---
 
+## 2026-04-29 — Lecciones nuevas sobre GitHub en Módulos 06 y 09
+
+### Añadido
+- Módulo 06 — nueva lección 11: *"Higiene de Git con IA: ramas, PRs y revisión de diffs generados"* (35 min). Cubre el hueco práctico entre la integración Claude Code↔GitHub (lección 10) y el manejo de repos grandes (ahora 12). Las lecciones 11–14 se desplazan a 12–15.
+- Módulo 09 — nueva lección 11: *"Publicar tu Skill (o MCP server) en GitHub: estructura del repo y descubribilidad"* (30 min). Apoya la entrega del módulo (*"una skill propia publicable"*). Las lecciones 11–14 se desplazan a 12–15.
+
+### Actualizado
+- `progreso.md` — contadores corregidos por módulo (el conteo previo era erróneo: solo capturaba lecciones 01–09 por una regex defectuosa). Total real: **161 lecciones planificadas** (no 118).
+
+### Notas
+- Los huecos quedan reservados con título y duración estimada; lecciones aún sin redactar (`📝`).
+
+---
+
 ## 2026-04-29 — Sistema de seguimiento de progreso
 
 ### Añadido

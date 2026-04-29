@@ -23,10 +23,11 @@ Dominar Claude Code como herramienta de desarrollo: instalación, configuración
 | 08 | Hooks: automatizar pasos del ciclo | pendiente | 35 min |
 | 09 | Integración con VS Code y JetBrains | pendiente | 20 min |
 | 10 | Claude Code con GitHub: PRs, Actions, revisiones | pendiente | 40 min |
-| 11 | Trabajar con repos grandes: context management | pendiente | 30 min |
-| 12 | Gestión de costes y límites | pendiente | 20 min |
-| 13 | Patrones y antipatrones con Claude Code | pendiente | 30 min |
-| 14 | Claude Code en equipo: convenciones compartidas | pendiente | 30 min |
+| 11 | Higiene de Git con IA: ramas, PRs y revisión de diffs generados | pendiente | 35 min |
+| 12 | Trabajar con repos grandes: context management | pendiente | 30 min |
+| 13 | Gestión de costes y límites | pendiente | 20 min |
+| 14 | Patrones y antipatrones con Claude Code | pendiente | 30 min |
+| 15 | Claude Code en equipo: convenciones compartidas | pendiente | 30 min |
 
 ## Recursos clave
 
