@@ -104,6 +104,22 @@ Cada lección sigue la plantilla de `plantillas/leccion.md` y contiene al menos:
 
 ## Cómo trabajar en este proyecto
 
+### Al iniciar cualquier sesión
+
+1. Lee `CLAUDE.md` (este archivo).
+2. Lee `progreso.md` para saber por dónde voy: qué lección está marcada como `🔵 Siguiente` y qué llevo completado. Es la fuente de verdad sobre mi avance, no `plan-de-estudio.md`.
+3. Si te pregunto *"¿por dónde sigo?"* o equivalente, contesta con la lección concreta marcada como `🔵 Siguiente` en `progreso.md`. Si esa lección está como `📝 Sin redactar todavía`, propón redactarla.
+
+### Cuando yo te diga "marca la lección X del módulo Y como completada"
+
+1. Edita `progreso.md`:
+   - Cambia el icono de esa fila a `✅` y añade la fecha de hoy.
+   - Marca la **siguiente** lección del módulo como `🔵 Siguiente` (la que tenga el orden inmediatamente superior dentro del mismo módulo, o la lección 01 del siguiente módulo si era la última).
+   - Actualiza el bloque de cabecera (`Última actualización` y `Próxima lección`).
+   - Recalcula el contador de avance del módulo en la tabla "Mapa de módulos" y el total al final.
+2. Si el módulo entero queda completado, mueve su entrada al "Histórico de módulos completados" con la fecha de cierre.
+3. No toques `bitacora.md` salvo que yo te lo pida explícitamente.
+
 ### Cuando yo te pida "redacta la lección X"
 1. Lee la plantilla `plantillas/leccion.md`.
 2. Consulta el README del módulo correspondiente para ver el lugar que ocupa en la secuencia.

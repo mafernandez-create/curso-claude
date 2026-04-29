@@ -11,6 +11,18 @@ Tipos de entrada:
 
 ---
 
+## 2026-04-29 — Sistema de seguimiento de progreso
+
+### Añadido
+- `progreso.md` — fuente única de verdad sobre mi avance: cabecera con próxima lección, mapa de los 14 módulos con contadores, detalle por lección del módulo activo, histórico de módulos completados.
+- `bitacora.md` — diario libre para apuntes, dudas y conexiones por sesión.
+
+### Actualizado
+- `CLAUDE.md` — añadidas instrucciones para que Claude Code lea `progreso.md` al inicio de cada sesión y mantenga el archivo al día cuando le diga *"marca la lección X como completada"*.
+- `mkdocs.yml` — `progreso.md` y `bitacora.md` quedan excluidos del sitio web (privados, solo en el repo).
+
+---
+
 ## 2026-04-24 — Migración a Cloudflare Pages con protección Basic Auth
 
 ### Añadido

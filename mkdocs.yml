@@ -12,6 +12,12 @@ site_dir: site
 not_in_nav: |
   plantillas/*.md
 
+# Excluye del build los ficheros de seguimiento personal: viven en el repo
+# pero no aparecen en el sitio web público.
+exclude_docs: |
+  progreso.md
+  bitacora.md
+
 theme:
   name: material
   language: es
