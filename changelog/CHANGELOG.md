@@ -11,6 +11,23 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-08 — Script de arranque local
+
+### Añadido
+- `iniciar-curso.sh` — script ejecutable en la raíz que comprueba dependencias, arranca el servidor MkDocs (`http://127.0.0.1:8000/`) y abre el navegador automáticamente. Avisa si el puerto 8000 ya está ocupado.
+
+---
+
+## 2026-05-08 — Segunda lección del Módulo 01
+
+### Añadido
+- `modulos/01-fundamentos-ia/02-arquitectura-transformer.md` — lección sobre la arquitectura Transformer con intuición sin matemáticas: del problema de las RNN al mecanismo de atención, multi-head, apilamiento de capas y por qué Claude es decoder-only. Incluye ejercicio sobre resolución de pronombres como ejemplo práctico de atención. Estado: borrador.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/README.md` — la lección 02 pasa de `pendiente` a `borrador` y se enlaza.
+
+---
+
 ## 2026-04-29 — Lecciones nuevas sobre GitHub en Módulos 06 y 09
 
 ### Añadido
