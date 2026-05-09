@@ -11,6 +11,14 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Hypothes.is: grupo privado configurado
+
+### Actualizado
+- `assets/hypothesis-config.js` — reemplazado el placeholder por el GRUPO_ID real (`GMWBEiXG`, grupo `curso-claude`). Al abrir el sidebar de Hypothes.is en cualquier lección, ya queda enfocado en el grupo privado en lugar de "Public".
+- `README.md` — sección "Anotaciones" actualizada: el setup ya no incluye reemplazar placeholder; ahora solo pide cuenta + entrar al grupo privado.
+
+---
+
 ## 2026-05-09 — Hypothes.is con grupo privado por defecto (pendiente de ID)
 
 ### Añadido

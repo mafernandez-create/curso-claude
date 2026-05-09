@@ -32,19 +32,17 @@ Los contenidos siguen siendo Markdown editable en `modulos/`, `recursos/`, etc. 
 
 El sitio carga el sidebar de [Hypothes.is](https://web.hypothes.is/) en cada página. Permite **subrayar texto y dejar notas inline** sobre cualquier lección. Las notas se guardan en tu cuenta de Hypothes.is, no en este repo.
 
-**Para que tus anotaciones sean PRIVADAS desde el primer momento, hay que enfocar el sidebar en un grupo privado.** Eso lo hace el archivo [`assets/hypothesis-config.js`](./assets/hypothesis-config.js) automáticamente, **una vez** se rellene el ID del grupo (ver más abajo).
+**Para que tus anotaciones sean PRIVADAS desde el primer momento, el sidebar se enfoca automáticamente en un grupo privado.** Eso lo hace el archivo [`assets/hypothesis-config.js`](./assets/hypothesis-config.js), que apunta al grupo `curso-claude` (https://hypothes.is/groups/GMWBEiXG/curso-claude).
 
-**Setup (5 min, una sola vez):**
+**Setup (una sola vez):**
 
-1. Crear cuenta gratis en https://hypothes.is/signup.
-2. Crear grupo privado en https://hypothes.is/groups/new (sugerido: `curso-claude`).
-3. Tras crearlo, copiar el **GRUPO_ID** de la URL: `https://hypothes.is/groups/<GRUPO_ID>/<slug>` (suele tener 8 caracteres alfanuméricos).
-4. Editar `assets/hypothesis-config.js` y reemplazar `__GRUPO_PRIVADO_PENDIENTE__` por el GRUPO_ID.
-5. Commit + push. En el siguiente deploy, al abrir el sidebar el grupo privado ya estará seleccionado por defecto.
+1. Crear cuenta gratis en https://hypothes.is/signup (si todavía no la tienes).
+2. Solicitar entrar al grupo privado `curso-claude` desde el enlace de invitación que comparte el dueño del grupo. Si eres el dueño, ya estás dentro.
+3. En el sitio del curso, abrir el sidebar de Hypothes.is (icono `<` arriba-derecha) y hacer login una vez. A partir de ahí, el grupo privado aparece seleccionado por defecto al abrir cualquier lección.
 
-Mientras el placeholder esté presente, el sidebar arranca en "Public" y conviene **no anotar** hasta haberlo reemplazado (o hacerlo seleccionando manualmente el grupo cada vez).
+Si quieres usar otro grupo en el futuro, edita `focus.group` en `assets/hypothesis-config.js` y haz push.
 
-**Uso, una vez configurado:**
+**Uso:**
 - Selecciona texto en cualquier lección → aparece un botón flotante:
   - 💬 *Annotate* — nota anclada al texto, con Markdown.
   - 🖍 *Highlight* — solo subrayado, sin texto.

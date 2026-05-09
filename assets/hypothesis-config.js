@@ -7,22 +7,17 @@
 // enfocado en el grupo privado del curso, no en "Public". Reduce la
 // probabilidad de anotar públicamente por error.
 //
-// IMPORTANTE: el `focus.group` de abajo es un PLACEHOLDER. Reemplázalo por
-// el ID real del grupo privado de Hypothes.is una vez creado.
+// Grupo privado vinculado:
+//   https://hypothes.is/groups/GMWBEiXG/curso-claude
 //
-// Cómo obtener el ID:
-//   1. Ir a https://hypothes.is/groups/new y crear un grupo privado.
-//   2. Tras crearlo, la URL es https://hypothes.is/groups/<GRUPO_ID>/<slug>.
-//   3. Copiar el segmento <GRUPO_ID> (suele tener 8 caracteres alfanuméricos).
-//   4. Reemplazar la cadena __GRUPO_PRIVADO_PENDIENTE__ aquí abajo.
+// Si en el futuro cambias de grupo, reemplaza el ID en `focus.group`
+// por el segmento <GRUPO_ID> de la URL del nuevo grupo.
 
 window.hypothesisConfig = function () {
   return {
     // Grupo en el que se enfoca el sidebar al abrirse.
-    // Mientras el placeholder esté presente, el sidebar se abre en "Public"
-    // y conviene NO anotar hasta haberlo reemplazado.
     focus: {
-      group: "__GRUPO_PRIVADO_PENDIENTE__"
+      group: "GMWBEiXG"
     },
     // Marca de aplicación que aparece en algunas vistas de Hypothes.is.
     appType: "via"
