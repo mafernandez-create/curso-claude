@@ -11,6 +11,17 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Cuarta lección del Módulo 01
+
+### Añadido
+- `modulos/01-fundamentos-ia/04-constitutional-ai.md` — lección sobre Constitutional AI: el problema que resuelve respecto al RLHF puro, las dos fases (SL con autocrítica + RL con RLAIF), qué es la "constitución" y de dónde salen sus principios, la variante Collective Constitutional AI, cómo se manifiesta en Claude y críticas legítimas (sesgo de redactores, opacidad de aplicación, sobre-rechazo, constitutional drift). Incluye ejercicio donde el lector escribe su propio principio y observa el trade-off útil/inofensivo. Estado: borrador.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/README.md` — la lección 04 pasa de `pendiente` a `borrador` y se enlaza.
+- `mkdocs.yml` — añadida la lección 04 a la navegación del Módulo 01.
+
+---
+
 ## 2026-05-09 — Hypothes.is: grupo privado configurado
 
 ### Actualizado
