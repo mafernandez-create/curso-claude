@@ -130,6 +130,7 @@ nav:
           - "06 · Familia de modelos (Opus / Sonnet / Haiku)": modulos/01-fundamentos-ia/06-familia-modelos-claude.md
           - "07 · Versiones del modelo": modulos/01-fundamentos-ia/07-versiones-modelos.md
           - "08 · Limitaciones fundamentales": modulos/01-fundamentos-ia/08-limitaciones-llm.md
+          - "09 · Cuándo NO usar un LLM": modulos/01-fundamentos-ia/09-cuando-no-usar-llm.md
       - "02 · AI Fluency": modulos/02-ai-fluency/README.md
       - "03 · Claude básico": modulos/03-claude-basico/README.md
       - "04 · Productividad": modulos/04-productividad/README.md

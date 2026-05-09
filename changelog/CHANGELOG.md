@@ -11,6 +11,20 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Novena lección del Módulo 01 (módulo completo en borrador)
+
+### Añadido
+- `modulos/01-fundamentos-ia/09-cuando-no-usar-llm.md` — lección de cierre del módulo. Plantea el problema del péndulo (sobreuso/infrauso), siete categorías donde un LLM es la herramienta equivocada (precisión absoluta, reproducibilidad estricta, criticidad sin verificación, herramienta especializada superior, dependencia de información actual, coste de prompt > coste manual, ground truth verificable), tres heurísticas rápidas de decisión, contraste con patrones donde sí brilla, y enlaza con la entrega del módulo. Estado: borrador.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/README.md` — la lección 09 pasa de `pendiente` a `borrador` y se enlaza. Cabecera marca el módulo como "completo en borrador".
+- `mkdocs.yml` — añadida la lección 09 a la navegación del Módulo 01.
+
+### Notas
+- El **Módulo 01 — Fundamentos de IA y LLMs** queda con sus 9 lecciones redactadas en estado `borrador`. Entrega del módulo (ensayo de 500–800 palabras) sigue pendiente del lector.
+
+---
+
 ## 2026-05-09 — Octava lección del Módulo 01
 
 ### Añadido
