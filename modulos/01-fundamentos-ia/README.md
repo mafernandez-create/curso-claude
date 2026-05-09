@@ -3,7 +3,7 @@
 **Eje:** Base
 **Tiempo estimado:** 8–10 h
 **Prerrequisitos:** ninguno
-**Última actualización:** 2026-05-08
+**Última actualización:** 2026-05-09
 
 ## Objetivo
 
@@ -15,7 +15,7 @@ Entender qué es un Large Language Model, cómo se entrena Claude, qué lo disti
 |----|--------|--------|--------|
 | 01 | [Qué es un LLM y cómo funciona a grandes rasgos](01-que-es-un-llm.md) | borrador | 30 min |
 | 02 | [La arquitectura Transformer: intuición sin matemáticas](02-arquitectura-transformer.md) | borrador | 40 min |
-| 03 | Preentrenamiento, fine-tuning y RLHF | pendiente | 30 min |
+| 03 | [Preentrenamiento, fine-tuning y RLHF](03-preentrenamiento-fine-tuning-rlhf.md) | borrador | 30 min |
 | 04 | Constitutional AI: el enfoque de Anthropic | pendiente | 30 min |
 | 05 | Historia de Anthropic y posicionamiento de mercado | pendiente | 20 min |
 | 06 | La familia de modelos Claude: Opus, Sonnet, Haiku | pendiente | 25 min |

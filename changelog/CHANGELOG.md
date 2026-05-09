@@ -11,6 +11,17 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Tercera lección del Módulo 01
+
+### Añadido
+- `modulos/01-fundamentos-ia/03-preentrenamiento-fine-tuning-rlhf.md` — lección sobre las tres fases del entrenamiento de un LLM moderno: preentrenamiento autosupervisado, fine-tuning supervisado (SFT / instruction tuning) y RLHF (modelo de recompensa + PPO). Incluye preludio a Constitutional AI y ejercicio comparativo de tres encuadres de prompt sobre la misma pregunta. Estado: borrador.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/README.md` — la lección 03 pasa de `pendiente` a `borrador` y se enlaza.
+- `mkdocs.yml` — añadida la lección 03 a la navegación del Módulo 01.
+
+---
+
 ## 2026-05-08 — Script de arranque local
 
 ### Añadido
