@@ -11,6 +11,17 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Séptima lección del Módulo 01
+
+### Añadido
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — lección breve sobre cómo leer un identificador de modelo Claude (familia + generación major.minor + snapshot YYYYMMDD), distinción entre alias (`-latest`) y snapshot fijo, ciclo de vida de un modelo y advertencias para producción. Incluye ejercicio de ir a docs.claude.com y copiar IDs vigentes. Estado: borrador.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/README.md` — la lección 07 pasa de `pendiente` a `borrador` y se enlaza.
+- `mkdocs.yml` — añadida la lección 07 a la navegación del Módulo 01.
+
+---
+
 ## 2026-05-09 — Sexta lección del Módulo 01
 
 ### Añadido
