@@ -127,6 +127,7 @@ nav:
           - "03 · Preentrenamiento, fine-tuning y RLHF": modulos/01-fundamentos-ia/03-preentrenamiento-fine-tuning-rlhf.md
           - "04 · Constitutional AI": modulos/01-fundamentos-ia/04-constitutional-ai.md
           - "05 · Historia de Anthropic": modulos/01-fundamentos-ia/05-historia-anthropic.md
+          - "06 · Familia de modelos (Opus / Sonnet / Haiku)": modulos/01-fundamentos-ia/06-familia-modelos-claude.md
       - "02 · AI Fluency": modulos/02-ai-fluency/README.md
       - "03 · Claude básico": modulos/03-claude-basico/README.md
       - "04 · Productividad": modulos/04-productividad/README.md

@@ -11,6 +11,17 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Sexta lección del Módulo 01
+
+### Añadido
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — lección sobre los tres tamaños (Opus, Sonnet, Haiku) dentro de cada generación: por qué tres y no uno, caracterización de cada uno por capacidad/latencia/coste, heurística práctica de elección (empezar por Sonnet), patrones de combinación (router, cascada, pre/post-procesado), y advertencia clave: el Sonnet de la generación N suele igualar al Opus de la N–1. Incluye ejercicio con tabla volumen/coste-de-error/latencia para tres tareas reales del lector. Estado: borrador.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/README.md` — la lección 06 pasa de `pendiente` a `borrador` y se enlaza.
+- `mkdocs.yml` — añadida la lección 06 a la navegación del Módulo 01.
+
+---
+
 ## 2026-05-09 — Quinta lección del Módulo 01
 
 ### Añadido
