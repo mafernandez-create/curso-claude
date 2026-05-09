@@ -28,6 +28,29 @@ Los contenidos siguen siendo Markdown editable en `modulos/`, `recursos/`, etc. 
 
 ---
 
+## Anotaciones (Hypothes.is)
+
+El sitio carga el sidebar de [Hypothes.is](https://web.hypothes.is/) en cada página. Te permite **subrayar texto y añadir notas inline** sobre cualquier lección. Las notas se guardan en tu cuenta de Hypothes.is, no en este repo.
+
+**Setup (5 minutos, una sola vez):**
+
+1. Crea cuenta gratis en https://hypothes.is/signup.
+2. Entra a https://hypothes.is/groups/new y **crea un grupo privado** (por ejemplo `curso-claude`). Esto es importante: por defecto Hypothes.is publica tus notas en el feed público; el grupo privado las mantiene solo para ti.
+3. Abre https://curso-claude.pages.dev/, haz login en el sidebar de la derecha y selecciona el grupo privado en el desplegable de arriba antes de anotar.
+
+**Uso:**
+- Selecciona texto en cualquier lección → aparece un botón flotante con dos iconos:
+  - 💬 *Annotate* — nota privada anclada al texto, con Markdown.
+  - 🖍 *Highlight* — solo subrayado, sin texto.
+- Para revisar lo anotado: icono `<` arriba a la derecha abre el sidebar con todo lo tuyo en esta página.
+- Para verlo todo agregado: https://hypothes.is/users/<tu_usuario>.
+
+**Alternativa sin script:** la [extensión Hypothes.is para Chrome/Firefox](https://web.hypothes.is/start/) hace lo mismo sin necesidad del embed. Útil si prefieres no cargar JS de terceros, o para anotar también en otras webs. Funciona aunque desactivemos el embed del sitio.
+
+**Privacidad:** el embed carga `embed.js` desde `hypothes.is` en cada página. Si te incomoda, dime y lo quitamos — la extensión sigue funcionando igual.
+
+---
+
 ## Cómo usar este repositorio
 
 Este proyecto está pensado para abrirse con **Claude Code** en la raíz. El fichero `CLAUDE.md` contiene las instrucciones maestras que Claude lee al iniciar cada sesión. A partir de ahí, puedes:

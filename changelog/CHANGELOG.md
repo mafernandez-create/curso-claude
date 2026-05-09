@@ -11,6 +11,20 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Anotaciones inline con Hypothes.is
+
+### Añadido
+- `mkdocs.yml` — bloque `extra_javascript` que carga `https://hypothes.is/embed.js` (async). El sitio público muestra ahora el sidebar de Hypothes.is en cada página, permitiendo subrayar texto y dejar notas inline.
+- `README.md` — sección **"Anotaciones (Hypothes.is)"** con setup paso a paso (cuenta + grupo privado obligatorio para mantener notas privadas), uso, alternativa con extensión de navegador y nota de privacidad sobre el JS de terceros.
+
+### Actualizado
+- `mkdocs.yml` — desactivada la feature `navigation.instant`. Es incompatible con la integración de Hypothes.is (los scripts de terceros que se enganchan al ciclo de vida de la página se rompen con la navegación tipo SPA). El coste es transiciones de página un pelín más lentas; el beneficio es que las anotaciones funcionan al cambiar de lección.
+
+### Notas
+- Las notas se guardan en servidores de Hypothes.is, no en este repo. Para mantenerlas privadas hay que crear y usar un grupo privado tras el registro; las anotaciones por defecto son públicas en el feed global.
+
+---
+
 ## 2026-05-09 — Tercera lección del Módulo 01
 
 ### Añadido

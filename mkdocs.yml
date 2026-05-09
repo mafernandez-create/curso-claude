@@ -26,7 +26,9 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
-    - navigation.instant
+    # navigation.instant desactivada a propósito: rompe la integración con
+    # Hypothes.is (anotaciones). Si quieres reactivarla, asegúrate antes de
+    # que las anotaciones siguen funcionando al cambiar de página.
     - navigation.tracking
     - navigation.indexes
     - toc.follow
@@ -99,6 +101,14 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/mafernandez-create
   generator: true
+
+# Anotaciones inline con Hypothes.is — sidebar con subrayados y notas.
+# Para usar: crear cuenta gratis en https://hypothes.is/signup y, MUY
+# IMPORTANTE, crear un grupo PRIVADO antes de anotar para que las notas
+# no sean públicas. Documentado en README.md → "Anotaciones".
+extra_javascript:
+  - path: https://hypothes.is/embed.js
+    async: true
 
 # Navegación explícita — refleja la estructura pedagógica del curso.
 nav:
