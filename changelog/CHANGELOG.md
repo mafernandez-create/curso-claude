@@ -11,6 +11,17 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Octava lección del Módulo 01
+
+### Añadido
+- `modulos/01-fundamentos-ia/08-limitaciones-llm.md` — lección sobre las tres limitaciones canónicas (alucinación, cutoff, sesgo) más cuatro secundarias importantes (ventana de contexto/lost-in-the-middle, aritmética, long tail, no-determinismo, sensibilidad al fraseo, privacidad). Para cada una: qué es, por qué pasa, cómo se manifiesta, mitigaciones reales y mitigaciones que no funcionan. Cierra con regla operativa "borrador sí, decisión final no" y lista de tareas que nunca delegar sin verificación. Ejercicio: diseñar un mini-protocolo de uso para una pregunta concreta del lector. Estado: borrador.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/README.md` — la lección 08 pasa de `pendiente` a `borrador` y se enlaza.
+- `mkdocs.yml` — añadida la lección 08 a la navegación del Módulo 01.
+
+---
+
 ## 2026-05-09 — Séptima lección del Módulo 01
 
 ### Añadido
