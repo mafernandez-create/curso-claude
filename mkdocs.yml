@@ -103,12 +103,16 @@ extra:
   generator: true
 
 # Anotaciones inline con Hypothes.is — sidebar con subrayados y notas.
-# Para usar: crear cuenta gratis en https://hypothes.is/signup y, MUY
-# IMPORTANTE, crear un grupo PRIVADO antes de anotar para que las notas
-# no sean públicas. Documentado en README.md → "Anotaciones".
+# Para usar: crear cuenta gratis en https://hypothes.is/signup y un grupo
+# PRIVADO (https://hypothes.is/groups/new) para que las notas no sean
+# públicas. Documentado en README.md → "Anotaciones".
+#
+# El orden de los scripts importa: hypothesis-config.js define
+# window.hypothesisConfig (con el grupo privado por defecto) y debe cargar
+# ANTES que embed.js, que la consulta al arrancar.
 extra_javascript:
-  - path: https://hypothes.is/embed.js
-    async: true
+  - assets/hypothesis-config.js
+  - https://hypothes.is/embed.js
 
 # Navegación explícita — refleja la estructura pedagógica del curso.
 nav:

@@ -11,6 +11,21 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Hypothes.is con grupo privado por defecto (pendiente de ID)
+
+### Añadido
+- `assets/hypothesis-config.js` — define `window.hypothesisConfig` con `focus.group` para que el sidebar de Hypothes.is se enfoque en un grupo privado del usuario al abrirse, en lugar del grupo "Public". Reduce el riesgo de anotar públicamente por error.
+- `docs/assets` — symlink a `../assets` para que MkDocs sirva el archivo bajo `/assets/` en el sitio.
+
+### Actualizado
+- `mkdocs.yml` — `extra_javascript` ahora carga `assets/hypothesis-config.js` ANTES de `embed.js` (orden importa: el embed consulta `window.hypothesisConfig` al arrancar). Ambos scripts cargan síncronos para garantizar el orden.
+- `README.md` — sección "Anotaciones" reescrita con el nuevo flujo: el setup ahora incluye reemplazar `__GRUPO_PRIVADO_PENDIENTE__` por el ID real del grupo privado.
+
+### Pendiente
+- **Reemplazar el placeholder `__GRUPO_PRIVADO_PENDIENTE__` en `assets/hypothesis-config.js`** por el ID real del grupo privado de Hypothes.is una vez creado. Hasta entonces, el sidebar arranca en "Public" y conviene no anotar.
+
+---
+
 ## 2026-05-09 — Anotaciones inline con Hypothes.is
 
 ### Añadido

@@ -30,24 +30,30 @@ Los contenidos siguen siendo Markdown editable en `modulos/`, `recursos/`, etc. 
 
 ## Anotaciones (Hypothes.is)
 
-El sitio carga el sidebar de [Hypothes.is](https://web.hypothes.is/) en cada página. Te permite **subrayar texto y añadir notas inline** sobre cualquier lección. Las notas se guardan en tu cuenta de Hypothes.is, no en este repo.
+El sitio carga el sidebar de [Hypothes.is](https://web.hypothes.is/) en cada página. Permite **subrayar texto y dejar notas inline** sobre cualquier lección. Las notas se guardan en tu cuenta de Hypothes.is, no en este repo.
 
-**Setup (5 minutos, una sola vez):**
+**Para que tus anotaciones sean PRIVADAS desde el primer momento, hay que enfocar el sidebar en un grupo privado.** Eso lo hace el archivo [`assets/hypothesis-config.js`](./assets/hypothesis-config.js) automáticamente, **una vez** se rellene el ID del grupo (ver más abajo).
 
-1. Crea cuenta gratis en https://hypothes.is/signup.
-2. Entra a https://hypothes.is/groups/new y **crea un grupo privado** (por ejemplo `curso-claude`). Esto es importante: por defecto Hypothes.is publica tus notas en el feed público; el grupo privado las mantiene solo para ti.
-3. Abre https://curso-claude.pages.dev/, haz login en el sidebar de la derecha y selecciona el grupo privado en el desplegable de arriba antes de anotar.
+**Setup (5 min, una sola vez):**
 
-**Uso:**
-- Selecciona texto en cualquier lección → aparece un botón flotante con dos iconos:
-  - 💬 *Annotate* — nota privada anclada al texto, con Markdown.
+1. Crear cuenta gratis en https://hypothes.is/signup.
+2. Crear grupo privado en https://hypothes.is/groups/new (sugerido: `curso-claude`).
+3. Tras crearlo, copiar el **GRUPO_ID** de la URL: `https://hypothes.is/groups/<GRUPO_ID>/<slug>` (suele tener 8 caracteres alfanuméricos).
+4. Editar `assets/hypothesis-config.js` y reemplazar `__GRUPO_PRIVADO_PENDIENTE__` por el GRUPO_ID.
+5. Commit + push. En el siguiente deploy, al abrir el sidebar el grupo privado ya estará seleccionado por defecto.
+
+Mientras el placeholder esté presente, el sidebar arranca en "Public" y conviene **no anotar** hasta haberlo reemplazado (o hacerlo seleccionando manualmente el grupo cada vez).
+
+**Uso, una vez configurado:**
+- Selecciona texto en cualquier lección → aparece un botón flotante:
+  - 💬 *Annotate* — nota anclada al texto, con Markdown.
   - 🖍 *Highlight* — solo subrayado, sin texto.
 - Para revisar lo anotado: icono `<` arriba a la derecha abre el sidebar con todo lo tuyo en esta página.
-- Para verlo todo agregado: https://hypothes.is/users/<tu_usuario>.
+- Para verlo agregado por usuario: https://hypothes.is/users/<tu_usuario>.
 
-**Alternativa sin script:** la [extensión Hypothes.is para Chrome/Firefox](https://web.hypothes.is/start/) hace lo mismo sin necesidad del embed. Útil si prefieres no cargar JS de terceros, o para anotar también en otras webs. Funciona aunque desactivemos el embed del sitio.
+**Alternativa sin embed:** la [extensión Hypothes.is para Chrome/Firefox](https://web.hypothes.is/start/) hace lo mismo sin cargar JS de terceros en el sitio. Útil si prefieres no cargar nada o quieres anotar también otras webs. Permite fijar un grupo por defecto en sus preferencias.
 
-**Privacidad:** el embed carga `embed.js` desde `hypothes.is` en cada página. Si te incomoda, dime y lo quitamos — la extensión sigue funcionando igual.
+**Privacidad:** el embed carga `embed.js` desde `hypothes.is` en cada página. Si te incomoda, quita las dos líneas de `extra_javascript` en `mkdocs.yml` — la extensión sigue funcionando igual.
 
 ---
 
