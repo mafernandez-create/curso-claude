@@ -11,6 +11,17 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Quinta lección del Módulo 01
+
+### Añadido
+- `modulos/01-fundamentos-ia/05-historia-anthropic.md` — lección contextual sobre Anthropic: origen (salida de OpenAI en 2021, equipo fundador con los Amodei, Tom Brown, Jack Clark, Jared Kaplan, Chris Olah), forma jurídica PBC, cronología de modelos Claude (1 → 4.7), financiación (Amazon y Google como inversores principales), posicionamiento frente a competidores (OpenAI, Google DeepMind, Meta, Mistral/xAI), decisiones distintivas (closed weights, foco enterprise, multi-cloud, Responsible Scaling Policy) y críticas habituales. Incluye ejercicio de lectura crítica del RSP. Estado: borrador.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/README.md` — la lección 05 pasa de `pendiente` a `borrador` y se enlaza.
+- `mkdocs.yml` — añadida la lección 05 a la navegación del Módulo 01.
+
+---
+
 ## 2026-05-09 — Cuarta lección del Módulo 01
 
 ### Añadido

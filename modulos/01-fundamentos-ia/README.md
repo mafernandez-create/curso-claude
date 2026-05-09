@@ -3,7 +3,7 @@
 **Eje:** Base
 **Tiempo estimado:** 8–10 h
 **Prerrequisitos:** ninguno
-**Última actualización:** 2026-05-09 (lección 04)
+**Última actualización:** 2026-05-09 (lección 05)
 
 ## Objetivo
 
@@ -17,7 +17,7 @@ Entender qué es un Large Language Model, cómo se entrena Claude, qué lo disti
 | 02 | [La arquitectura Transformer: intuición sin matemáticas](02-arquitectura-transformer.md) | borrador | 40 min |
 | 03 | [Preentrenamiento, fine-tuning y RLHF](03-preentrenamiento-fine-tuning-rlhf.md) | borrador | 30 min |
 | 04 | [Constitutional AI: el enfoque de Anthropic](04-constitutional-ai.md) | borrador | 30 min |
-| 05 | Historia de Anthropic y posicionamiento de mercado | pendiente | 20 min |
+| 05 | [Historia de Anthropic y posicionamiento de mercado](05-historia-anthropic.md) | borrador | 20 min |
 | 06 | La familia de modelos Claude: Opus, Sonnet, Haiku | pendiente | 25 min |
 | 07 | Versiones: leyendo el número del modelo | pendiente | 15 min |
 | 08 | Limitaciones fundamentales: alucinaciones, cutoff, sesgo | pendiente | 30 min |
