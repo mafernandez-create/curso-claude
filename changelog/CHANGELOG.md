@@ -11,6 +11,23 @@ Tipos de entrada:
 
 ---
 
+## 2026-05-09 — Módulo 02 (AI Fluency): primeras 4 lecciones
+
+### Añadido
+- `modulos/02-ai-fluency/01-que-es-alfabetizacion-ia.md` — definición operativa de alfabetización IA, diferencias con tech literacy clásica, por qué importa ahora, las 4 D como avance, señales de infra/sobre-alfabetización. Incluye autoevaluación inicial (1–5) en las cuatro dimensiones.
+- `modulos/02-ai-fluency/02-framework-4-dimensiones.md` — presentación detallada del framework: Delegación, Descripción, Discernimiento, Diligencia. Por qué son cuatro y no tres ni cinco, cómo diagnosticar qué dimensión falla en una interacción concreta, cómo encaja con otros frameworks de prompting.
+- `modulos/02-ai-fluency/03-delegacion.md` — espectro de cinco niveles de autonomía (de 0 sin IA a 5 totalmente autónoma), tres heurísticas (coste manual, coste de error, criterio humano), patrones de buena y mala delegación, distinción crítica entre delegar tarea y delegar responsabilidad.
+- `modulos/02-ai-fluency/04-descripcion.md` — cinco componentes esenciales del prompt (contexto, tarea, restricciones, ejemplos, cláusula de incertidumbre), antes/después comparado, iterar prompt vs iterar conversación, rol explícito y formato exacto.
+
+### Actualizado
+- `modulos/02-ai-fluency/README.md` — lecciones 01–04 pasan de `pendiente` a `borrador` y se enlazan.
+- `mkdocs.yml` — Módulo 02 ahora tiene sub-navegación con sus cuatro primeras lecciones, igual estructura que Módulo 01.
+
+### Pendiente
+- Lecciones 05–08 del módulo 02 (Discernimiento, Diligencia, errores típicos, casos aplicados). Se redactarán cuando el lector retome.
+
+---
+
 ## 2026-05-09 — Novena lección del Módulo 01 (módulo completo en borrador)
 
 ### Añadido

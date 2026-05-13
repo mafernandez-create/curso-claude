@@ -3,7 +3,7 @@
 **Eje:** Base
 **Tiempo estimado:** 5–7 h
 **Prerrequisitos:** Módulo 01 (recomendado, no obligatorio)
-**Última actualización:** 2026-04-23
+**Última actualización:** 2026-05-09 (lecciones 01–04 en borrador)
 
 ## Objetivo
 
@@ -13,10 +13,10 @@ Desarrollar "alfabetización en IA": saber interactuar con sistemas como Claude 
 
 | Nº | Título | Estado | Tiempo |
 |----|--------|--------|--------|
-| 01 | Qué es alfabetización IA y por qué importa | pendiente | 20 min |
-| 02 | El framework de las 4 dimensiones (Anthropic) | pendiente | 30 min |
-| 03 | Delegación con criterio: qué tareas tienen sentido | pendiente | 25 min |
-| 04 | Descripción: cómo pedir con precisión | pendiente | 30 min |
+| 01 | [Qué es alfabetización IA y por qué importa](01-que-es-alfabetizacion-ia.md) | borrador | 20 min |
+| 02 | [El framework de las 4 dimensiones (Anthropic)](02-framework-4-dimensiones.md) | borrador | 30 min |
+| 03 | [Delegación con criterio: qué tareas tienen sentido](03-delegacion.md) | borrador | 25 min |
+| 04 | [Descripción: cómo pedir con precisión](04-descripcion.md) | borrador | 30 min |
 | 05 | Discernimiento: cómo evaluar outputs | pendiente | 30 min |
 | 06 | Diligencia: uso responsable y ético | pendiente | 30 min |
 | 07 | Errores típicos de interacción y cómo detectarlos | pendiente | 25 min |

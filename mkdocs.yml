@@ -131,7 +131,12 @@ nav:
           - "07 · Versiones del modelo": modulos/01-fundamentos-ia/07-versiones-modelos.md
           - "08 · Limitaciones fundamentales": modulos/01-fundamentos-ia/08-limitaciones-llm.md
           - "09 · Cuándo NO usar un LLM": modulos/01-fundamentos-ia/09-cuando-no-usar-llm.md
-      - "02 · AI Fluency": modulos/02-ai-fluency/README.md
+      - "02 · AI Fluency":
+          - Descripción: modulos/02-ai-fluency/README.md
+          - "01 · Qué es alfabetización IA": modulos/02-ai-fluency/01-que-es-alfabetizacion-ia.md
+          - "02 · El framework de las 4 dimensiones": modulos/02-ai-fluency/02-framework-4-dimensiones.md
+          - "03 · Delegación": modulos/02-ai-fluency/03-delegacion.md
+          - "04 · Descripción": modulos/02-ai-fluency/04-descripcion.md
       - "03 · Claude básico": modulos/03-claude-basico/README.md
       - "04 · Productividad": modulos/04-productividad/README.md
       - "05 · Prompt Engineering": modulos/05-prompt-engineering/README.md
