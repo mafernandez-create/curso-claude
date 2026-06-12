@@ -135,6 +135,7 @@ Cada lección sigue la plantilla de `plantillas/leccion.md` y contiene al menos:
    - `anthropic.com/research` (investigación)
    - `docs.claude.com` (cambios en documentación)
 3. Propón actualizaciones concretas, no las apliques sin confirmación.
+4. **Quién confirma:** las actualizaciones propuestas (tanto las de esta orden como las de la rutina semanal programada, que deja sus informes en `changelog/novedades-YYYY-MM-DD.md`) **solo las confirma Manolo**. No apliques una propuesta al contenido del curso hasta que conste su visto bueno.
 
 ### Cuando yo te pida "verifica enlaces"
 1. Usa el comando `/verificar-enlaces` (ver `.claude/commands/`).
