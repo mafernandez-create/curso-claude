@@ -11,6 +11,15 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-12 — Registro de accesos visible solo para Manolo
+
+### Añadido
+- `wrangler.toml` — binding del namespace KV `CURSO_KV` (id `61fe6c03…`) para persistir el registro de accesos.
+- `functions/_middleware.js` — registro de eventos por usuario en KV: cada **inicio de sesión** y, como máximo una vez por hora, un evento de **actividad** (con fecha, dispositivo aproximado, IP y país). Nuevo panel **`/admin/accesos`** que muestra las conexiones y accesos de Javier; solo accesible con la sesión del administrador (`AUTH_ADMIN`, por defecto `manolo`) — cualquier otro usuario recibe 403. Se conservan los últimos 200 eventos por usuario y el registro nunca interrumpe la navegación si KV no está disponible.
+- `assets/progreso.js` — enlace "Registro de accesos" en la página "Mi progreso", visible únicamente cuando la sesión es de Manolo (la restricción real la impone el servidor).
+
+---
+
 ## 2026-06-12 — Acceso multiusuario, progreso individual y podcasts en español
 
 ### Añadido

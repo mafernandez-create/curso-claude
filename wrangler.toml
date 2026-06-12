@@ -1,0 +1,16 @@
+# Configuración de Cloudflare Pages para el proyecto curso-claude.
+#
+# Este archivo lo lee Cloudflare en cada build (integración git) y define
+# los bindings de las Pages Functions (functions/_middleware.js).
+#
+# CURSO_KV: almacén clave-valor donde el middleware registra las conexiones
+# y accesos de los usuarios (panel /admin/accesos, visible solo para el
+# usuario administrador definido en AUTH_ADMIN, por defecto "manolo").
+
+name = "curso-claude"
+compatibility_date = "2026-06-01"
+pages_build_output_dir = "site"
+
+[[kv_namespaces]]
+binding = "CURSO_KV"
+id = "61fe6c03510f4c5bb393fc286e16fdde"

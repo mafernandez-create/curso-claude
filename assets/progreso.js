@@ -182,12 +182,19 @@
       ? Math.round((100 * totalHechas) / lecciones.length)
       : 0;
 
+    // El enlace al registro de accesos solo se pinta para el administrador
+    // (Manolo); el endpoint /admin/accesos lo verifica además en servidor.
+    var enlaceAdmin =
+      usuarioActual() === "manolo"
+        ? ' · <a href="/admin/accesos">Registro de accesos</a>'
+        : "";
+
     var html =
       '<div class="cc-resumen-cabecera">' +
       "<h2>Avance de " + usuario + "</h2>" +
       "<p><strong>" + totalHechas + " de " + lecciones.length +
       "</strong> lecciones publicadas completadas (" + pct + " %)." +
-      ' · <a href="/salir">Cerrar sesión</a></p>' +
+      ' · <a href="/salir">Cerrar sesión</a>' + enlaceAdmin + "</p>" +
       '<div class="cc-barra"><div class="cc-barra-relleno" style="width:' +
       pct + '%"></div></div>' +
       "</div>";
