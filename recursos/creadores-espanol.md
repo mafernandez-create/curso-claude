@@ -1,8 +1,8 @@
-# Creadores en español — YouTube y otros
+# Creadores en español — YouTube, podcasts y otros
 
 > Referentes del ecosistema hispano sobre IA y Claude. La calidad es desigual (lo habitual en YouTube), pero los siguientes tienen trayectoria y rigor contrastado.
 >
-> **Última revisión:** 2026-04-23
+> **Última revisión:** 2026-06-12
 
 ---
 
@@ -53,6 +53,26 @@
 - **YouTube:** @academiaialab
 - **Enfoque:** formación estructurada sobre IA en español.
 - **Relevancia:** revisar vídeos específicos; su newsletter también aparece en `newsletters.md`.
+
+---
+
+## Podcasts
+
+### El Test de Turing
+
+- **Dónde:** [YouTube](https://www.youtube.com/@ElTestdeTuring) · también en Spotify, Apple Podcasts e iVoox.
+- **Perfil:** podcast semanal (~40 min) presentado por Álvaro Peña, Arnau Vendrell y Víctor Mollá.
+- **Enfoque para este curso:** IA aplicada a negocio — noticias de la semana, un tema a fondo y preguntas de la comunidad. Tono informal y accesible.
+- **Relevancia:** media. Complemento de actualidad para los módulos 01 (fundamentos) y 04 (productividad).
+- **Por qué:** formato ágil para mantenerse al día de OpenAI, Claude, Google, etc. sin necesidad de leer newsletters técnicas.
+
+### Inteligencia Artificial (Pocho Costa)
+
+- **Dónde:** [pochocosta.com](https://pochocosta.com/series/inteligencia-artificial/) · también en Apple Podcasts y Spotify.
+- **Perfil:** Pocho Costa, ingeniero de sistemas y programador. Emite desde finales de 2018.
+- **Enfoque para este curso:** presente y futuro de la IA explicados sin jerga, con casos de aplicación reales en trabajo, proyectos y negocios.
+- **Relevancia:** media-alta para el módulo 01 (fundamentos en lenguaje llano) y el módulo 04 (aplicación práctica).
+- **Por qué:** trayectoria larga y constante; buen punto de entrada en español para perfiles no técnicos.
 
 ---
 

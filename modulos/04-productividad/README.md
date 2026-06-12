@@ -3,7 +3,7 @@
 **Eje:** Usuario
 **Tiempo estimado:** 6–8 h
 **Prerrequisitos:** Módulo 03
-**Última actualización:** 2026-04-23
+**Última actualización:** 2026-06-12
 
 ## Objetivo
 
@@ -32,6 +32,10 @@ Del catálogo:
 - `claude-101`.
 - `anthropic-news`.
 - `xavier-mitjana` — tutoriales prácticos en español.
+
+Contenido extra en español (ver `recursos/creadores-espanol.md`):
+- `podcast-el-test-de-turing` — [El Test de Turing](https://www.youtube.com/@ElTestdeTuring): IA aplicada a negocio, noticias semanales y casos de uso.
+- `podcast-ia-pocho-costa` — [Inteligencia Artificial, de Pocho Costa](https://pochocosta.com/series/inteligencia-artificial/): cómo aplicar IA en trabajo, proyectos y negocios.
 
 ## Entrega
 

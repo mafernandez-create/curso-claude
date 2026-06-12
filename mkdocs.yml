@@ -113,11 +113,16 @@ extra:
 extra_javascript:
   - assets/hypothesis-config.js
   - https://hypothes.is/embed.js
+  # Historial de avance por usuario (botón "marcar como completada" en cada
+  # lección + resumen en mi-progreso.md). Lee la cookie curso_user que deja
+  # el middleware de autenticación (functions/_middleware.js).
+  - assets/progreso.js
 
 # Navegación explícita — refleja la estructura pedagógica del curso.
 nav:
   - Inicio: README.md
   - Plan de estudio: plan-de-estudio.md
+  - Mi progreso: mi-progreso.md
   - Módulos:
       - Visión general: modulos/00-guia-proyecto/README.md
       - "01 · Fundamentos de IA y LLMs":

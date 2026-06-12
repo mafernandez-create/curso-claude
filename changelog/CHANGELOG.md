@@ -11,6 +11,24 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-12 — Acceso multiusuario, progreso individual y podcasts en español
+
+### Añadido
+- `functions/_middleware.js` reescrito: el Basic Auth de usuario único se sustituye por una **pantalla de login propia** con sesión por cookie firmada (HMAC-SHA256, 30 días) y soporte para **varios usuarios** (Javier y Manolo). Credenciales en la variable de entorno `AUTH_USERS` de Cloudflare Pages (formato `usuario:contraseña;usuario:contraseña`) más un `AUTH_SECRET` para firmar cookies. Nuevas rutas `/acceso` (login) y `/salir` (logout). Las contraseñas **no** se guardan en el repositorio.
+- `assets/progreso.js` — **historial de avance por usuario**: botón "Marcar como completada" en cada lección y resumen por módulos en la nueva página "Mi progreso". El avance se guarda en localStorage, con clave separada por usuario (cookie `curso_user` que deja el middleware). La lista de lecciones se deriva del índice de búsqueda de MkDocs, sin manifiesto manual. Limitación documentada: el almacenamiento es por navegador/dispositivo (sin sincronización entre iPhone y ordenador); el plan B si hiciera falta es Cloudflare KV.
+- `mi-progreso.md` (+ symlink en `docs/`) — página "Mi progreso" añadida a la navegación.
+- Recursos nuevos en `recursos/enlaces.yaml` (catálogo pasa de 64 a 66): `podcast-el-test-de-turing` (El Test de Turing — IA aplicada a negocio) y `podcast-ia-pocho-costa` (Inteligencia Artificial, de Pocho Costa). URLs verificadas el 2026-06-12.
+
+### Actualizado
+- `recursos/creadores-espanol.md` — nueva sección "Podcasts" con fichas de ambos.
+- `modulos/01-fundamentos-ia/README.md` y `modulos/04-productividad/README.md` — los dos podcasts enlazados como contenido extra en español en "Recursos clave".
+- `mkdocs.yml` — carga `assets/progreso.js` y añade "Mi progreso" a la navegación.
+
+### Notas
+- En Cloudflare Pages hay que definir `AUTH_USERS` y `AUTH_SECRET` y eliminar las antiguas `BASIC_AUTH_USER` / `BASIC_AUTH_PASS` (el middleware falla cerrado si faltan las nuevas).
+
+---
+
 ## 2026-05-09 — Módulo 02 (AI Fluency): primeras 4 lecciones
 
 ### Añadido

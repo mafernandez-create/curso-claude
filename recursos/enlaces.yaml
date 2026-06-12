@@ -5,8 +5,8 @@
 
 meta:
   version: "1.0.0"
-  ultima_revision: "2026-04-23"
-  total_recursos: 64
+  ultima_revision: "2026-06-12"
+  total_recursos: 66
 
 # ============================================================
 # 1. RECURSOS OFICIALES DE ANTHROPIC
@@ -597,6 +597,24 @@ creadores_espanol:
     plataforma: YouTube
     enfoque: "IA aplicada, tutoriales accesibles"
     relevancia: media
+
+  - id: podcast-el-test-de-turing
+    nombre: "El Test de Turing (podcast)"
+    url: "https://www.youtube.com/@ElTestdeTuring"
+    plataforma: "Podcast (YouTube, Spotify, Apple Podcasts, iVoox)"
+    enfoque: "IA aplicada a negocio: noticias semanales, un tema a fondo y preguntas de la comunidad. Presentan Álvaro Peña, Arnau Vendrell y Víctor Mollá."
+    relevancia: media
+    modulos_relacionados: [01, 04]
+    revisado: "2026-06-12"
+
+  - id: podcast-ia-pocho-costa
+    nombre: "Inteligencia Artificial (Pocho Costa)"
+    url: "https://pochocosta.com/series/inteligencia-artificial/"
+    plataforma: "Podcast (web propia, Apple Podcasts, Spotify)"
+    enfoque: "Divulgación accesible de IA y casos de aplicación en trabajo y negocio. Emitido desde 2018 por Pocho Costa, ingeniero de sistemas."
+    relevancia: media
+    modulos_relacionados: [01, 04]
+    revisado: "2026-06-12"
 
 # ============================================================
 # 8. COMUNIDADES Y FOROS

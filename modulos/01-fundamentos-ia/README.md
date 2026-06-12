@@ -3,7 +3,7 @@
 **Eje:** Base
 **Tiempo estimado:** 8–10 h
 **Prerrequisitos:** ninguno
-**Última actualización:** 2026-05-09 (módulo completo en borrador)
+**Última actualización:** 2026-06-12 (módulo completo en borrador)
 
 ## Objetivo
 
@@ -36,6 +36,10 @@ Papers recomendados (ver `recursos/papers-investigacion.md`):
 - Attention Is All You Need (Vaswani et al., 2017).
 - Constitutional AI (Anthropic, 2022).
 - Scaling Laws for Neural Language Models (Kaplan et al., 2020).
+
+Contenido extra en español (ver `recursos/creadores-espanol.md`):
+- `podcast-ia-pocho-costa` — [Inteligencia Artificial, de Pocho Costa](https://pochocosta.com/series/inteligencia-artificial/): fundamentos y casos reales explicados sin jerga. Buen acompañamiento en audio para este módulo.
+- `podcast-el-test-de-turing` — [El Test de Turing](https://www.youtube.com/@ElTestdeTuring): actualidad semanal de IA aplicada a negocio, para contextualizar lo aprendido.
 
 ## Entrega
 
