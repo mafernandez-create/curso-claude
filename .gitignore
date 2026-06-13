@@ -1,6 +1,9 @@
 # MkDocs build output
 /site/
 
+# Cloudflare (caché local de wrangler)
+.wrangler/
+
 # Python
 __pycache__/
 *.py[cod]

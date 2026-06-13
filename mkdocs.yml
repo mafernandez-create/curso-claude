@@ -41,14 +41,14 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
+      primary: blue
       accent: deep orange
       toggle:
         icon: material/weather-sunny
         name: Cambiar a modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
+      primary: blue
       accent: deep orange
       toggle:
         icon: material/weather-night
@@ -110,6 +110,11 @@ extra:
 # El orden de los scripts importa: hypothesis-config.js define
 # window.hypothesisConfig (con el grupo privado por defecto) y debe cargar
 # ANTES que embed.js, que la consulta al arrancar.
+# Estilo del Kit de Formación (aspecto del curso modelo Ferroplast):
+# colores de marca, tipografía grande, áreas táctiles y ayudas (objetivo/resumen/reto).
+extra_css:
+  - assets/extra.css
+
 extra_javascript:
   - assets/hypothesis-config.js
   - https://hypothes.is/embed.js

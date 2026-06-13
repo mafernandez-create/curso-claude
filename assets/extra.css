@@ -1,0 +1,114 @@
+/* ============================================================
+   Kit de Estilo de Formación — capa para MkDocs Material
+   Reproduce el aspecto del curso modelo (Ferroplast) sobre
+   este sitio MkDocs. Cargado desde mkdocs.yml -> extra_css.
+   ============================================================ */
+
+/* 1) Paleta de marca ------------------------------------------------
+   Se usan selectores [data-md-color-*] además de :root para ganar a
+   las variables que Material define por nombre de paleta. */
+:root,
+[data-md-color-primary] {
+  --md-primary-fg-color:        #003366;  /* azul corporativo */
+  --md-primary-fg-color--light: #004d99;
+  --md-primary-fg-color--dark:  #00264d;
+}
+[data-md-color-accent] {
+  --md-accent-fg-color:         #E67E22;  /* naranja de acento */
+}
+
+/* Modo claro: fondo y texto del modelo */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #F8FAFC;
+  --md-typeset-color:    #1a1a1a;
+  --md-typeset-a-color:  #1a56db;  /* enlaces / acciones */
+}
+
+/* Modo oscuro (se conserva el de curso-claude): azul más claro para
+   mantener contraste sobre fondo oscuro */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #4a90d9;
+  --md-accent-fg-color:  #F39C12;
+  --md-typeset-a-color:  #7fb3f0;
+}
+
+/* 2) Tipografía legible (cuerpo grande, interlineado generoso) ------ */
+.md-typeset {
+  font-size: 1.05rem;     /* ~18.8px sobre base 16px */
+  line-height: 1.8;
+}
+.md-typeset h1 { font-size: 1.9rem; font-weight: 700; }
+.md-typeset h2 { font-size: 1.45rem; }
+.md-typeset h3 { font-size: 1.2rem; }
+.md-typeset small { font-size: 0.95rem; }  /* nunca por debajo de ~15px */
+
+/* 3) Áreas táctiles y navegación grandes --------------------------- */
+.md-nav__link,
+.md-tabs__link {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.md-typeset a { padding: 2px 1px; }  /* amplía área de toque en enlaces */
+
+/* 4) Tablas con bordes redondeados y cabecera clara ---------------- */
+.md-typeset table:not([class]) {
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 1rem;
+}
+.md-typeset table:not([class]) th {
+  background: #eef2f7;
+  color: #1a1a1a;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: #2a2f3a;
+  color: #e8eaed;
+}
+
+/* 5) Botones (.md-button) con el look del modelo ------------------- */
+.md-typeset .md-button {
+  border-radius: 8px;
+  min-height: 56px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+.md-typeset .md-button--primary {
+  background: #003366;
+  border-color: #003366;
+  color: #fff;
+}
+
+/* 6) Admonitions reutilizables como "ayudas a la formación" --------
+   En markdown:  !!! objetivo  /  !!! resumen  /  ??? reto           */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+  border-left-width: 6px;
+}
+.md-typeset .objetivo  { border-color: #1a56db; }
+.md-typeset .objetivo  > .admonition-title,
+.md-typeset .objetivo  > summary { background: #e8effd; }
+
+.md-typeset .resumen   { border-color: #166534; }
+.md-typeset .resumen   > .admonition-title,
+.md-typeset .resumen   > summary { background: #e7f3ec; }
+
+.md-typeset .reto      { border-color: #E67E22; }
+.md-typeset .reto      > .admonition-title,
+.md-typeset .reto      > summary { background: #fdeede; }
+
+/* 7) Foco visible (accesibilidad) ---------------------------------- */
+:focus-visible {
+  outline: 3px solid #1a56db;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* 8) Respeto a usuarios sensibles al movimiento -------------------- */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

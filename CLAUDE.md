@@ -168,3 +168,55 @@ Cada lección sigue la plantilla de `plantillas/leccion.md` y contiene al menos:
 - **Mensual**: ejecutar `/verificar-enlaces` y actualizar URLs rotas.
 - **Trimestral**: revisar módulos completos, marcar como `obsoleto` lo que haya quedado desfasado y reescribir.
 - **Cada release mayor de Claude** (p. ej. nuevo Opus): revisar módulos 03, 05, 06 y 07.
+
+---
+
+## Estilo y metodología de formación (Kit de Estilo)
+
+> Este curso adopta el aspecto y la metodología del curso modelo *Ferroplast* mediante un
+> Kit de Estilo. El kit completo de referencia vive en el repo `formacion-red-comercial/kit-estilo-formacion/`.
+> El aspecto se aplica vía `assets/extra.css` (cargado en `mkdocs.yml`).
+
+### Aspecto visual (design tokens)
+Colores de marca y superficies, ya implementados en `assets/extra.css`:
+
+```css
+--brand-primary: #003366;   --brand-accent: #E67E22;
+--background:    #F8FAFC;    --surface:      #FFFFFF;   --foreground: #1a1a1a;
+--success:       #166534;    --error:        #991b1b;   --action-blue: #1a56db;
+--radius-card: 12-16px;      --radius-btn: 8px;
+```
+
+- Tipografía **Inter**, cuerpo ~18px, line-height 1.8. Iconos: emoji legibles.
+- Tarjetas/tablas redondeadas; botones (`.md-button`) altos; foco visible de 3px.
+- Se conserva el modo oscuro del curso (el `extra.css` ajusta los colores para que contrasten).
+
+### Buenas prácticas de accesibilidad (recomendadas)
+Este curso es de público general, así que las reglas senior del modelo se aplican como
+buenas prácticas, no como obligación: cuerpo ≥ 16px, contraste AA, el color nunca como única
+señal (añadir icono/texto), `alt` en imágenes, navegable por teclado.
+
+### Estructura y plantilla de lección
+Mantener la estructura de `modulos/NN-tema/`. Cada lección, además de su frontmatter habitual,
+sigue el molde del kit: **Objetivo** (1 frase) → **Contenido** en bloques cortos → **Resumen**
+(3-5 puntos) → **Reto/autoevaluación** → **Siguiente paso**.
+
+### Ayudas a la formación en markdown (MkDocs)
+Usar admonitions con estas clases (ya estiladas en `extra.css`):
+
+```markdown
+!!! objetivo "Al terminar sabrás…"
+    …
+
+!!! resumen "Lo esencial"
+    - …
+
+??? reto "Pon a prueba lo aprendido"
+    1. … (respuesta tras pensarlo)
+
+[Siguiente lección →](...){ .md-button .md-button--primary }
+```
+
+### Principio rector
+Cada cosa debe entenderse sin explicación previa. Simplicidad de uso por encima de la
+sofisticación. Lecciones cortas, feedback en positivo, una idea por bloque.

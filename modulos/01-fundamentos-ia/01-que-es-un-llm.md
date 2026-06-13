@@ -3,13 +3,16 @@ titulo: "Qué es un LLM y cómo funciona a grandes rasgos"
 modulo: "01-fundamentos-ia"
 orden: 1
 creado: 2026-04-23
-revisado: 2026-04-23
+revisado: 2026-06-13
 modelo_referencia: "Claude Opus 4.7"
 estado: borrador
 tiempo_estudio_min: 30
 ---
 
 # Qué es un LLM y cómo funciona a grandes rasgos
+
+!!! objetivo "Al terminar sabrás…"
+    Explicar, sin tecnicismos, qué es un LLM y por qué funciona prediciendo el siguiente *token* — y, sobre todo, qué **no** hace por sí solo.
 
 ## Objetivos de aprendizaje
 
@@ -132,11 +135,18 @@ Probablemente Claude te dará una referencia con aspecto perfectamente creíble:
 - **Atribuir intencionalidad.** Expresiones como "Claude ha decidido…" o "Claude quiere…" son antropomorfizaciones útiles como atajo, peligrosas como modelo mental. El modelo no tiene intención; tiene una distribución de probabilidad sobre tokens.
 - **Asumir que si entiende algo una vez, lo entiende siempre.** Un cambio menor en el prompt puede desplazar la salida a una región muy distinta. Reproducibilidad ≠ determinismo.
 
-## Resumen en 3 frases
+!!! resumen "Lo esencial en 3 frases"
+    1. Un LLM es un sistema estadístico que, dado un texto, predice repetidamente el siguiente token más probable según lo aprendido de un gran corpus.
+    2. Toda la aparente sofisticación (resumir, programar, razonar) emerge de esta mecánica simple cuando se escala en parámetros, datos y cómputo.
+    3. Lo que parece memoria, cálculo, búsqueda o ejecución son siempre **texto generado** + **sistema externo que lo interpreta**; el modelo por sí solo solo produce texto.
 
-1. Un LLM es un sistema estadístico que, dado un texto, predice repetidamente el siguiente token más probable según lo aprendido de un gran corpus.
-2. Toda la aparente sofisticación (resumir, programar, razonar) emerge de esta mecánica simple cuando se escala en parámetros, datos y cómputo.
-3. Lo que parece memoria, cálculo, búsqueda o ejecución son siempre **texto generado** + **sistema externo que lo interpreta**; el modelo por sí solo solo produce texto.
+??? reto "Pon a prueba lo aprendido"
+    1. En una frase: ¿qué hace un LLM en su núcleo?
+       *(Predecir el siguiente token más probable, una y otra vez.)*
+    2. ¿Por qué Claude puede darte una cita bibliográfica con aspecto creíble pero falsa?
+       *(Genera texto plausible, no verdadero: es una alucinación.)*
+    3. Verdadero o falso: un LLM "recuerda" tus conversaciones anteriores por defecto.
+       *(Falso. Cada conversación parte de cero; lo que parece memoria es el historial reinyectado como contexto.)*
 
 ## Recursos para profundizar
 
@@ -147,7 +157,9 @@ Probablemente Claude te dará una referencia con aspecto perfectamente creíble:
 
 ## Siguiente lección
 
-➡️ `02-arquitectura-transformer.md` — La arquitectura Transformer: intuición sin matemáticas.
+La arquitectura Transformer: intuición sin matemáticas.
+
+[Siguiente: La arquitectura Transformer →](02-arquitectura-transformer.md){ .md-button .md-button--primary }
 
 ## Fuentes
 
