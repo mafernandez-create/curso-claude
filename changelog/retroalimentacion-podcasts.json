@@ -1,0 +1,20 @@
+{
+  "descripcion": "Registro de episodios de podcast ya procesados por la rutina de retroalimentación dinámica del curso. La rutina semanal lo lee para proponer SOLO episodios nuevos, y lo actualiza tras cada ejecución. No se aplica nada al curso sin la confirmación de Manolo.",
+  "fecha_corte_inicial": "2026-06-01",
+  "actualizado": "2026-06-14",
+  "podcasts": {
+    "podcast-el-test-de-turing": {
+      "rss": "https://anchor.fm/s/e1671d44/podcast/rss",
+      "episodios_procesados": [
+        { "titulo": "Claude Fable 5: El MEJOR modelo y una ESTAFA (Ep. 158)", "fecha": "2026-06-11", "decision": "propuesto" },
+        { "titulo": "Opus 4.8: Lo analizamos a fondo ¿Mejora? (Ep. 157)", "fecha": "2026-06-03", "decision": "propuesto" },
+        { "titulo": "Probamos Composer 2.5...y uff (Ep. 156)", "fecha": "2026-05-28", "decision": "propuesto" },
+        { "titulo": "Google I/O 2026: Google reinventa la búsqueda (Ep. 155)", "fecha": "2026-05-21", "decision": "propuesto" }
+      ]
+    },
+    "podcast-ia-pocho-costa": {
+      "rss": "https://pochocosta.com/feed/podcast/inteligencia-artificial/",
+      "episodios_procesados": []
+    }
+  }
+}

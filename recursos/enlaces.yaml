@@ -601,20 +601,24 @@ creadores_espanol:
   - id: podcast-el-test-de-turing
     nombre: "El Test de Turing (podcast)"
     url: "https://www.youtube.com/@ElTestdeTuring"
+    rss: "https://anchor.fm/s/e1671d44/podcast/rss"
     plataforma: "Podcast (YouTube, Spotify, Apple Podcasts, iVoox)"
     enfoque: "IA aplicada a negocio: noticias semanales, un tema a fondo y preguntas de la comunidad. Presentan Álvaro Peña, Arnau Vendrell y Víctor Mollá."
     relevancia: media
     modulos_relacionados: [01, 04]
-    revisado: "2026-06-12"
+    retroalimenta_curso: true  # la rutina semanal escanea su RSS en busca de episodios relevantes
+    revisado: "2026-06-14"
 
   - id: podcast-ia-pocho-costa
     nombre: "Inteligencia Artificial (Pocho Costa)"
     url: "https://pochocosta.com/series/inteligencia-artificial/"
+    rss: "https://pochocosta.com/feed/podcast/inteligencia-artificial/"
     plataforma: "Podcast (web propia, Apple Podcasts, Spotify)"
     enfoque: "Divulgación accesible de IA y casos de aplicación en trabajo y negocio. Emitido desde 2018 por Pocho Costa, ingeniero de sistemas."
     relevancia: media
     modulos_relacionados: [01, 04]
-    revisado: "2026-06-12"
+    retroalimenta_curso: true
+    revisado: "2026-06-14"
 
 # ============================================================
 # 8. COMUNIDADES Y FOROS
