@@ -11,6 +11,20 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-14 — Módulo 03 (Claude básico): 10 lecciones redactadas
+
+### Añadido
+- `modulos/03-claude-basico/` — las 10 lecciones del módulo, en borrador: interfaz (web/desktop/móvil), conversaciones vs. Projects, Artefactos, Skills de oficina, modo Investigación, conectores, memoria de conversaciones, estilos personalizados, planes y límites de uso. Estructura según la plantilla del curso; datos volátiles (precios, límites) sin cifras concretas, remitiendo a la web oficial.
+
+### Actualizado
+- `modulos/03-claude-basico/README.md` — las 10 lecciones pasan de `pendiente` a `borrador` y se enlazan.
+- Contenido sincronizado a la app Next.js (base de datos Supabase) vía `extraer-contenido` + `seed`.
+
+### Pendiente de confirmación
+- Revisión de Manolo antes de marcar las lecciones como `revisado` (las features de producto cambian; conviene contrastar con docs.claude.com actuales).
+
+---
+
 ## 2026-06-12 — Registro de accesos visible solo para Manolo
 
 ### Añadido

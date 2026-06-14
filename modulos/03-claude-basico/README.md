@@ -3,7 +3,7 @@
 **Eje:** Usuario
 **Tiempo estimado:** 5–7 h
 **Prerrequisitos:** Módulo 02
-**Última actualización:** 2026-04-23
+**Última actualización:** 2026-06-14 (módulo completo en borrador)
 
 ## Objetivo
 
@@ -13,16 +13,16 @@ Dominar Claude a nivel de interfaz: saber qué hace cada función y cuándo usar
 
 | Nº | Título | Estado | Tiempo |
 |----|--------|--------|--------|
-| 01 | La interfaz de Claude: web, desktop, móvil | pendiente | 20 min |
-| 02 | Conversaciones vs. Projects: cuándo usar cada uno | pendiente | 25 min |
-| 03 | Artefactos: qué son y cómo sacarles partido | pendiente | 30 min |
-| 04 | Skills preconfiguradas (Excel, Word, PPT, PDF) | pendiente | 25 min |
-| 05 | Modo Investigación (Research) | pendiente | 30 min |
-| 06 | Conectores: Google Drive, Gmail, Slack, etc. | pendiente | 25 min |
-| 07 | Memoria de conversaciones | pendiente | 20 min |
-| 08 | Estilos personalizados | pendiente | 15 min |
-| 09 | Planes Free / Pro / Max / Team / Enterprise | pendiente | 20 min |
-| 10 | Límites de uso y cómo optimizarlos | pendiente | 25 min |
+| 01 | [La interfaz de Claude: web, desktop y móvil](01-interfaz-claude.md) | borrador | 20 min |
+| 02 | [Conversaciones vs. Projects: cuándo usar cada uno](02-conversaciones-vs-projects.md) | borrador | 25 min |
+| 03 | [Artefactos: qué son y cómo sacarles partido](03-artefactos.md) | borrador | 30 min |
+| 04 | [Skills preconfiguradas (Excel, Word, PPT, PDF)](04-skills-preconfiguradas.md) | borrador | 25 min |
+| 05 | [Modo Investigación (Research)](05-modo-investigacion.md) | borrador | 30 min |
+| 06 | [Conectores: Google Drive, Gmail, Slack, etc.](06-conectores.md) | borrador | 25 min |
+| 07 | [Memoria de conversaciones](07-memoria-conversaciones.md) | borrador | 20 min |
+| 08 | [Estilos personalizados](08-estilos-personalizados.md) | borrador | 15 min |
+| 09 | [Planes Free / Pro / Max / Team / Enterprise](09-planes.md) | borrador | 20 min |
+| 10 | [Límites de uso y cómo optimizarlos](10-limites-uso.md) | borrador | 25 min |
 
 ## Recursos clave
 
