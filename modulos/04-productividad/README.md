@@ -3,7 +3,7 @@
 **Eje:** Usuario
 **Tiempo estimado:** 6–8 h
 **Prerrequisitos:** Módulo 03
-**Última actualización:** 2026-06-12
+**Última actualización:** 2026-06-14 (módulo completo en borrador)
 
 ## Objetivo
 
@@ -13,17 +13,17 @@ Integrar Claude en tu flujo de trabajo diario de forma que te ahorre tiempo real
 
 | Nº | Título | Estado | Tiempo |
 |----|--------|--------|--------|
-| 01 | Filosofía: IA como colaborador, no como oráculo | pendiente | 20 min |
-| 02 | Diseñar un workflow personal: plantilla de trabajo | pendiente | 30 min |
-| 03 | Claude Cowork: qué es y cuándo usarlo | pendiente | 30 min |
-| 04 | Claude en el navegador (Chrome): workflow multi-tab | pendiente | 25 min |
-| 05 | Claude para Excel: casos típicos | pendiente | 25 min |
-| 06 | Claude para Word / PowerPoint: flujos de documentos | pendiente | 25 min |
-| 07 | Claude en Slack para equipos | pendiente | 20 min |
-| 08 | Plugins y tareas programadas en Cowork | pendiente | 30 min |
-| 09 | Escribir mejor con Claude (no "que escriba por ti") | pendiente | 30 min |
-| 10 | Análisis de documentos largos y PDFs | pendiente | 25 min |
-| 11 | Construir una biblioteca personal de prompts | pendiente | 25 min |
+| 01 | [Filosofía: IA como colaborador, no como oráculo](01-ia-como-colaborador.md) | borrador | 20 min |
+| 02 | [Diseñar un workflow personal: plantilla de trabajo](02-disenar-workflow-personal.md) | borrador | 30 min |
+| 03 | [Claude Cowork: qué es y cuándo usarlo](03-claude-cowork.md) | borrador | 30 min |
+| 04 | [Claude en el navegador (Chrome): workflow multi-tab](04-claude-navegador-chrome.md) | borrador | 25 min |
+| 05 | [Claude para Excel: casos típicos](05-claude-excel.md) | borrador | 25 min |
+| 06 | [Claude para Word / PowerPoint: flujos de documentos](06-claude-word-powerpoint.md) | borrador | 25 min |
+| 07 | [Claude en Slack para equipos](07-claude-slack.md) | borrador | 20 min |
+| 08 | [Plugins y tareas programadas](08-plugins-tareas-programadas.md) | borrador | 30 min |
+| 09 | [Escribir mejor con Claude (no "que escriba por ti")](09-escribir-mejor.md) | borrador | 30 min |
+| 10 | [Análisis de documentos largos y PDFs](10-analisis-documentos-pdf.md) | borrador | 25 min |
+| 11 | [Construir una biblioteca personal de prompts](11-biblioteca-prompts.md) | borrador | 25 min |
 
 ## Recursos clave
 

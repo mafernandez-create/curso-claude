@@ -11,6 +11,20 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-14 — Módulo 04 (Productividad): 11 lecciones redactadas
+
+### Añadido
+- `modulos/04-productividad/` — las 11 lecciones del módulo, en borrador: IA como colaborador, diseño de workflows, Cowork, navegador (Chrome), Excel, Word/PowerPoint, Slack, plugins y tareas programadas, escribir mejor, análisis de documentos/PDF y biblioteca de prompts. Estructura según plantilla; datos de producto volátiles remitidos a docs oficiales.
+
+### Actualizado
+- `modulos/04-productividad/README.md` — las 11 lecciones pasan de `pendiente` a `borrador` y se enlazan.
+- Contenido sincronizado a la app Next.js (Supabase).
+
+### Pendiente de confirmación
+- Revisión de Manolo antes de marcar como `revisado`.
+
+---
+
 ## 2026-06-14 — Módulo 03 (Claude básico): 10 lecciones redactadas
 
 ### Añadido
