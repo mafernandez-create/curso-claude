@@ -3,7 +3,7 @@
 **Eje:** Transversal
 **Tiempo estimado:** 8–10 h
 **Prerrequisitos:** Módulo 02 (AI Fluency) y algo de Módulo 03
-**Última actualización:** 2026-04-23
+**Última actualización:** 2026-06-14 (módulo completo en borrador; lecciones 08 y 09 actualizadas al estado de 2026)
 
 ## Objetivo
 
@@ -13,19 +13,19 @@ Dominar las técnicas de prompting específicas de Claude: desde las buenas prá
 
 | Nº | Título | Estado | Tiempo |
 |----|--------|--------|--------|
-| 01 | Anatomía de un buen prompt: el marco de Anthropic | pendiente | 30 min |
-| 02 | Claridad, contexto, formato: las tres patas | pendiente | 30 min |
-| 03 | System prompts vs. user prompts | pendiente | 25 min |
-| 04 | Few-shot prompting: cuándo y cómo | pendiente | 30 min |
-| 05 | Chain-of-Thought y prompting con razonamiento | pendiente | 30 min |
-| 06 | XML tags: el patrón favorito de Claude | pendiente | 25 min |
-| 07 | Role prompting y personalización de tono | pendiente | 20 min |
-| 08 | Prefill: forzar formato de respuesta | pendiente | 20 min |
-| 09 | Extended thinking: cuándo y cómo activarlo | pendiente | 30 min |
-| 10 | Prompt caching: reducir costes en la API | pendiente | 25 min |
-| 11 | Evaluación sistemática de prompts | pendiente | 40 min |
-| 12 | Antipatrones: prompts que parecen buenos y no lo son | pendiente | 25 min |
-| 13 | Debugging de respuestas erróneas | pendiente | 30 min |
+| 01 | [Anatomía de un buen prompt: el marco de Anthropic](01-anatomia-prompt.md) | borrador | 30 min |
+| 02 | [Claridad, contexto y formato: las tres patas](02-claridad-contexto-formato.md) | borrador | 30 min |
+| 03 | [System prompts vs. user prompts](03-system-vs-user-prompts.md) | borrador | 25 min |
+| 04 | [Few-shot prompting: cuándo y cómo](04-few-shot.md) | borrador | 30 min |
+| 05 | [Chain-of-Thought y prompting con razonamiento](05-chain-of-thought.md) | borrador | 30 min |
+| 06 | [XML tags: el patrón favorito de Claude](06-xml-tags.md) | borrador | 25 min |
+| 07 | [Role prompting y personalización de tono](07-role-prompting.md) | borrador | 20 min |
+| 08 | [Forzar el formato de respuesta (y el fin del prefill)](08-prefill-formato.md) | borrador | 20 min |
+| 09 | [Razonamiento del modelo: adaptive thinking y effort](09-extended-thinking.md) | borrador | 30 min |
+| 10 | [Prompt caching: reducir costes en la API](10-prompt-caching.md) | borrador | 25 min |
+| 11 | [Evaluación sistemática de prompts](11-evaluacion-prompts.md) | borrador | 40 min |
+| 12 | [Antipatrones: prompts que parecen buenos y no lo son](12-antipatrones.md) | borrador | 25 min |
+| 13 | [Debugging de respuestas erróneas](13-debugging-respuestas.md) | borrador | 30 min |
 
 ## Recursos clave
 

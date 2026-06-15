@@ -11,6 +11,22 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-14 — Módulo 05 (Prompt Engineering): 13 lecciones redactadas
+
+### Añadido
+- `modulos/05-prompt-engineering/` — las 13 lecciones del módulo, en borrador: anatomía del prompt, claridad/contexto/formato, system vs. user, few-shot, chain-of-thought, XML tags, role prompting, formato de salida, razonamiento del modelo, prompt caching, evaluación, antipatrones y debugging.
+
+### Actualizado (importante)
+- Lección 08 reescrita: el **prefill** está obsoleto en los modelos actuales (da error); se enseña la alternativa vigente (instrucciones + structured outputs).
+- Lección 09 reescrita: **adaptive thinking + effort** sustituyen al antiguo `budget_tokens`.
+- `modulos/05-prompt-engineering/README.md` — lecciones a `borrador` y enlazadas.
+- Contenido sincronizado a la app (Supabase).
+
+### Pendiente de confirmación
+- Revisión de Manolo antes de marcar como `revisado`.
+
+---
+
 ## 2026-06-14 — Módulo 04 (Productividad): 11 lecciones redactadas
 
 ### Añadido
