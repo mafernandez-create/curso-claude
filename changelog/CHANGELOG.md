@@ -11,6 +11,22 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-14 — Módulo 07 (API de Claude): 17 lecciones redactadas
+
+### Añadido
+- `modulos/07-api-claude/` — las 17 lecciones del módulo, en borrador: arquitectura de la API, SDKs Python/TS, system y parámetros, streaming, tool use (fundamentos y avanzado), visión, PDFs, prompt caching, batch, razonamiento, RAG, embeddings/vectoriales, errores/rate limits, monitorización y costes. Con ejemplos de código del SDK.
+
+### Actualizado (importante)
+- Lección 04: los parámetros de sampling (`temperature`/`top_p`/`top_k`) se eliminaron en los modelos actuales (dan 400); se guía con prompting.
+- Lección 12: `budget_tokens` sustituido por `thinking: {type:"adaptive"}` + `effort`.
+- `modulos/07-api-claude/README.md` — lecciones a `borrador` y enlazadas.
+- Contenido sincronizado a la app (Supabase).
+
+### Pendiente de confirmación
+- Revisión de Manolo antes de marcar como `revisado`.
+
+---
+
 ## 2026-06-14 — Módulo 06 (Claude Code): 15 lecciones redactadas
 
 ### Añadido
