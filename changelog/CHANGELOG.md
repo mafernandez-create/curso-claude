@@ -11,6 +11,20 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-14 — Módulo 06 (Claude Code): 15 lecciones redactadas
+
+### Añadido
+- `modulos/06-claude-code/` — las 15 lecciones del módulo, en borrador: qué es y cuándo usarlo, instalación, primera sesión, CLAUDE.md, permisos, plan mode, comandos slash, hooks, integración IDE, GitHub, higiene de Git con IA, repos grandes/contexto, costes, patrones/antipatrones y uso en equipo.
+
+### Actualizado
+- `modulos/06-claude-code/README.md` — lecciones a `borrador` y enlazadas.
+- Contenido sincronizado a la app (Supabase).
+
+### Pendiente de confirmación
+- Revisión de Manolo antes de marcar como `revisado` (detalles de producto/CLI volátiles; remitidos a docs oficiales).
+
+---
+
 ## 2026-06-14 — Módulo 05 (Prompt Engineering): 13 lecciones redactadas
 
 ### Añadido
