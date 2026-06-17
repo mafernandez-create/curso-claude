@@ -3,7 +3,7 @@
 **Eje:** Transversal ⭐
 **Tiempo estimado:** 6–10 h
 **Prerrequisitos:** Módulo 01 (mínimo).
-**Última actualización:** 2026-04-23
+**Última actualización:** 2026-06-14 (módulo completo en borrador)
 
 ## Objetivo
 
@@ -15,18 +15,18 @@ No busca respuestas definitivas (no las hay todavía) sino **un marco para pensa
 
 | Nº | Título | Estado | Tiempo |
 |----|--------|--------|--------|
-| 01 | Qué es "alignment" y por qué es difícil | pendiente | 30 min |
-| 02 | El enfoque Anthropic: Constitutional AI al detalle | pendiente | 40 min |
-| 03 | Interpretabilidad: el programa de investigación | pendiente | 35 min |
-| 04 | Sparse Autoencoders y features interpretables | pendiente | 35 min |
-| 05 | Jailbreaks y prompt injection: cómo se producen | pendiente | 30 min |
-| 06 | Misuse: privacidad, desinformación, manipulación | pendiente | 30 min |
-| 07 | Usage policies de Anthropic | pendiente | 25 min |
-| 08 | Frontier risk: biosec, cyber, autonomía | pendiente | 30 min |
-| 09 | Debate regulatorio: EU AI Act, SB-1047, marcos nacionales | pendiente | 35 min |
-| 10 | Open source vs. closed source en IA | pendiente | 25 min |
-| 11 | El Economic Index de Anthropic: impacto real | pendiente | 30 min |
-| 12 | Mis obligaciones éticas como usuario y constructor | pendiente | 30 min |
+| 01 | [Qué es alignment y por qué es difícil](01-que-es-alignment.md) | borrador | 30 min |
+| 02 | [El enfoque Anthropic: Constitutional AI](02-constitutional-ai.md) | borrador | 40 min |
+| 03 | [Interpretabilidad: el programa de investigación](03-interpretabilidad.md) | borrador | 35 min |
+| 04 | [Sparse Autoencoders y features interpretables](04-sparse-autoencoders.md) | borrador | 35 min |
+| 05 | [Jailbreaks y prompt injection: cómo se producen](05-jailbreaks-prompt-injection.md) | borrador | 30 min |
+| 06 | [Misuse: privacidad, desinformación y manipulación](06-misuse-privacidad-desinformacion.md) | borrador | 30 min |
+| 07 | [Las Usage Policies de Anthropic](07-usage-policies.md) | borrador | 25 min |
+| 08 | [Frontier risk: bioseguridad, ciber y autonomía](08-frontier-risk.md) | borrador | 30 min |
+| 09 | [El debate regulatorio: EU AI Act y marcos nacionales](09-debate-regulatorio.md) | borrador | 35 min |
+| 10 | [Open source vs. closed source en IA](10-open-vs-closed-source.md) | borrador | 25 min |
+| 11 | [El Economic Index de Anthropic: impacto real](11-economic-index.md) | borrador | 30 min |
+| 12 | [Mis obligaciones éticas como usuario y constructor](12-obligaciones-eticas-usuario.md) | borrador | 30 min |
 
 ## Recursos clave
 

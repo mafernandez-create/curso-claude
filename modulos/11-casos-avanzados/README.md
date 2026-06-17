@@ -3,7 +3,7 @@
 **Eje:** Integración (opcional 🔹)
 **Tiempo estimado:** 10–20 h (muy variable según profundidad)
 **Prerrequisitos:** Módulos 07, 08 y 09.
-**Última actualización:** 2026-04-23
+**Última actualización:** 2026-06-14 (fichas de proyecto en borrador)
 
 ## Objetivo
 
@@ -15,16 +15,16 @@ Cada proyecto tiene su propia plantilla en `plantillas/proyecto-practico.md`.
 
 | Nº | Proyecto | Dificultad | Horas aprox |
 |----|----------|-----------|-------------|
-| 01 | Chatbot personalizado con RAG sobre tu conocimiento | Media | 10 h |
-| 02 | Agente autónomo que investiga un tema y produce informe | Alta | 15 h |
-| 03 | Sistema de procesamiento de emails con Claude | Media | 8 h |
-| 04 | Asistente de código sobre tu propio repositorio | Alta | 12 h |
-| 05 | Generador de contenido editorial con control de calidad | Media | 8 h |
-| 06 | Análisis de documentos legales o técnicos largos | Media | 6 h |
-| 07 | Aplicación multimodal (texto + imagen) | Alta | 15 h |
-| 08 | Browser automation con Claude + Playwright | Alta | 12 h |
-| 09 | Pipeline de fine-tuning ligero (eval de prompts) | Media | 8 h |
-| 10 | Orquestador multi-agente para tarea compleja | Muy alta | 20+ h |
+| 01 | [Chatbot personalizado con RAG sobre tu conocimiento](01-chatbot-rag.md) | Media | 10 h |
+| 02 | [Agente autónomo que investiga un tema y produce informe](02-agente-investigador.md) | Alta | 15 h |
+| 03 | [Sistema de procesamiento de emails con Claude](03-procesamiento-emails.md) | Media | 8 h |
+| 04 | [Asistente de código sobre tu propio repositorio](04-asistente-codigo-repo.md) | Alta | 12 h |
+| 05 | [Generador de contenido editorial con control de calidad](05-generador-contenido-qa.md) | Media | 8 h |
+| 06 | [Análisis de documentos legales o técnicos largos](06-analisis-documentos-largos.md) | Media | 6 h |
+| 07 | [Aplicación multimodal (texto + imagen)](07-aplicacion-multimodal.md) | Alta | 15 h |
+| 08 | [Browser automation con Claude + Playwright](08-browser-automation.md) | Alta | 12 h |
+| 09 | [Pipeline de evaluación de prompts (evals)](09-eval-prompts.md) | Media | 8 h |
+| 10 | [Orquestador multi-agente para tarea compleja](10-orquestador-multiagente.md) | Muy alta | 20+ h |
 
 ## Recursos clave
 

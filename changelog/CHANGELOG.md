@@ -11,6 +11,27 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-14 — Módulos 10, 11, 12 y 13 redactados (cierra el contenido principal del curso)
+
+### Añadido
+- `modulos/10-cloud/` — 13 lecciones en borrador: por qué Bedrock/Vertex, arquitectura de Bedrock, IAM, primeras llamadas con `AnthropicBedrock`, Knowledge Bases (RAG), Agents for Bedrock, arquitectura de Vertex, auth GCP/Service Accounts, primeras llamadas con `AnthropicVertex`, RAG/grounding en Vertex, comparativa de las tres vías, costes/facturación y seguridad/compliance (GDPR, SOC 2, HIPAA).
+- `modulos/11-casos-avanzados/` — 10 fichas de proyecto en borrador (banco de proyectos): chatbot RAG, agente investigador, procesamiento de emails, asistente de código, generador con control de calidad, análisis de documentos largos, app multimodal, browser automation, evals de prompts y orquestador multi-agente.
+- `modulos/12-formacion-docencia/` — 10 lecciones en borrador: enseñar IA bien/mal, diagnóstico, diseño de sesión, materiales, evaluación 4D, gestión del aula, adaptación de público, ética en docencia, casos por rol y mantener la formación actualizada.
+- `modulos/13-seguridad-etica/` — 12 lecciones en borrador: alignment, Constitutional AI, interpretabilidad, sparse autoencoders, jailbreaks/prompt injection, misuse, Usage Policies, frontier risk, debate regulatorio, open vs. closed, Economic Index y obligaciones éticas.
+
+### Actualizado
+- READMEs de los módulos 10, 11, 12 y 13 — lecciones/fichas a `borrador` y enlazadas.
+- Contenido sincronizado a la app (Supabase).
+
+### Notas
+- Con esto quedan **redactados los módulos 04–13** solicitados; todo el grueso del curso (módulos 01–13) está en borrador.
+- Por honestidad epistémica, los datos volátiles (precios, IDs de modelo por plataforma, detalles de IAM/Service Accounts, regulación) se remiten a las fuentes oficiales en cada lección.
+
+### Pendiente de confirmación
+- Revisión de Manolo antes de marcar como `revisado`.
+
+---
+
 ## 2026-06-14 — Módulo 09 (Skills y subagentes): 15 lecciones redactadas
 
 ### Añadido

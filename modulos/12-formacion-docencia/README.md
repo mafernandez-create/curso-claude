@@ -3,7 +3,7 @@
 **Eje:** Formador (opcional 🔹)
 **Tiempo estimado:** 5–8 h
 **Prerrequisitos:** Módulos 02 y 03. Idealmente también 05.
-**Última actualización:** 2026-04-23
+**Última actualización:** 2026-06-14 (módulo completo en borrador)
 
 ## Objetivo
 
@@ -13,16 +13,16 @@ Preparar a formadores, docentes y responsables de diseño instruccional para **e
 
 | Nº | Título | Estado | Tiempo |
 |----|--------|--------|--------|
-| 01 | Qué significa "enseñar IA" bien y qué significa mal | pendiente | 25 min |
-| 02 | Diagnóstico: adaptar la formación al nivel y objetivos | pendiente | 25 min |
-| 03 | Diseñar una sesión formativa sobre Claude | pendiente | 35 min |
-| 04 | Materiales y ejercicios aplicables en aula | pendiente | 30 min |
-| 05 | Evaluación: cómo medir alfabetización IA | pendiente | 30 min |
-| 06 | Gestión del aula: expectativas realistas, trampas comunes | pendiente | 25 min |
-| 07 | Adaptaciones: público técnico vs. no técnico | pendiente | 25 min |
-| 08 | Ética en la docencia con IA: lo que hay que decir | pendiente | 30 min |
-| 09 | Casos prácticos: educador, manager, consultor | pendiente | 40 min |
-| 10 | Mantener la formación actualizada en el tiempo | pendiente | 20 min |
+| 01 | [Qué significa enseñar IA bien y qué significa mal](01-ensenar-ia-bien-mal.md) | borrador | 25 min |
+| 02 | [Diagnóstico: adaptar la formación al nivel y objetivos](02-diagnostico-nivel-objetivos.md) | borrador | 25 min |
+| 03 | [Diseñar una sesión formativa sobre Claude](03-disenar-sesion-formativa.md) | borrador | 35 min |
+| 04 | [Materiales y ejercicios aplicables en aula](04-materiales-ejercicios.md) | borrador | 30 min |
+| 05 | [Evaluación: cómo medir la alfabetización en IA](05-evaluacion-alfabetizacion-ia.md) | borrador | 30 min |
+| 06 | [Gestión del aula: expectativas realistas y trampas comunes](06-gestion-aula-expectativas.md) | borrador | 25 min |
+| 07 | [Adaptaciones: público técnico vs. no técnico](07-adaptaciones-publico.md) | borrador | 25 min |
+| 08 | [Ética en la docencia con IA: lo que hay que decir](08-etica-docencia-ia.md) | borrador | 30 min |
+| 09 | [Casos prácticos: educador, manager y consultor](09-casos-practicos-roles.md) | borrador | 40 min |
+| 10 | [Mantener la formación actualizada en el tiempo](10-mantener-formacion-actualizada.md) | borrador | 20 min |
 
 ## Recursos clave
 

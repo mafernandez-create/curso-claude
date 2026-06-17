@@ -3,7 +3,7 @@
 **Eje:** Desarrollador (opcional 🔹)
 **Tiempo estimado:** 8–10 h
 **Prerrequisitos:** Módulo 07 (API). Python. AWS o GCP básicos.
-**Última actualización:** 2026-04-23
+**Última actualización:** 2026-06-14 (módulo completo en borrador)
 
 ## Objetivo
 
@@ -15,19 +15,19 @@ Este módulo es **opcional**: solo lo necesitas si trabajas o vas a trabajar en 
 
 | Nº | Título | Estado | Tiempo |
 |----|--------|--------|--------|
-| 01 | Por qué usar Claude vía Bedrock o Vertex (y por qué no) | pendiente | 25 min |
-| 02 | AWS Bedrock: arquitectura y modelos disponibles | pendiente | 30 min |
-| 03 | Autenticación y permisos IAM para Claude en AWS | pendiente | 30 min |
-| 04 | Primeras llamadas a Claude vía Bedrock | pendiente | 30 min |
-| 05 | RAG en AWS: Knowledge Bases para Bedrock | pendiente | 40 min |
-| 06 | Agentes autónomos con Bedrock Agents | pendiente | 40 min |
-| 07 | Google Vertex AI: arquitectura | pendiente | 30 min |
-| 08 | Autenticación con GCP y Service Accounts | pendiente | 25 min |
-| 09 | Claude en Vertex: primeros pasos | pendiente | 30 min |
-| 10 | RAG y grounding en Vertex AI | pendiente | 35 min |
-| 11 | Comparativa: Bedrock vs. Vertex vs. API directa | pendiente | 30 min |
-| 12 | Costes y facturación | pendiente | 25 min |
-| 13 | Seguridad y compliance (GDPR, SOC2, HIPAA) | pendiente | 30 min |
+| 01 | [Por qué usar Claude vía Bedrock o Vertex (y por qué no)](01-por-que-bedrock-vertex.md) | borrador | 25 min |
+| 02 | [AWS Bedrock: arquitectura y modelos disponibles](02-bedrock-arquitectura.md) | borrador | 30 min |
+| 03 | [Autenticación y permisos IAM para Claude en AWS](03-iam-aws.md) | borrador | 30 min |
+| 04 | [Primeras llamadas a Claude en Bedrock con el SDK](04-primeras-llamadas-bedrock.md) | borrador | 35 min |
+| 05 | [RAG en AWS: Knowledge Bases for Bedrock](05-rag-knowledge-bases.md) | borrador | 30 min |
+| 06 | [Agents for Bedrock: agentes gestionados en AWS](06-bedrock-agents.md) | borrador | 30 min |
+| 07 | [Google Vertex AI: arquitectura y modelos Claude](07-vertex-arquitectura.md) | borrador | 30 min |
+| 08 | [Autenticación en GCP: Service Accounts y permisos](08-auth-gcp-service-accounts.md) | borrador | 30 min |
+| 09 | [Primeras llamadas a Claude en Vertex con el SDK](09-claude-vertex-primeros-pasos.md) | borrador | 35 min |
+| 10 | [RAG y grounding en Vertex AI](10-rag-grounding-vertex.md) | borrador | 30 min |
+| 11 | [Comparativa: API directa vs. Bedrock vs. Vertex](11-comparativa-plataformas.md) | borrador | 30 min |
+| 12 | [Costes y facturación en cloud](12-costes-facturacion.md) | borrador | 25 min |
+| 13 | [Seguridad y compliance: GDPR, SOC 2, HIPAA y residencia](13-seguridad-compliance.md) | borrador | 30 min |
 
 ## Recursos clave
 
