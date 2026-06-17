@@ -11,6 +11,20 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-14 — Módulo 09 (Skills y subagentes): 15 lecciones redactadas
+
+### Añadido
+- `modulos/09-skills-agentes/` — las 15 lecciones del módulo, en borrador: qué es una Skill, decisión Skill/tool/slash/prompt, anatomía de SKILL.md, progressive disclosure, recursos bundled, crear y testear Skills, descriptions para triggering, empaquetar/compartir/publicar, y subagentes (qué son, contexto, orquestación multi-agente y antipatrones).
+
+### Actualizado
+- `modulos/09-skills-agentes/README.md` — lecciones a `borrador` y enlazadas.
+- Contenido sincronizado a la app (Supabase).
+
+### Pendiente de confirmación
+- Revisión de Manolo antes de marcar como `revisado`.
+
+---
+
 ## 2026-06-14 — Módulo 08 (MCP): 15 lecciones redactadas
 
 ### Añadido
