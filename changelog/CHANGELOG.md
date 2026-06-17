@@ -11,6 +11,20 @@ Tipos de entrada:
 
 ---
 
+## 2026-06-14 — Módulo 08 (MCP): 15 lecciones redactadas
+
+### Añadido
+- `modulos/08-mcp/` — las 15 lecciones del módulo, en borrador: qué resuelve MCP, arquitectura cliente/servidor/transports, los tres primitivos (Tools/Resources/Prompts), probar y construir servidores, definir tools, resources, prompts, sampling, notifications, transports, seguridad/control de acceso, integración con Claude, ecosistema de la comunidad y buenas prácticas.
+
+### Actualizado
+- `modulos/08-mcp/README.md` — lecciones a `borrador` y enlazadas.
+- Contenido sincronizado a la app (Supabase).
+
+### Pendiente de confirmación
+- Revisión de Manolo antes de marcar como `revisado` (detalles del SDK MCP volátiles; remitidos a la spec oficial).
+
+---
+
 ## 2026-06-14 — Módulo 07 (API de Claude): 17 lecciones redactadas
 
 ### Añadido
