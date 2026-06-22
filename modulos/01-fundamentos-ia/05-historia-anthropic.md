@@ -157,6 +157,8 @@ No hay respuesta correcta. El ejercicio es entrenar el ojo para leer la **declar
 - [Anthropic — Economic Index](https://www.anthropic.com/economic-index) — informes trimestrales sobre cómo se usa Claude en la economía real. Útil para ver la lente con la que Anthropic interpreta su impacto.
 - [Anthropic Research](https://www.anthropic.com/research) — blog de investigación. Buen termómetro de en qué está pensando el equipo.
 - [Import AI](https://importai.substack.com/) — newsletter de Jack Clark, cofundador. Perspectiva del sector desde dentro de Anthropic.
+- 🎙️ El Test de Turing — "Google I/O 2026: Google reinventa la búsqueda" (Ep. 155) — panorama competitivo y movimientos de talento hacia Anthropic.
+- 🎙️ Inteligencia Artificial (Pocho Costa) — "Claude vs ChatGPT vs Gemini: ¿Cuál IA te conviene más?" — comparativa divulgativa de plataformas (los datos de precios/capacidades caducan rápido).
 
 ## Siguiente lección
 

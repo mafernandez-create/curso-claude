@@ -76,6 +76,9 @@ En la web, Claude no ve tus archivos: le pegas código y te devuelve texto. Clau
 
 - `claude-code-in-action` (catálogo) — curso oficial.
 - [docs.claude.com — Claude Code](https://docs.claude.com) — consultado 2026-06-14.
+- **Dynamic workflows** (research preview): Claude Code planifica y lanza cientos de subagentes en paralelo, verificando sus salidas (ver Módulo 09, lección 14).
+- 🎙️ El Test de Turing — "Kimi K2.7 Code. ¿Mejor que Fable 5 en programación?" (Ep. 159) — comparativa de actualidad de modelos de coding.
+- 🎙️ El Test de Turing — "Probamos Composer 2.5...y uff" (Ep. 156) — contexto de mercado y adopción de Claude Code.
 
 ## Siguiente lección
 

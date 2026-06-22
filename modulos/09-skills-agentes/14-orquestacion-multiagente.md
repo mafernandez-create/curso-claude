@@ -3,10 +3,10 @@ titulo: "Orquestación multi-agente: patrones"
 modulo: "09-skills-agentes"
 orden: 14
 creado: 2026-06-14
-revisado: 2026-06-14
+revisado: 2026-06-22
 modelo_referencia: "Claude Opus 4.8"
 estado: borrador
-tiempo_estudio_min: 40
+tiempo_estudio_min: 42
 ---
 
 # Orquestación multi-agente: patrones
@@ -43,6 +43,12 @@ Un agente principal que **planifica**, **reparte** subtareas a subagentes y **si
 ### 3. Síntesis: el paso clave
 
 Tras recoger los resultados, el coordinador **integra**: deduplica, resuelve contradicciones y produce una respuesta coherente. Sin una buena síntesis, tienes piezas sueltas, no una solución.
+
+### 4. Caso real: los *dynamic workflows* de Claude Code
+
+Estos patrones no son teoría: Claude Code los lleva al producto con los **dynamic workflows** (en *research preview* en 2026). Ante una tarea muy grande, Claude **planifica** el trabajo, lanza **cientos de subagentes en paralelo** en una sola sesión y **verifica** sus salidas antes de reportar. Con Opus 4.8 esos agentes pueden trabajar durante más tiempo, hasta abordar **migraciones a escala de cientos de miles de líneas** de código de principio a fin, usando la suite de tests existente como criterio.
+
+Es un buen ejemplo de fan-out + verificación + síntesis aplicados de verdad: el reparto masivo en paralelo solo es útil si hay una fase de verificación que filtra y una síntesis que integra. Por ser *research preview*, confirma su estado y límites en la documentación.
 
 ## Ejemplo aplicado
 

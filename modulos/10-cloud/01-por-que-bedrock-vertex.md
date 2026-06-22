@@ -74,6 +74,7 @@ Una empresa con todo su stack en AWS, requisitos de compliance y facturación ce
 
 - `claude-amazon-bedrock` y `claude-google-vertex` (catálogo) — cursos oficiales.
 - [docs.claude.com — Bedrock y Vertex](https://docs.claude.com) — consultado 2026-06-14.
+- 🎙️ Inteligencia Artificial (Pocho Costa) — "Cómo tener IA PRIVADA en tu empresa o en tu casa" — contrapunto on-premise/local a las opciones cloud (contexto, no how-to del curso).
 
 ## Siguiente lección
 

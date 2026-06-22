@@ -68,6 +68,8 @@ En un repositorio enorme, el agente principal lanza un subagente: "explora la ca
 
 - `introduction-subagents` (catálogo) — curso oficial.
 - Módulo 06, lección 12 — gestión de contexto.
+- 🎙️ Inteligencia Artificial (Pocho Costa) — "Dejá de escribir prompts: pensá en sistemas de IA" — introducción divulgativa al salto de prompts a sistemas/agentes.
+- 🎙️ Inteligencia Artificial (Pocho Costa) — "De ChatGPT a Agentes de IA: El salto que pocos dan" — generativa vs. agéntica con casos reales.
 
 ## Siguiente lección
 

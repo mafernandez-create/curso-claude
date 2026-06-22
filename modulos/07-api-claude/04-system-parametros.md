@@ -43,6 +43,12 @@ client.messages.create(
 )
 ```
 
+### 1b. `system` también dentro de `messages` (novedad 2026)
+
+Además del campo `system` de la petición, la Messages API permite ahora incluir **entradas `system` dentro del array `messages`**. ¿Para qué? Para **actualizar las instrucciones a mitad de una tarea larga** —por ejemplo, cambiar permisos, ajustar el presupuesto de tokens o dar nuevo contexto de entorno a un agente en marcha— **sin romper el prompt cache** (lección sobre caching) y **sin tener que meterlo en un turno de usuario**.
+
+Idea clave: el `system` de la petición fija el marco inicial; las entradas `system` intercaladas permiten **reencuadrar sobre la marcha** en flujos agénticos. Para tareas normales de pregunta-respuesta no lo necesitas; gana valor en agentes de larga duración. Consulta la sintaxis exacta en [docs.claude.com](https://docs.claude.com).
+
 ### 2. `max_tokens`
 
 Limita la **longitud de la respuesta**. Si te quedas corto, la respuesta se corta. Orientación: ~16000 para respuestas normales; para respuestas largas, usa **streaming** (lección 05) y sube el límite.

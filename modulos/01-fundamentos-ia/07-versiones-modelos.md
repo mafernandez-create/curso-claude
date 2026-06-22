@@ -3,8 +3,8 @@ titulo: "Versiones: leyendo el número del modelo"
 modulo: "01-fundamentos-ia"
 orden: 7
 creado: 2026-05-09
-revisado: 2026-05-09
-modelo_referencia: "Claude Opus 4.7"
+revisado: 2026-06-22
+modelo_referencia: "Claude Opus 4.8"
 estado: borrador
 tiempo_estudio_min: 15
 ---
@@ -49,6 +49,8 @@ El número de versión sigue una convención **major.minor**:
 Como regla práctica:
 - Cambio **minor**: suele ser drop-in, casi sin sorpresas.
 - Cambio **major**: revisar prompts y evaluaciones; el comportamiento puede haber cambiado en cosas sutiles que rompen tu pipeline.
+
+> **La 5ª generación (junio 2026).** Anthropic ha empezado a publicar modelos de **generación 5** con nombres nuevos: **Fable 5** (su modelo más capaz, para tareas de días) y **Mythos 5**. Es un salto **major**: nueva base, no un refinamiento de la 4.x. Ojo: su disponibilidad quedó **suspendida** por una directiva de exportación de EE. UU. (12 jun 2026), así que confirma siempre el estado vigente en la documentación. Para el día a día, la referencia sigue siendo **Opus 4.8** (4.x). Más detalle en la [lección 06](06-familia-modelos-claude.md).
 
 ### 3. El identificador completo en la API
 
@@ -121,7 +123,7 @@ No memorices versiones — quedan obsoletas en meses. En su lugar:
 - **Página de pricing**: https://www.anthropic.com/pricing — útil para confirmar precio por modelo activo.
 - **Anthropic News**: https://www.anthropic.com/news — anuncios de releases y deprecaciones.
 
-Si tienes Claude Code o cualquier integración instalada, suele estar ya configurada con el modelo recomendado vigente al momento de la instalación. En este curso, el **modelo de referencia** es **Claude Opus 4.7** (lo verás en el frontmatter de cada lección).
+Si tienes Claude Code o cualquier integración instalada, suele estar ya configurada con el modelo recomendado vigente al momento de la instalación. En este curso, el **modelo de referencia** es **Claude Opus 4.8** (lo verás en el frontmatter de cada lección).
 
 ## Ejemplo aplicado
 
@@ -181,6 +183,7 @@ Cualquier cambio de modelo es una **decisión consciente**: actualizas la consta
 - [Anthropic — Pricing](https://www.anthropic.com/pricing) — precios por modelo, útil para confirmar versiones activas.
 - [Anthropic News](https://www.anthropic.com/news) — donde se anuncian releases y deprecaciones.
 - [Anthropic — Deprecation policy](https://docs.claude.com/) — política y plazos al deprecar modelos. Buscar "deprecation" en la documentación.
+- 🎙️ El Test de Turing — "Opus 4.8: Lo analizamos a fondo ¿Mejora?" (Ep. 157) — ejemplo divulgativo de cómo se analiza una versión nueva.
 
 ## Siguiente lección
 

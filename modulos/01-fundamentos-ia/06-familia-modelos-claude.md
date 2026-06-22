@@ -3,10 +3,10 @@ titulo: "La familia de modelos Claude: Opus, Sonnet, Haiku"
 modulo: "01-fundamentos-ia"
 orden: 6
 creado: 2026-05-09
-revisado: 2026-05-09
-modelo_referencia: "Claude Opus 4.7"
+revisado: 2026-06-22
+modelo_referencia: "Claude Opus 4.8"
 estado: borrador
-tiempo_estudio_min: 25
+tiempo_estudio_min: 28
 ---
 
 # La familia de modelos Claude: Opus, Sonnet, Haiku
@@ -117,6 +117,16 @@ La frontera de capacidades se mueve hacia abajo. Lo que hoy requiere Opus, maña
 
 Por eso **revisa tu elección cada vez que sale una generación nueva**, especialmente si tu uso es a escala. Mantenerse en Opus por inercia es uno de los errores más caros y más comunes.
 
+### 9. Más allá del trío: la 5ª generación (Fable 5, Mythos 5)
+
+> **Actualización (junio 2026).** El trío Opus/Sonnet/Haiku sigue siendo la base, pero Anthropic ha empezado a introducir **modelos de 5ª generación con nombres nuevos**, fuera de la nomenclatura poética clásica.
+
+**Claude Fable 5** se presenta como el modelo **más capaz** de Anthropic, pensado para el trabajo de conocimiento y la programación más difíciles: tareas **ambiciosas y de larga duración** (agentes que trabajan de forma autónoma durante días, migraciones de código complejas, investigación profunda, lectura de diagramas y documentos densos). Se posiciona **por encima de Opus 4.8**. Como salvaguarda, en dominios sensibles (ciberseguridad, biología) las consultas se redirigen automáticamente a Opus 4.8. Junto a él se anunció **Mythos 5**, otro modelo de la misma generación.
+
+**Salvedad importante de disponibilidad:** tras una **directiva de control de exportación del gobierno de EE. UU. (12 de junio de 2026)**, el acceso a Fable 5 y Mythos 5 quedó **suspendido**. Es una situación **volátil y cambiante**: antes de contar con estos modelos, **comprueba su disponibilidad y condiciones vigentes** en la documentación oficial. Para el trabajo del día a día, el modelo de referencia sigue siendo **Opus 4.8**.
+
+Qué te llevas de aquí: la familia ya no son solo tres tamaños; conviene saber que existe una capa superior (5ª generación) para tareas excepcionalmente largas y complejas, aunque su disponibilidad dependa del momento y la región.
+
 ## Ejemplo aplicado
 
 Imagina tres tareas reales y razonemos qué modelo elegir:
@@ -167,6 +177,8 @@ Patrón observable: a medida que sube la **complejidad de razonamiento** y baja 
 - [docs.claude.com — Models overview](https://docs.claude.com/en/docs/about-claude/models/overview) — tabla actualizada con capacidades, ventana de contexto y precios por modelo.
 - [Anthropic — Pricing](https://www.anthropic.com/pricing) — referencia oficial de precios por token.
 - [Anthropic — Model cards](https://www.anthropic.com/research) — información detallada por modelo (busca el más reciente).
+- [Anthropic — Claude Fable](https://www.anthropic.com/claude/fable) — la 5ª generación (verifica disponibilidad vigente).
+- 🎙️ El Test de Turing — "Claude Fable 5: El MEJOR modelo y una ESTAFA" (Ep. 158) — análisis divulgativo del modelo y sus límites de uso.
 
 ## Siguiente lección
 
@@ -177,3 +189,4 @@ Patrón observable: a medida que sube la **complejidad de razonamiento** y baja 
 - [docs.claude.com — Models](https://docs.claude.com/) — consultado 2026-05-09.
 - [Anthropic — Pricing](https://www.anthropic.com/pricing) — consultado 2026-05-09.
 - [Anthropic — Model cards y blog de releases](https://www.anthropic.com/news) — consultado 2026-05-09.
+- [Anthropic — Claude Fable](https://www.anthropic.com/claude/fable) y [Anthropic News](https://www.anthropic.com/news) — Fable 5 / Mythos 5 y directiva de exportación — consultado 2026-06-22.
