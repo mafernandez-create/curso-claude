@@ -26,6 +26,25 @@ Cada `git push` a `main` dispara un deploy automático en Cloudflare Pages (tard
 
 Los contenidos siguen siendo Markdown editable en `modulos/`, `recursos/`, etc. La carpeta `docs/` solo contiene enlaces simbólicos para que MkDocs los encuentre; **no edites nada dentro de `docs/`**. La carpeta `functions/` contiene la middleware de Basic Auth que Cloudflare Pages ejecuta en cada petición.
 
+### Publicar cambios con `push-all.sh`
+
+En vez de encadenar a mano el `gh auth switch` + `git push` (y repetirlo por cada cuenta de GitHub), usa el script [`push-all.sh`](./push-all.sh) desde la raíz del repo:
+
+```bash
+./push-all.sh              # push de la rama actual a todos los remotos, cada uno con su cuenta
+./push-all.sh --dry-run    # enseña qué haría, sin tocar nada (útil para revisar antes)
+./push-all.sh --branch main
+./push-all.sh --help
+```
+
+Qué hace, paso a paso:
+
+1. **Comprueba primero, empuja después.** Verifica que estás en un repo git, que `git` y `gh` existen, y que **cada** remoto tiene su cuenta de `gh` disponible. Si algo falla (un remoto sin cuenta, HEAD desacoplado…), aborta **antes** de empujar nada — no deja el trabajo a medias.
+2. **Detecta la cuenta por remoto (sin hardcodear).** Lee el *owner* de la URL de cada remoto (p. ej. `mafernandez-create` o `villabotijo`) y cambia a la cuenta de `gh` con ese mismo nombre (`gh auth switch`) antes de su `git push`. Con un solo remoto, hace un solo push; si algún día añades el remoto espejo de la otra cuenta, lo empujará también sin tocar el script.
+3. **Despliegue automático.** No lanza ningún comando de deploy: este repo publica en **Cloudflare Pages por integración git**, así que el propio push dispara el build. Si empujaste a `main`, es un deploy de **producción** (~90 s); en otra rama, Cloudflare genera una *preview*.
+
+Al terminar (o si falla a mitad), **restaura la cuenta de `gh` que estaba activa**, para no dejarte cambiado de cuenta. Requiere que `gh` sea el *credential helper* de git (`gh auth setup-git`, una sola vez); el script te avisa si no lo está. Compatible con el bash 3.2 de macOS.
+
 ---
 
 ## Anotaciones (Hypothes.is)
