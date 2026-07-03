@@ -21,3 +21,6 @@ venv/
 
 # Local overrides de Claude Code (se mantienen fuera del repo público)
 .claude/settings.local.json
+
+# Secretos: credenciales SMTP del digest de novedades (nunca en git)
+.env
