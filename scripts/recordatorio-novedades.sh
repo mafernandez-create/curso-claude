@@ -8,7 +8,10 @@
 #
 set -euo pipefail
 
-REPO="/Users/ma.fernandez/Documents/02_Proyectos_Claude/Personal/curso-claude"
+# Raíz del repo deducida de la ubicación de este script (scripts/ → raíz), para
+# que funcione esté donde esté el repo (evita rutas hardcodeadas; sobrevive a mover
+# o renombrar la carpeta del proyecto).
+REPO="$(cd "$(dirname "$0")/.." && pwd)"
 LOG="$HOME/Library/Logs/curso-claude-recordatorio.log"
 
 # launchd arranca con un PATH mínimo; basta con los binarios de sistema.
