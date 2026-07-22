@@ -4,8 +4,8 @@
 >
 > Para apuntes libres y reflexiones mientras estudias, ver [bitacora.md](./bitacora.md).
 
-**Última actualización:** 2026-04-29
-**Próxima lección:** Módulo 01 · lección 02 — La arquitectura Transformer (📝 sin redactar todavía)
+**Última actualización:** 2026-07-22
+**Próxima lección:** [Módulo 01 · lección 02 — La arquitectura Transformer](modulos/01-fundamentos-ia/02-arquitectura-transformer.md) — ✅ redactada, lista para estudiar.
 
 ---
 
@@ -46,6 +46,13 @@
 
 **Total: 1/161 lecciones completadas.**
 
+> **✅ Curso completo en borrador** (2026-07-22): las **161 lecciones están redactadas**.
+> Ya no hay nada pendiente de escribir; lo que queda es estudiarlo y revisarlo.
+>
+> Todas están en `estado: borrador`. Eso significa que el contenido está, pero no ha
+> pasado tu revisión: si al estudiar una lección detectas algo desfasado o mal explicado,
+> corrígelo y súbela a `revisado`.
+
 ---
 
 ## Detalle del módulo activo
@@ -55,14 +62,14 @@
 | Lección | Estado | Completada | Tiempo invertido |
 |---|---|---|---|
 | [01 — Qué es un LLM y cómo funciona a grandes rasgos](modulos/01-fundamentos-ia/01-que-es-un-llm.md) | ✅ | 2026-04-29 | — |
-| 02 — La arquitectura Transformer: intuición sin matemáticas | 🔵 | — | — |
-| 03 — Preentrenamiento, fine-tuning y RLHF | 📝 | — | — |
-| 04 — Constitutional AI: el enfoque de Anthropic | 📝 | — | — |
-| 05 — Historia de Anthropic y posicionamiento de mercado | 📝 | — | — |
-| 06 — La familia de modelos Claude: Opus, Sonnet, Haiku | 📝 | — | — |
-| 07 — Versiones: leyendo el número del modelo | 📝 | — | — |
-| 08 — Limitaciones fundamentales: alucinaciones, cutoff, sesgo | 📝 | — | — |
-| 09 — Cuándo un LLM NO es la herramienta adecuada | 📝 | — | — |
+| [02 — La arquitectura Transformer: intuición sin matemáticas](modulos/01-fundamentos-ia/02-arquitectura-transformer.md) | 🔵 | — | — |
+| [03 — Preentrenamiento, fine-tuning y RLHF](modulos/01-fundamentos-ia/03-preentrenamiento-fine-tuning-rlhf.md) | ⚪ | — | — |
+| [04 — Constitutional AI: el enfoque de Anthropic](modulos/01-fundamentos-ia/04-constitutional-ai.md) | ⚪ | — | — |
+| [05 — Historia de Anthropic y posicionamiento de mercado](modulos/01-fundamentos-ia/05-historia-anthropic.md) | ⚪ | — | — |
+| [06 — La familia de modelos Claude: Opus, Sonnet, Haiku](modulos/01-fundamentos-ia/06-familia-modelos-claude.md) | ⚪ | — | — |
+| [07 — Versiones: leyendo el número del modelo](modulos/01-fundamentos-ia/07-versiones-modelos.md) | ⚪ | — | — |
+| [08 — Limitaciones fundamentales: alucinaciones, cutoff, sesgo](modulos/01-fundamentos-ia/08-limitaciones-llm.md) | ⚪ | — | — |
+| [09 — Cuándo un LLM NO es la herramienta adecuada](modulos/01-fundamentos-ia/09-cuando-no-usar-llm.md) | ⚪ | — | — |
 
 **Entrega del módulo:** explicar Claude por escrito (500–800 palabras) a alguien sin conocimientos técnicos. Estado: pendiente, se aborda al cerrar el módulo.
 

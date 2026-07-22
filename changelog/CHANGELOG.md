@@ -11,6 +11,31 @@ Tipos de entrada:
 
 ---
 
+## 2026-07-22 — Redactadas las 7 lecciones que faltaban (el curso queda completo en borrador)
+
+Con esto, las **161 lecciones del curso están redactadas**. No queda contenido pendiente
+de escribir.
+
+### Añadido
+- `modulos/02-ai-fluency/05-discernimiento.md` — la trampa de la plausibilidad (fluidez y veracidad son independientes), las tres formas de equivocarse, el mapa de sospecha, cuatro técnicas de verificación, el principio de que quien genera no se evalúa a sí mismo, y verificación proporcional al riesgo.
+- `modulos/02-ai-fluency/06-diligencia.md` — los tres ejes (responsabilidad, terceros, privacidad), criterio para declarar el uso de IA, regla operativa sobre qué no pegar nunca, y la erosión del criterio como riesgo profesional.
+- `modulos/02-ai-fluency/07-errores-tipicos-interaccion.md` — seis patrones de interacción (espiral de reformulación, contexto supuesto, complacencia, pozo de contexto largo, delegación por inercia, aceptación silenciosa) con su señal temprana y su corrección.
+- `modulos/02-ai-fluency/08-casos-aplicados.md` — cierre del módulo: las 4D aplicadas a trabajo, estudio y creatividad, mostrando que **la dimensión crítica cambia** según el contexto (Diligencia / Delegación / Descripción).
+- `modulos/00-guia-proyecto/01-como-esta-organizado.md` — mapa del repositorio, los cuatro ejes, y la distinción entre `plan-de-estudio.md`, `progreso.md` y `bitacora.md`.
+- `modulos/00-guia-proyecto/02-flujos-claude-code.md` — `CLAUDE.md` como archivo de reglas, las cinco órdenes que el repo entiende, la skill `actualizar-recursos` y el reparto de decisiones entre Claude y Manolo.
+- `modulos/00-guia-proyecto/03-rutinas-mantenimiento.md` — las tres rutinas, el release mayor como disparador extraordinario, la distinción desactualizado/incorrecto y la deuda de revisión.
+
+### Actualizado
+- `modulos/00-guia-proyecto/README.md` y `modulos/02-ai-fluency/README.md` — lecciones enlazadas y pasadas de `pendiente` a `borrador`.
+- `progreso.md` — **corregido un desfase importante**: el archivo llevaba sin actualizarse desde el 29 de abril y marcaba como "📝 sin redactar" siete lecciones del módulo 01 que llevan escritas desde mayo, incluida la que figura como `🔵 Siguiente`. Ahora refleja el estado real, con las lecciones del módulo 01 enlazadas.
+
+### Notas
+- El módulo 02 quedaba cortado por la mitad del framework de Anthropic: estaban Delegación y Descripción, faltaban Discernimiento y Diligencia. Ya está completo el ciclo de las 4D.
+- El módulo 00 documenta el propio repositorio. Al redactarlo se detectó que **`CLAUDE.md` describe un comando `/verificar-enlaces` que no existe** (`.claude/commands/` no está creada; solo hay la skill `actualizar-recursos`). Se ha documentado como tal en la lección 02 en vez de enseñar algo que no está construido.
+- Verificados los enlaces internos de todo `modulos/`: **0 rotos**.
+
+---
+
 ## 2026-07-22 — Claude for Teachers y revisión del Workbench (tanda 3: informe del 20 jul)
 
 Aplica las propuestas **#1** y **#6** de `changelog/novedades-2026-07-20.md`, confirmadas
