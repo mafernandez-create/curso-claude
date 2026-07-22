@@ -5,7 +5,7 @@
 
 meta:
   version: "1.0.0"
-  ultima_revision: "2026-06-12"
+  ultima_revision: "2026-07-22"
   total_recursos: 66
 
 # ============================================================
@@ -607,7 +607,7 @@ creadores_espanol:
     relevancia: media
     modulos_relacionados: [01, 04]
     retroalimenta_curso: true  # la rutina semanal escanea su RSS en busca de episodios relevantes
-    revisado: "2026-06-14"
+    revisado: "2026-07-22"
 
   - id: podcast-ia-pocho-costa
     nombre: "Inteligencia Artificial (Pocho Costa)"
@@ -618,7 +618,7 @@ creadores_espanol:
     relevancia: media
     modulos_relacionados: [01, 04]
     retroalimenta_curso: true
-    revisado: "2026-06-14"
+    revisado: "2026-07-22"
 
 # ============================================================
 # 8. COMUNIDADES Y FOROS

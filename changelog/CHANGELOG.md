@@ -11,6 +11,31 @@ Tipos de entrada:
 
 ---
 
+## 2026-07-22 — Retroalimentación de podcasts (tanda 2: informe del 06 jul)
+
+Aplica las 4 propuestas de `changelog/novedades-2026-07-06.md`, confirmadas por Manolo.
+Solo añade recursos: no modifica contenido de lecciones.
+
+### Añadido
+- `modulos/13-seguridad-etica/09-debate-regulatorio.md` — El Test de Turing, "Fable 5 y GPT 5.6 bloqueados. ¿Fin de los modelos frontera?" (Ep. 161, 30 jun 2026). Caso real de controles de exportación afectando a modelos frontera; enlazado de forma cruzada con la cronología de Fable 5 / Mythos 5 del Módulo 01, L06.
+- `modulos/04-productividad/02-disenar-workflow-personal.md` — Pocho Costa, "Un día entero en tu PyME usando IA, hora por hora" (30 jun 2026). Contrapunto práctico en español a la teoría de workflows.
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — Pocho Costa, "Claude Mythos, OpenAI y la economía de la IA" (22 jun 2026). Posicionamiento de la familia Claude frente a la competencia.
+- `modulos/04-productividad/01-ia-como-colaborador.md` — Pocho Costa, "IA sin humo: por qué no vas tan atrás como creés" (3 jul 2026). Lectura de mentalidad de adopción, marcada como opcional.
+
+### Actualizado
+- `changelog/retroalimentacion-podcasts.json` — registrados los 4 episodios aplicados con su destino, más 3 descartados con su motivo. Incluye el **Ep. 162** de El Test de Turing (16 jul), posterior al informe: descartado por centrarse en competidores. El registro de Pocho Costa estaba vacío y ahora refleja los 4 episodios evaluados.
+- `recursos/enlaces.yaml` — `revisado` de los dos podcasts que retroalimentan el curso y `ultima_revision` del catálogo.
+
+### Notas
+- **Convención seguida:** los *programas* se catalogan en `enlaces.yaml`; los *episodios* concretos se enlazan en "Recursos para profundizar" de la lección correspondiente, con el prefijo 🎙️. Es el precedente que ya existía en los módulos 01, 06, 09 y 10.
+- Los 4 episodios se **verificaron contra el RSS** de cada programa antes de enlazarlos: título, número de episodio y fecha correctos en los 4. Se añadió la URL directa, que el informe no traía.
+- Cada enlace lleva el aviso de que es material divulgativo y de que los datos técnicos se contrastan con fuente oficial (principio de honestidad epistémica).
+
+### Corregido
+- El informe del 06 jul proponía el episodio de Mythos para el "Módulo 03 (familia de modelos Claude)". La familia de modelos se explica en el **Módulo 01, L06**; el Módulo 03 es "Claude básico". Aplicado en el destino correcto y anotado en el informe.
+
+---
+
 ## 2026-07-20 — Actualización por el release de Claude Sonnet 5 (tanda 1 del informe del 04 jul)
 
 Aplica la propuesta **#1** de `changelog/novedades-2026-07-04.md`, confirmada por Manolo.

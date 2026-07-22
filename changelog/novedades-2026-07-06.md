@@ -3,8 +3,16 @@
 > Informe generado por la rutina semanal de actualización (fuentes oficiales de
 > Anthropic + retroalimentación de podcasts). Fuentes consultadas el 2026-07-06.
 >
-> **🔶 ESTADO: PENDIENTE DE CONFIRMAR.** Nada de lo de abajo se ha aplicado al curso.
-> Son *propuestas*; el visto bueno lo das tú (Manolo).
+> **✅ ESTADO: IMPLEMENTADO** (2026-07-22), confirmado por Manolo.
+>
+> Los 4 episodios propuestos se han enlazado en sus lecciones. Detalle por archivo en
+> `CHANGELOG.md`, entrada "2026-07-22 — Retroalimentación de podcasts". Los 4 se
+> verificaron contra el RSS de cada programa antes de enlazarlos (título, número de
+> episodio y fecha correctos en los 4).
+>
+> ⚠️ **Corrección al informe:** el episodio de Mythos se propuso para el "Módulo 03
+> (familia de modelos Claude)", pero la familia de modelos se explica en el **Módulo 01,
+> lección 06**. El Módulo 03 es "Claude básico". Se ha aplicado en el 01/06.
 
 ## Contexto respecto a informes anteriores
 

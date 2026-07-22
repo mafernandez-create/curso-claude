@@ -198,6 +198,7 @@ Patrón observable: a medida que sube la **complejidad de razonamiento** y baja 
 - [Anthropic — Model cards](https://www.anthropic.com/research) — información detallada por modelo (busca el más reciente).
 - [Anthropic — Claude Fable](https://www.anthropic.com/claude/fable) — la 5ª generación (verifica disponibilidad vigente).
 - 🎙️ El Test de Turing — "Claude Fable 5: El MEJOR modelo y una ESTAFA" (Ep. 158) — análisis divulgativo del modelo y sus límites de uso.
+- 🎙️ Inteligencia Artificial (Pocho Costa) — ["Claude Mythos, OpenAI y la economía de la IA"](https://pochocosta.com/podcast/claude-mythos-openai-y-la-economia-de-la-ia/) (22 jun 2026) — posicionamiento de la familia Claude (Mythos) frente a la competencia y dinámica de financiación del sector. Divulgativo: antes de citar cualquier dato concreto, contrástalo con la nota oficial de Anthropic.
 
 ## Siguiente lección
 

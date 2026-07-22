@@ -3,7 +3,7 @@ titulo: "Filosofía: IA como colaborador, no como oráculo"
 modulo: "04-productividad"
 orden: 1
 creado: 2026-06-14
-revisado: 2026-06-14
+revisado: 2026-07-22
 modelo_referencia: "Claude Opus 4.8"
 estado: borrador
 tiempo_estudio_min: 20
@@ -78,6 +78,7 @@ y dime los pros y contras de cada uno antes de desarrollar ninguno.
 
 - `introduction-claude-cowork` (catálogo) — filosofía de trabajo con Claude.
 - Módulo 02, lección 02 — las 4 dimensiones de la alfabetización IA.
+- 🎙️ Inteligencia Artificial (Pocho Costa) — ["IA sin humo: por qué no vas tan atrás como creés"](https://pochocosta.com/podcast/ia-sin-humo-por-que-no-vas-tan-atras-como-crees/) (3 jul 2026) — sobre la ansiedad por "quedarse atrás" con la IA y por qué conviene un enfoque sereno frente al ruido. Lectura ligera de mentalidad, opcional.
 
 ## Siguiente lección
 
