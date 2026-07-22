@@ -11,6 +11,49 @@ Tipos de entrada:
 
 ---
 
+## 2026-07-20 — Actualización por el release de Claude Sonnet 5 (tanda 1 del informe del 04 jul)
+
+Aplica la propuesta **#1** de `changelog/novedades-2026-07-04.md`, confirmada por Manolo.
+Cubre la revisión obligatoria por release mayor que marca el `CLAUDE.md`.
+
+### Corregido
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — **error factual**: la lección afirmaba que el acceso a Fable 5 y Mythos 5 seguía **suspendido** por la directiva de exportación de EE. UU. Reescrito con la cronología real y **asimétrica**: controles levantados el 30 jun; **Fable 5** disponible globalmente el 1 jul; **Mythos 5** aprobado el 26 jun y **solo para un conjunto de organizaciones de EE. UU.**. Reenfocado a la lección de fondo: "restaurado" no siempre significa "restaurado para todos".
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — misma afirmación obsoleta sobre la suspensión, corregida con idéntico matiz.
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — **snapshot incorrecto** en el ejemplo de buena práctica: `claude-haiku-4-5-20251010` → `claude-haiku-4-5-20251001` (2 apariciones). Añadido el **cambio de formato de ID desde la generación 4.6** (identificador sin fecha que ya es snapshot fijo), que faltaba y contradecía el ejemplo nuevo `claude-sonnet-5`. Lista de generaciones actualizada con 4.8 y 5.
+- `modulos/07-api-claude/04-system-parametros.md` — **imprecisión**: la lección decía que los parámetros de sampling "se eliminaron" / "ya no existen" (4 apariciones). Falso: siguen aceptándose con su valor por defecto; lo que devuelve 400 es **fijarlos a un valor distinto**. Corregidas las 4.
+- `modulos/05-prompt-engineering/09-extended-thinking.md` — contradicción interna sobre la generación 4.6: se afirmaba que el razonamiento ya era adaptativo y a la vez que `budget_tokens` estaba solo "obsoleto". Unificado: en 4.6 **funciona pero está deprecado**; el 400 es de 4.7 en adelante.
+- `modulos/05-prompt-engineering/08-prefill-formato.md` — **hueco de la revisión por release**: la lección lista los modelos donde el prefill devuelve 400 y **no incluía Sonnet 5**. Añadido.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — añadido **Claude Sonnet 5** en la sección de Sonnet (1M de contexto, 128k de salida, precio introductorio 2 $/10 $ hasta el 31 ago 2026 → 3 $/15 $) con aviso sobre el tokenizador nuevo. Precisado que la generación 5 incluye también modelos con nomenclatura clásica.
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — Sonnet 5 incorporado como generación 5, con los **tres cambios de comportamiento** al migrar (dos errores 400 + adaptive thinking por defecto), enmarcados como matices de una actualización que Anthropic describe como *drop-in*.
+- `modulos/05-prompt-engineering/09-extended-thinking.md` — Sonnet 5 añadido a la lista de modelos donde `budget_tokens` da error 400; documentado que el **adaptive thinking viene activado por defecto** en Sonnet 5.
+- `modulos/07-api-claude/12-extended-thinking-api.md` — ídem, con nota de migración (el 400 no es un fallo silencioso), cómo apagar el razonamiento (`thinking: {type: "disabled"}`) y el aviso de que en Sonnet 5 el valor por defecto de `effort` es **`high`** en Claude API y Claude Code.
+- `modulos/07-api-claude/04-system-parametros.md` — Sonnet 5 añadido a los modelos donde fijar `temperature`/`top_p`/`top_k` a valores no por defecto devuelve 400.
+- `modulos/07-api-claude/17-costes.md` — **nueva sección 1b**: el precio por token no es comparable entre modelos con tokenizadores distintos. Sonnet 5 genera ~30 % más tokens para el mismo texto **frente a Sonnet 4.6**; se introduce la regla de comparar **coste por tarea** y el aviso sobre la caducidad del precio introductorio.
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — precisado el alcance del tokenizador: el salto es frente a **Sonnet 4.6 y anteriores a Opus 4.7**; con Opus 4.7/4.8 y Fable 5 la escala es la misma y la comparación directa sí vale.
+
+### Notas
+- Módulos **03 y 06** revisados: no fijan versiones ni parámetros de modelo en el cuerpo (solo `modelo_referencia` en frontmatter), así que **no requerían cambios**. El contenido sensible a versiones vive en los módulos 01, 05 y 07.
+- Los datos se verificaron con el subagente `verificador-resultados` **dos veces**: antes de redactar (fuentes) y **después de editar** (contenido aplicado). La segunda pasada detectó 10 afirmaciones contradichas y 5 sin confirmar —parte preexistentes, parte introducidas en esta misma tanda—, todas corregidas antes de cerrar. Queda constancia porque es el motivo por el que la entrada "Corregido" es más larga que la de "Actualizado".
+
+### Pendiente de revisión humana
+Marcado por el verificador como material sensible que conviene que Manolo confirme:
+- La cronología de la directiva de control de exportación de EE. UU. (dato regulatorio + gobierno nombrado), en `01/06` y `01/07`.
+- Las cifras de precio de Sonnet 5, por si alguien las usa para presupuestar.
+- Que Mythos 5 es de acceso por invitación (Project Glasswing): el curso no lo aclara y un lector puede creer que es accesible. **No corregido en esta tanda** — texto preexistente, fuera del alcance de Sonnet 5.
+
+### ⚠️ Defecto preexistente detectado, PENDIENTE de decisión
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md`, **sección 4 completa** ("Alias vs snapshot fijo") y el "mal ejemplo" de la sección de ejemplo aplicado se apoyan en alias tipo `claude-opus-4-7-latest`, `claude-opus-latest` y `claude-haiku-latest`. **La documentación oficial no documenta ningún alias `-latest` para las generaciones 4.x/5.** La sección enseña una decisión ("usa `-latest` para prototipar, pinea para producción") construida sobre identificadores que probablemente no existen.
+- Es un defecto **anterior** a esta tanda y su arreglo no es cosmético: obliga a reescribir la sección más importante de la lección. Se deja documentado en vez de parcheado a medias. **Requiere el visto bueno de Manolo sobre cómo reenfocarla.**
+
+### Pendiente
+- Tanda 2: recursos de podcasts de `novedades-2026-07-06.md`.
+- Propuestas #3 (Claude Science → M11), #4 (Claude Tag → M03/04) y #5 (marco de jailbreaks → M13) del informe del 04 jul, aún sin aplicar.
+- Todo el informe `novedades-2026-07-20.md`, sin confirmar.
+
+---
+
 ## 2026-06-14 — Módulos 10, 11, 12 y 13 redactados (cierra el contenido principal del curso)
 
 ### Añadido

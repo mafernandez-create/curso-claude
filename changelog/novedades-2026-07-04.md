@@ -3,9 +3,14 @@
 > Informe generado por la skill `actualizar-recursos` (escaneo de fuentes oficiales
 > de Anthropic: news, research, docs). Fuentes consultadas el 2026-07-04.
 >
-> **🔶 ESTADO: PENDIENTE DE CONFIRMAR.** Nada de lo de abajo se ha aplicado al curso.
-> Estas son *propuestas*; el visto bueno lo das tú (Manolo). Cuando decidas, cambia
-> este estado y anota dónde se aplicó cada una.
+> **🟡 ESTADO: PARCIALMENTE IMPLEMENTADO** (actualizado 2026-07-20).
+>
+> - ✅ **#1 (Sonnet 5) y #2 (Fable 5 / Mythos 5 restaurados): APLICADOS** el 2026-07-20,
+>   confirmados por Manolo. Ver el detalle por archivo en `CHANGELOG.md`, entrada
+>   "2026-07-20 — Actualización por el release de Claude Sonnet 5".
+>   Archivos tocados: `01/06`, `01/07`, `05/09`, `07/04`, `07/12`, `07/17`.
+> - 🔶 **#3 (Claude Science), #4 (Claude Tag) y #5 (marco de jailbreaks): PENDIENTES.**
+>   Siguen siendo propuestas; nada aplicado al curso.
 
 ## Contexto respecto a informes anteriores
 
@@ -43,9 +48,13 @@
   tras la suspensión del 12 jun por los controles de exportación del Gobierno de EE. UU.
 - **Encaja en:** Módulo 13 (seguridad/ética y geopolítica de los modelos) y Módulo 10
   (cloud/compliance). Buen caso real de cómo la regulación afecta a la disponibilidad.
-- **Fuente:** [Redeploying Fable 5 y Mythos 5](https://www.anthropic.com/news/redeploying-fable-5-mythos-5)
-  (nota fechada 30 jun; restauración efectiva el 1 jul) · release notes de la plataforma
-  (1 jul 2026) — consultado 2026-07-04.
+- **Fuente:** [Redeploying Claude Fable 5](https://www.anthropic.com/news/redeploying-fable-5)
+  · release notes de la plataforma (1 jul 2026) — consultado 2026-07-04.
+- **Corrección (2026-07-20):** la URL citada originalmente aquí (`/redeploying-fable-5-mythos-5`)
+  no existe; el título correcto es "Redeploying Claude Fable 5". Además, la restauración **no
+  fue simétrica**: los controles se levantaron el 30 jun y Fable 5 volvió globalmente el 1 jul,
+  mientras que **Mythos 5** se aprobó el 26 jun y solo para **un conjunto de organizaciones de
+  EE. UU.** Así se ha reflejado en el curso.
 
 ## 3. 🔬 Claude Science (30 jun 2026)
 

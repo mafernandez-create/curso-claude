@@ -3,7 +3,7 @@ titulo: "Razonamiento del modelo: adaptive thinking y effort"
 modulo: "05-prompt-engineering"
 orden: 9
 creado: 2026-06-14
-revisado: 2026-06-14
+revisado: 2026-07-20
 modelo_referencia: "Claude Opus 4.8"
 estado: borrador
 tiempo_estudio_min: 30
@@ -19,7 +19,7 @@ Al terminar esta lección serás capaz de:
 - [ ] Conocer el parámetro **effort** y para qué sirve.
 - [ ] Saber por qué el antiguo "budget de tokens de pensamiento" ya no se usa.
 
-> **⚠️ Actualización importante (2026):** el plan original hablaba de "extended thinking" con un presupuesto fijo de tokens (`budget_tokens`). Eso ha cambiado. En los modelos actuales (Opus 4.6+, Opus 4.8, Sonnet 4.6, Fable 5) el razonamiento es **adaptativo** y se regula con el parámetro **effort**, no con un budget fijo.
+> **⚠️ Actualización importante (julio 2026):** el plan original hablaba de "extended thinking" con un presupuesto fijo de tokens (`budget_tokens`). Eso ha cambiado. En los modelos actuales (Opus 4.7/4.8, **Sonnet 5**, Fable 5) el razonamiento es **adaptativo** y se regula con el parámetro **effort**, no con un budget fijo. En la generación 4.6 (Opus 4.6, Sonnet 4.6) el budget fijo **todavía funciona, pero está deprecado**: no lo uses en código nuevo.
 
 ## Prerrequisitos
 
@@ -35,6 +35,8 @@ Los modelos modernos pueden "pensar" antes de responder. Antes había que reserv
 
 Es razonamiento **interno y automático**: el modelo decide cuándo y cuánto pensar según lo difícil que sea lo que le pides. No tienes que activarlo con un número de tokens; en la API se indica con `thinking: {type: "adaptive"}` y por interfaz ocurre de forma transparente.
 
+> **Novedad en Sonnet 5 (30 jun 2026):** en este modelo el adaptive thinking está **activado por defecto**. No tienes que pedirlo — y si necesitas apagarlo, se hace con `thinking: {type: "disabled"}`. Es un cambio de comportamiento a tener en cuenta si migras desde un modelo anterior y esperabas que el razonamiento estuviera apagado salvo que lo activaras: puede subirte el coste y la latencia sin que hayas tocado nada.
+
 ### 2. El parámetro `effort`
 
 Regula **cuánto esfuerzo** dedica el modelo (y, con ello, el gasto de tokens y la latencia). Niveles habituales: `low`, `medium`, `high` y, en los modelos punteros, `xhigh` y `max`.
@@ -44,7 +46,7 @@ Regula **cuánto esfuerzo** dedica el modelo (y, con ello, el gasto de tokens y 
 
 ### 3. Por qué desapareció el budget fijo
 
-El presupuesto manual de tokens de pensamiento (`budget_tokens`) se ha **eliminado** en los modelos recientes (da error en Opus 4.7/4.8 y Fable 5; está obsoleto en 4.6 y Sonnet 4.6). El razonamiento adaptativo + `effort` lo sustituye y rinde mejor. Si lees tutoriales antiguos que usan `budget_tokens`, están desfasados.
+El presupuesto manual de tokens de pensamiento (`budget_tokens`) se ha **retirado** en los modelos recientes: da **error 400** en Opus 4.7/4.8, **Sonnet 5** y Fable 5. En Opus 4.6 y Sonnet 4.6 sigue funcionando, pero está **deprecado**. El razonamiento adaptativo + `effort` lo sustituye y rinde mejor. Si lees tutoriales antiguos que usan `budget_tokens`, están desfasados.
 
 ## Ejemplo aplicado
 
@@ -62,7 +64,7 @@ output_config: { effort: "high" }
 
 ## Errores comunes
 
-- **Usar `budget_tokens`:** está obsoleto/da error en los modelos actuales. Usa adaptive thinking + effort.
+- **Usar `budget_tokens`:** da error 400 en Opus 4.7/4.8, Sonnet 5 y Fable 5, y está deprecado en la generación 4.6. Usa adaptive thinking + effort.
 - **Poner siempre `max`:** gasta más sin mejorar en tareas que no lo necesitan; `high` suele ser el punto óptimo.
 
 ## Resumen en 3 frases
@@ -83,3 +85,4 @@ output_config: { effort: "high" }
 ## Fuentes
 
 - [docs.claude.com — adaptive thinking / effort / migración](https://docs.claude.com) — consultado 2026-06-14.
+- [Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) — adaptive thinking por defecto y retirada de `budget_tokens` — consultado 2026-07-20.

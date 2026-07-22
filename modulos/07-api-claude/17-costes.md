@@ -3,7 +3,7 @@ titulo: "Costes: cómo estimarlos y reducirlos"
 modulo: "07-api-claude"
 orden: 17
 creado: 2026-06-14
-revisado: 2026-06-14
+revisado: 2026-07-20
 modelo_referencia: "Claude Opus 4.8"
 estado: borrador
 tiempo_estudio_min: 25
@@ -34,6 +34,21 @@ En producción, el coste por tokens se acumula. Estimarlo antes y optimizarlo de
 ### 1. Estimar el coste
 
 Coste ≈ (tokens de entrada × precio entrada) + (tokens de salida × precio salida), por llamada, multiplicado por el volumen. Para medir tokens **antes**, usa el contador de tokens del SDK (`count_tokens`) en lugar de estimar a ojo.
+
+### 1b. ⚠️ El precio por token no es comparable entre modelos
+
+Este es el error de estimación más caro que puedes cometer hoy, y es nuevo.
+
+**Claude Sonnet 5** (30 jun 2026) usa un **tokenizador distinto**, que produce aproximadamente un **30 % más de tokens para el mismo texto** (el porcentaje exacto depende del contenido y del tipo de carga). Consecuencia: si comparas su precio por millón de tokens con el de un modelo anterior y concluyes "es más barato", puedes equivocarte, porque el **mismo texto consume más tokens**.
+
+**Regla práctica:** compara siempre **coste por tarea**, nunca coste por token. Es decir:
+
+1. Coge una muestra representativa de tus entradas reales.
+2. Mide los tokens **con el tokenizador de cada modelo** (`count_tokens` apuntando a ese modelo concreto).
+3. Multiplica por el precio de ese modelo.
+4. Compara los totales.
+
+Al mismo tiempo, ojo con el precio vigente: Sonnet 5 salió con precio introductorio de **2 $ / 10 $ por millón** (entrada/salida) **hasta el 31 ago 2026**, y pasa después a **3 $ / 15 $**. Si haces una estimación a un año vista con el precio introductorio, te quedarás corto.
 
 ### 2. Palancas para reducir
 
@@ -66,12 +81,14 @@ Construye el **chatbot con RAG** descrito en el README del módulo (retrieval so
 
 - **Opus para todo:** caro sin necesidad; ajusta el modelo a la tarea.
 - **Estimar a ojo:** usa `count_tokens` para cifras reales.
+- **Comparar modelos por su precio por token:** con tokenizadores distintos (Sonnet 5), esa comparación engaña. Compara coste por tarea.
+- **Estimar a largo plazo con un precio introductorio:** comprueba la fecha en que expira.
 
 ## Resumen en 3 frases
 
 1. Estima el coste por tokens (entrada+salida) × volumen, midiendo con `count_tokens`.
-2. Reduce con: modelo adecuado, caching, batch, effort ajustado y contexto justo.
-3. Mide en producción para optimizar lo que más pesa.
+2. Compara modelos por **coste por tarea**, no por token: los tokenizadores difieren entre generaciones.
+3. Reduce con: modelo adecuado, caching, batch, effort ajustado y contexto justo, y mide en producción para optimizar lo que más pesa.
 
 ## Recursos para profundizar
 
@@ -85,3 +102,4 @@ Construye el **chatbot con RAG** descrito en el README del módulo (retrieval so
 ## Fuentes
 
 - [docs.claude.com — token counting y pricing](https://docs.claude.com) — consultado 2026-06-14.
+- [Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) — tokenizador nuevo (~30 % más tokens) y precio introductorio hasta el 31 ago 2026 — consultado 2026-07-20.

@@ -3,7 +3,7 @@ titulo: "La familia de modelos Claude: Opus, Sonnet, Haiku"
 modulo: "01-fundamentos-ia"
 orden: 6
 creado: 2026-05-09
-revisado: 2026-06-22
+revisado: 2026-07-20
 modelo_referencia: "Claude Opus 4.8"
 estado: borrador
 tiempo_estudio_min: 28
@@ -62,6 +62,23 @@ Cuándo usarlo:
 
 Esto tiene una consecuencia importante: si vienes de Opus 3 y cambias a Sonnet 4.6, **subes** de capacidad y **bajas** de coste a la vez. La intuición "Opus es siempre lo mejor" deja de ser correcta cuando comparas entre generaciones.
 
+> **Actualización (30 junio 2026): Claude Sonnet 5.** Anthropic ha publicado `claude-sonnet-5`,
+> la siguiente generación de Sonnet. Lo posiciona como la mejor combinación de velocidad e
+> inteligencia, y como la opción para cargas de trabajo que necesitan más capacidad que
+> Sonnet 4.6 sin llegar a un modelo de clase Opus. Es el ejemplo de manual de lo que cuenta
+> esta sección: un Sonnet de generación nueva que sube el listón sin el coste de un Opus.
+> Ventana de contexto de **1M de tokens** y salida máxima de **128k**. Precio introductorio
+> de **2 $ / 10 $ por millón de tokens** (entrada/salida) hasta el **31 ago 2026**; después,
+> **3 $ / 15 $**.
+>
+> ⚠️ **Cuidado al comparar precios:** Sonnet 5 usa un **tokenizador distinto** al de
+> **Sonnet 4.6**, y genera aproximadamente un **30 % más de tokens** para el mismo texto.
+> Frente a Sonnet 4.6 (y a los modelos anteriores a Opus 4.7), el precio por token **no es
+> comparable directamente**: hay que comparar el coste por *tarea*, no por token. Con
+> Opus 4.7, Opus 4.8 y Fable 5 las estimaciones de la documentación apuntan a una escala
+> de tokens **parecida**, así que ahí la comparación directa engaña menos — pero si el
+> importe te importa, mide. Volveremos sobre esto en el Módulo 07 (costes).
+
 Cuándo usarlo (que suele ser el caso por defecto):
 - Conversación general, escritura, análisis estructurado, código de complejidad media.
 - Productos de cara al usuario donde la latencia importa.
@@ -119,13 +136,15 @@ Por eso **revisa tu elección cada vez que sale una generación nueva**, especia
 
 ### 9. Más allá del trío: la 5ª generación (Fable 5, Mythos 5)
 
-> **Actualización (junio 2026).** El trío Opus/Sonnet/Haiku sigue siendo la base, pero Anthropic ha empezado a introducir **modelos de 5ª generación con nombres nuevos**, fuera de la nomenclatura poética clásica.
+> **Actualización (julio 2026).** El trío Opus/Sonnet/Haiku sigue siendo la base, pero Anthropic ha empezado a introducir **modelos de 5ª generación con nombres nuevos**, fuera de la nomenclatura poética clásica. Ojo: la generación 5 no es solo esos nombres nuevos — **Sonnet 5** (sección 3) también es de esta generación y sí conserva el nombre clásico.
 
-**Claude Fable 5** se presenta como el modelo **más capaz** de Anthropic, pensado para el trabajo de conocimiento y la programación más difíciles: tareas **ambiciosas y de larga duración** (agentes que trabajan de forma autónoma durante días, migraciones de código complejas, investigación profunda, lectura de diagramas y documentos densos). Se posiciona **por encima de Opus 4.8**. Como salvaguarda, en dominios sensibles (ciberseguridad, biología) las consultas se redirigen automáticamente a Opus 4.8. Junto a él se anunció **Mythos 5**, otro modelo de la misma generación.
+**Claude Fable 5** se presenta como el modelo **más capaz** de Anthropic, pensado para el trabajo de conocimiento y la programación más difíciles: tareas **ambiciosas y de larga duración** (agentes que trabajan de forma autónoma durante días, migraciones de código complejas, investigación profunda, lectura de diagramas y documentos densos). Se posiciona **por encima de Opus 4.8**. Como salvaguarda, incorpora clasificadores que **rechazan** las peticiones en dominios sensibles (ciberseguridad, biología y otros). Ojo al detalle técnico: ese rechazo **no es un error** — la API responde con un HTTP 200 y un `stop_reason: "refusal"`. Reintentar con otro modelo es algo que **configura quien desarrolla**, no una redirección automática. Junto a él se anunció **Mythos 5**, otro modelo de la misma generación.
 
-**Salvedad importante de disponibilidad:** tras una **directiva de control de exportación del gobierno de EE. UU. (12 de junio de 2026)**, el acceso a Fable 5 y Mythos 5 quedó **suspendido**. Es una situación **volátil y cambiante**: antes de contar con estos modelos, **comprueba su disponibilidad y condiciones vigentes** en la documentación oficial. Para el trabajo del día a día, el modelo de referencia sigue siendo **Opus 4.8**.
+**Historia de disponibilidad (caso real que conviene conocer):** tras una **directiva de control de exportación del gobierno de EE. UU. (12 de junio de 2026)**, el acceso a Fable 5 y Mythos 5 quedó **suspendido**. Los controles se levantaron el **30 de junio** y **Fable 5** volvió a estar disponible globalmente el **1 de julio de 2026**. **Mythos 5 siguió otro camino**: su restauración se aprobó el **26 de junio** y quedó limitada a **un conjunto de organizaciones de EE. UU.**, no de forma global.
 
-Qué te llevas de aquí: la familia ya no son solo tres tamaños; conviene saber que existe una capa superior (5ª generación) para tareas excepcionalmente largas y complejas, aunque su disponibilidad dependa del momento y la región.
+Ese paréntesis de 19 días es la lección de verdad de esta sección: la disponibilidad de un modelo frontera **no depende solo de la tecnología**, sino también del marco regulatorio y geopolítico del momento. Y, como muestra Mythos 5, "restaurado" no siempre significa "restaurado para todos". Es una situación **volátil**: antes de comprometer un proyecto con un modelo concreto, **comprueba su disponibilidad y condiciones vigentes** en la documentación oficial. Para el trabajo del día a día, el modelo de referencia de este curso sigue siendo **Opus 4.8**.
+
+Qué te llevas de aquí: la familia ya no son solo tres tamaños; conviene saber que existe una capa superior (5ª generación) para tareas excepcionalmente largas y complejas, y que su disponibilidad puede depender del momento y la región.
 
 ## Ejemplo aplicado
 
@@ -190,3 +209,5 @@ Patrón observable: a medida que sube la **complejidad de razonamiento** y baja 
 - [Anthropic — Pricing](https://www.anthropic.com/pricing) — consultado 2026-05-09.
 - [Anthropic — Model cards y blog de releases](https://www.anthropic.com/news) — consultado 2026-05-09.
 - [Anthropic — Claude Fable](https://www.anthropic.com/claude/fable) y [Anthropic News](https://www.anthropic.com/news) — Fable 5 / Mythos 5 y directiva de exportación — consultado 2026-06-22.
+- [Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) — Sonnet 5: precios, ventana de contexto y tokenizador — consultado 2026-07-20.
+- [Redeploying Fable 5 y Mythos 5](https://www.anthropic.com/news/redeploying-fable-5) — restauración del acceso el 1 jul 2026 — consultado 2026-07-20.
