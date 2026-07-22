@@ -3,8 +3,18 @@
 > Informe generado por la skill `actualizar-recursos` (escaneo de fuentes oficiales
 > de Anthropic: news, research, release notes de plataforma). Fuentes consultadas el 2026-07-20.
 >
-> **🔶 ESTADO: PENDIENTE DE CONFIRMAR.** Nada de lo de abajo se ha aplicado al curso.
-> Son *propuestas*; el visto bueno lo das tú (Manolo).
+> **🟡 ESTADO: PARCIALMENTE IMPLEMENTADO** (actualizado 2026-07-22).
+>
+> - ✅ **#1 (Claude for Teachers): APLICADO** en `modulos/12-formacion-docencia/04-materiales-ejercicios.md`,
+>   más `enlaces.yaml` y el README del módulo. Enfocado como referencia de diseño, porque
+>   el producto no está disponible en España.
+> - ✅ **#6 (retirada del Workbench): REVISADO, sin cambios necesarios.** El curso no
+>   menciona el Workbench en ninguna parte (búsqueda en módulos, recursos, README y
+>   plan de estudio: cero apariciones). La fecha del 17 ago no nos afecta.
+> - 🔶 **#2 (reflexión sobre el uso), #3 (valores por idioma), #4 (J-space), #5 (GRAM)
+>   y el resto de #6 (cambios de API): PENDIENTES.**
+>
+> Detalle en `CHANGELOG.md`, entrada "2026-07-22 — Claude for Teachers y revisión del Workbench".
 
 ## Contexto respecto a informes anteriores
 

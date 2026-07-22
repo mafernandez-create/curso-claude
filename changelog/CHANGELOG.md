@@ -11,6 +11,32 @@ Tipos de entrada:
 
 ---
 
+## 2026-07-22 — Claude for Teachers y revisión del Workbench (tanda 3: informe del 20 jul)
+
+Aplica las propuestas **#1** y **#6** de `changelog/novedades-2026-07-20.md`, confirmadas
+por Manolo. Eran las dos prioritarias: la de más valor para el curso y la única con
+fecha límite.
+
+### Añadido
+- `modulos/12-formacion-docencia/04-materiales-ejercicios.md` — nueva sección 4, "Claude for Teachers: qué es y qué se puede aprender de él". Enfoque deliberado: como el producto **no está disponible en España**, se documenta qué es y se explota como **referencia de diseño** (docente como intermediario, anclaje a estándares externos, foco en diferenciación, formación incluida, política de datos explícita) para que sirva a un formador español que nunca podrá usarlo.
+- `recursos/enlaces.yaml` — entrada `claude-for-teachers` con campo `disponibilidad` (nuevo) advirtiendo de la restricción geográfica. `total_recursos` 66 → 67.
+- `modulos/12-formacion-docencia/README.md` — recurso añadido a "Recursos clave" con el aviso de disponibilidad.
+
+### Notas
+- **La retirada del Workbench (17 ago 2026) NO requiere cambios.** Se buscó `workbench`, `playground`, `generate_prompt`, `improve_prompt` y `templatize` en todos los módulos, `recursos/`, `README.md` y `plan-de-estudio.md`: **cero apariciones**. El curso nunca enseñó el Workbench, así que su retirada no deja contenido obsoleto. Queda documentado para no repetir la búsqueda.
+- Verificado con `verificador-resultados`: los 12 datos del producto (fecha, gratuidad, alcance K-12 EE. UU., nueve integraciones y sus nombres, Claude Code/Cowork, Teach For America, política 18+, no disponible en España) **VERIFICADOS** contra la fuente oficial, 0 contradichos.
+
+### Corregido tras la verificación
+El verificador marcó 5 puntos de **precisión normativa** en el párrafo de privacidad —el más delicado, porque trata datos de menores y va dirigido a formadores—. Todos corregidos antes de cerrar:
+- "Anthropic declara cumplimiento FERPA" → la formulación real es que su **anexo K-12 está redactado para cumplir FERPA**. No es un sello ni una certificación del proveedor.
+- Añadida la precisión de que **FERPA no es "el RGPD americano"**: regula expedientes educativos y obliga a los centros, no a los proveedores. El paralelismo original inducía a error.
+- "los datos no se usan para entrenar modelos" → acotado a **Claude for Teachers**, para que no se extrapole al Claude de consumo.
+- "en España y la UE, el RGPD" → añadida la **LOPDGDD** y el umbral real de **14 años** para el consentimiento del menor en España. Citar solo el RGPD dejaba al formador con el umbral equivocado (16).
+- "registro abierto hasta el 30 jun 2027" → "quien se registre antes de esa fecha obtiene un año completo". La fuente no dice que el registro cierre.
+- Añadidas fuentes primarias del regulador (Dept. of Education y BOE), no solo el anuncio de Anthropic.
+
+---
+
 ## 2026-07-22 — Retroalimentación de podcasts (tanda 2: informe del 06 jul)
 
 Aplica las 4 propuestas de `changelog/novedades-2026-07-06.md`, confirmadas por Manolo.
