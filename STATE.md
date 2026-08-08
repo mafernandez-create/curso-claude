@@ -4,11 +4,24 @@
 
 ## Última ejecución
 
-2026-08-08 · Incorporado todo el material pendiente de julio y completado el curso: 161/161 lecciones redactadas (borrador). Fusionado el PR #5 a `main`.
+2026-08-08 · Completado el curso (161/161, borrador) y fusionado el PR #5. Después, arrancado el **envío de lecciones por correo** para poder estudiar desde el iPhone sin encender el Mac.
 
 ## En curso
 
-- Nada abierto. El curso está completo en borrador; el siguiente ciclo natural es que Manolo **estudie y suba lecciones de `borrador` a `revisado`** a medida que las valida.
+**Envío de una lección por correo cada dos días — a medio montar.**
+
+- ✅ Hecho: `scripts/enviar-leccion.py`. Elige la lección **por fecha y sin guardar estado**
+  (`índice = días transcurridos ÷ 2`; si no toca, sale sin enviar), convierte el Markdown a
+  HTML legible en móvil (con los colores del Kit de Estilo) y envía por **SMTP** (local) o
+  **Resend** (pensado para la rutina cloud). Probado: la lección 1/161 llegó a
+  villabotijo@gmail.com el 2026-08-08.
+- ⏸️ Pendiente de Manolo: **confirmar que se lee bien en el iPhone** y decidir si el orden
+  arranca en el módulo 00 (guía del proyecto, 3 lecciones cortas) o directamente en el 01.
+- ⏸️ Pendiente después: **crear la rutina cloud**. Diseño ya decidido: cron diario
+  `0 5 * * *` (07:00 hora peninsular), repo público `mafernandez-create/curso-claude` como
+  source, entorno `env_017edvqXdEkfcyigtdZZUcJX`, envío por Resend copiando el patrón de las
+  rutinas existentes. El script ya está listo para ese modo.
+- Ritmo: 161 lecciones a una cada dos días ≈ **11 meses**.
 
 ## Completado recientemente
 
@@ -19,6 +32,11 @@
 - **Higiene del repo**: `trusted-sources.md` versionado, `.claude/settings.json` a `.gitignore`, borrados `AGENTS.md` y `.agents/` (copias corruptas Claude→Codex).
 
 ## Escalado a humanos
+
+- ⚠️ **Seguridad — la API key de Resend está en texto plano** dentro del prompt de varias
+  rutinas cloud (Informe sectorial GPF, Informe diario de prensa, etc.). Se detectó el
+  2026-08-08 al inspeccionarlas. Manolo decidió reutilizarla por ahora, pero **conviene
+  rotarla** en resend.com y actualizar las rutinas que la usan. Pendiente.
 
 - **Confirmación de contenido:** por diseño, aplicar novedades al curso lo aprueba solo Manolo. No hay nada esperando ahora mismo.
 - **Decisiones abiertas (del `CLAUDE.md` raíz, no de este proyecto):** consolidar `curso-claude` vs `curso-claude-app`; consolidar el `placsp` duplicado.
