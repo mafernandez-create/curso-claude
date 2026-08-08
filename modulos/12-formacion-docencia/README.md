@@ -3,7 +3,7 @@
 **Eje:** Formador (opcional 🔹)
 **Tiempo estimado:** 5–8 h
 **Prerrequisitos:** Módulos 02 y 03. Idealmente también 05.
-**Última actualización:** 2026-06-14 (módulo completo en borrador)
+**Última actualización:** 2026-07-22 (módulo completo en borrador)
 
 ## Objetivo
 
@@ -31,6 +31,7 @@ Del catálogo:
 - `ai-fluency-educators` ⭐ (curso oficial).
 - `ai-fluency-nonprofits` — enfoque aplicado.
 - `ai-fluency-framework` — base pedagógica.
+- `claude-for-teachers` — producto de Anthropic para docentes (jul 2026). ⚠️ Solo EE. UU. y K-12 verificado: en este curso se estudia como **referencia de diseño**, no como herramienta disponible. Ver lección 04.
 
 ## Entrega
 

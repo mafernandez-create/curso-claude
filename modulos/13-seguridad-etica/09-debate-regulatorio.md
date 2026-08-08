@@ -3,7 +3,7 @@ titulo: "El debate regulatorio: EU AI Act y marcos nacionales"
 modulo: "13-seguridad-etica"
 orden: 9
 creado: 2026-06-14
-revisado: 2026-06-14
+revisado: 2026-07-22
 modelo_referencia: "Claude Opus 4.8"
 estado: borrador
 tiempo_estudio_min: 35
@@ -81,6 +81,7 @@ Una app que usa Claude para **cribar currículums** cae probablemente en "alto r
 
 - Textos oficiales del EU AI Act y marcos nacionales.
 - `import-ai` (newsletter) — perspectiva de política — catálogo.
+- 🎙️ El Test de Turing — ["Fable 5 y GPT 5.6 bloqueados. ¿Fin de los modelos frontera?" (Ep. 161)](https://podcasters.spotify.com/pod/show/el-test-de-turing/episodes/Fable-5-y-GPT-5-6-bloqueados--Fin-de-los-mo) (30 jun 2026) — caso real de cómo los controles de exportación de EE. UU. afectan a la disponibilidad de modelos frontera. Complementa la cronología de la suspensión y restauración de Fable 5 / Mythos 5 que se cuenta en el [Módulo 01, lección 06](../01-fundamentos-ia/06-familia-modelos-claude.md). Divulgativo: contrasta cualquier dato técnico con la fuente oficial.
 
 ## Siguiente lección
 

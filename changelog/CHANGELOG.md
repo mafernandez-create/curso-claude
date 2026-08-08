@@ -11,6 +11,145 @@ Tipos de entrada:
 
 ---
 
+## 2026-07-22 — Reescrita la sección de IDs y versiones (defecto de los alias `-latest`)
+
+Resuelve el **defecto preexistente** que quedó documentado y pendiente de decisión en la
+actualización de Sonnet 5: la sección "alias vs snapshot" de `01/07-versiones-modelos.md`
+se apoyaba en identificadores `-latest` que la documentación oficial no recoge.
+
+### Corregido
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — **error factual sobre el esquema de IDs.** La lección enseñaba alias tipo `claude-opus-4-7-latest` / `claude-opus-latest` y presentaba `claude-opus-4-7` como un ID con fecha. Ninguna de las dos cosas es correcta según la doc oficial. Reescritas las secciones 3 y 4:
+  - **Dos formatos según generación.** Desde la 4.6, el ID va **sin fecha** (`claude-sonnet-5`, `claude-opus-4-8`) y **ya es un snapshot fijo** — Anthropic no cambia los pesos de un ID existente; una versión nueva sale con un ID nuevo. Antes de la 4.6, el ID lleva **fecha** (`claude-haiku-4-5-20251001`) y existe un **alias de conveniencia sin fecha** (`claude-haiku-4-5`) que sí se mueve al último snapshot.
+  - Los alias con sufijo **`-latest` no existen** en el esquema actual de Anthropic (sí existieron históricamente, p. ej. en Claude 3.5); la lección lo dice con esa cautela.
+  - Corregida la anatomía del ID (usaba `claude-opus-4-7-20260301`, formato inexistente para 4.7) y el ejemplo aplicado (usaba `claude-haiku-latest`, inexistente → ahora el alias real `claude-haiku-4-5`).
+  - Añadido el matiz de que fijar el ID congela los **pesos**, no la infraestructura de serving (router, clasificadores, muestreo), que puede alterar el comportamiento observable.
+  - Actualizados objetivos, ciclo de vida, errores comunes y resumen para que sean coherentes.
+
+### Notas
+- Verificado con `verificador-resultados` contra la doc oficial de model-ids-and-versions y models overview: **7 VERIFIED, 1 PROBABLE (la inexistencia de `-latest`, negativo universal, ya redactado con cautela), 0 contradichos.** Veredicto: listo para publicar.
+- Con esto se cierra el último punto pendiente que quedaba anotado en el PR de novedades de julio.
+
+---
+
+## 2026-07-22 — Redactadas las 7 lecciones que faltaban (el curso queda completo en borrador)
+
+Con esto, las **161 lecciones del curso están redactadas**. No queda contenido pendiente
+de escribir.
+
+### Añadido
+- `modulos/02-ai-fluency/05-discernimiento.md` — la trampa de la plausibilidad (fluidez y veracidad son independientes), las tres formas de equivocarse, el mapa de sospecha, cuatro técnicas de verificación, el principio de que quien genera no se evalúa a sí mismo, y verificación proporcional al riesgo.
+- `modulos/02-ai-fluency/06-diligencia.md` — los tres ejes (responsabilidad, terceros, privacidad), criterio para declarar el uso de IA, regla operativa sobre qué no pegar nunca, y la erosión del criterio como riesgo profesional.
+- `modulos/02-ai-fluency/07-errores-tipicos-interaccion.md` — seis patrones de interacción (espiral de reformulación, contexto supuesto, complacencia, pozo de contexto largo, delegación por inercia, aceptación silenciosa) con su señal temprana y su corrección.
+- `modulos/02-ai-fluency/08-casos-aplicados.md` — cierre del módulo: las 4D aplicadas a trabajo, estudio y creatividad, mostrando que **la dimensión crítica cambia** según el contexto (Diligencia / Delegación / Descripción).
+- `modulos/00-guia-proyecto/01-como-esta-organizado.md` — mapa del repositorio, los cuatro ejes, y la distinción entre `plan-de-estudio.md`, `progreso.md` y `bitacora.md`.
+- `modulos/00-guia-proyecto/02-flujos-claude-code.md` — `CLAUDE.md` como archivo de reglas, las cinco órdenes que el repo entiende, la skill `actualizar-recursos` y el reparto de decisiones entre Claude y Manolo.
+- `modulos/00-guia-proyecto/03-rutinas-mantenimiento.md` — las tres rutinas, el release mayor como disparador extraordinario, la distinción desactualizado/incorrecto y la deuda de revisión.
+
+### Actualizado
+- `modulos/00-guia-proyecto/README.md` y `modulos/02-ai-fluency/README.md` — lecciones enlazadas y pasadas de `pendiente` a `borrador`.
+- `progreso.md` — **corregido un desfase importante**: el archivo llevaba sin actualizarse desde el 29 de abril y marcaba como "📝 sin redactar" siete lecciones del módulo 01 que llevan escritas desde mayo, incluida la que figura como `🔵 Siguiente`. Ahora refleja el estado real, con las lecciones del módulo 01 enlazadas.
+
+### Notas
+- El módulo 02 quedaba cortado por la mitad del framework de Anthropic: estaban Delegación y Descripción, faltaban Discernimiento y Diligencia. Ya está completo el ciclo de las 4D.
+- El módulo 00 documenta el propio repositorio. Al redactarlo se detectó que **`CLAUDE.md` describe un comando `/verificar-enlaces` que no existe** (`.claude/commands/` no está creada; solo hay la skill `actualizar-recursos`). Se ha documentado como tal en la lección 02 en vez de enseñar algo que no está construido.
+- Verificados los enlaces internos de todo `modulos/`: **0 rotos**.
+
+---
+
+## 2026-07-22 — Claude for Teachers y revisión del Workbench (tanda 3: informe del 20 jul)
+
+Aplica las propuestas **#1** y **#6** de `changelog/novedades-2026-07-20.md`, confirmadas
+por Manolo. Eran las dos prioritarias: la de más valor para el curso y la única con
+fecha límite.
+
+### Añadido
+- `modulos/12-formacion-docencia/04-materiales-ejercicios.md` — nueva sección 4, "Claude for Teachers: qué es y qué se puede aprender de él". Enfoque deliberado: como el producto **no está disponible en España**, se documenta qué es y se explota como **referencia de diseño** (docente como intermediario, anclaje a estándares externos, foco en diferenciación, formación incluida, política de datos explícita) para que sirva a un formador español que nunca podrá usarlo.
+- `recursos/enlaces.yaml` — entrada `claude-for-teachers` con campo `disponibilidad` (nuevo) advirtiendo de la restricción geográfica. `total_recursos` 66 → 67.
+- `modulos/12-formacion-docencia/README.md` — recurso añadido a "Recursos clave" con el aviso de disponibilidad.
+
+### Notas
+- **La retirada del Workbench (17 ago 2026) NO requiere cambios.** Se buscó `workbench`, `playground`, `generate_prompt`, `improve_prompt` y `templatize` en todos los módulos, `recursos/`, `README.md` y `plan-de-estudio.md`: **cero apariciones**. El curso nunca enseñó el Workbench, así que su retirada no deja contenido obsoleto. Queda documentado para no repetir la búsqueda.
+- Verificado con `verificador-resultados`: los 12 datos del producto (fecha, gratuidad, alcance K-12 EE. UU., nueve integraciones y sus nombres, Claude Code/Cowork, Teach For America, política 18+, no disponible en España) **VERIFICADOS** contra la fuente oficial, 0 contradichos.
+
+### Corregido tras la verificación
+El verificador marcó 5 puntos de **precisión normativa** en el párrafo de privacidad —el más delicado, porque trata datos de menores y va dirigido a formadores—. Todos corregidos antes de cerrar:
+- "Anthropic declara cumplimiento FERPA" → la formulación real es que su **anexo K-12 está redactado para cumplir FERPA**. No es un sello ni una certificación del proveedor.
+- Añadida la precisión de que **FERPA no es "el RGPD americano"**: regula expedientes educativos y obliga a los centros, no a los proveedores. El paralelismo original inducía a error.
+- "los datos no se usan para entrenar modelos" → acotado a **Claude for Teachers**, para que no se extrapole al Claude de consumo.
+- "en España y la UE, el RGPD" → añadida la **LOPDGDD** y el umbral real de **14 años** para el consentimiento del menor en España. Citar solo el RGPD dejaba al formador con el umbral equivocado (16).
+- "registro abierto hasta el 30 jun 2027" → "quien se registre antes de esa fecha obtiene un año completo". La fuente no dice que el registro cierre.
+- Añadidas fuentes primarias del regulador (Dept. of Education y BOE), no solo el anuncio de Anthropic.
+
+---
+
+## 2026-07-22 — Retroalimentación de podcasts (tanda 2: informe del 06 jul)
+
+Aplica las 4 propuestas de `changelog/novedades-2026-07-06.md`, confirmadas por Manolo.
+Solo añade recursos: no modifica contenido de lecciones.
+
+### Añadido
+- `modulos/13-seguridad-etica/09-debate-regulatorio.md` — El Test de Turing, "Fable 5 y GPT 5.6 bloqueados. ¿Fin de los modelos frontera?" (Ep. 161, 30 jun 2026). Caso real de controles de exportación afectando a modelos frontera; enlazado de forma cruzada con la cronología de Fable 5 / Mythos 5 del Módulo 01, L06.
+- `modulos/04-productividad/02-disenar-workflow-personal.md` — Pocho Costa, "Un día entero en tu PyME usando IA, hora por hora" (30 jun 2026). Contrapunto práctico en español a la teoría de workflows.
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — Pocho Costa, "Claude Mythos, OpenAI y la economía de la IA" (22 jun 2026). Posicionamiento de la familia Claude frente a la competencia.
+- `modulos/04-productividad/01-ia-como-colaborador.md` — Pocho Costa, "IA sin humo: por qué no vas tan atrás como creés" (3 jul 2026). Lectura de mentalidad de adopción, marcada como opcional.
+
+### Actualizado
+- `changelog/retroalimentacion-podcasts.json` — registrados los 4 episodios aplicados con su destino, más 3 descartados con su motivo. Incluye el **Ep. 162** de El Test de Turing (16 jul), posterior al informe: descartado por centrarse en competidores. El registro de Pocho Costa estaba vacío y ahora refleja los 4 episodios evaluados.
+- `recursos/enlaces.yaml` — `revisado` de los dos podcasts que retroalimentan el curso y `ultima_revision` del catálogo.
+
+### Notas
+- **Convención seguida:** los *programas* se catalogan en `enlaces.yaml`; los *episodios* concretos se enlazan en "Recursos para profundizar" de la lección correspondiente, con el prefijo 🎙️. Es el precedente que ya existía en los módulos 01, 06, 09 y 10.
+- Los 4 episodios se **verificaron contra el RSS** de cada programa antes de enlazarlos: título, número de episodio y fecha correctos en los 4. Se añadió la URL directa, que el informe no traía.
+- Cada enlace lleva el aviso de que es material divulgativo y de que los datos técnicos se contrastan con fuente oficial (principio de honestidad epistémica).
+
+### Corregido
+- El informe del 06 jul proponía el episodio de Mythos para el "Módulo 03 (familia de modelos Claude)". La familia de modelos se explica en el **Módulo 01, L06**; el Módulo 03 es "Claude básico". Aplicado en el destino correcto y anotado en el informe.
+
+---
+
+## 2026-07-20 — Actualización por el release de Claude Sonnet 5 (tanda 1 del informe del 04 jul)
+
+Aplica la propuesta **#1** de `changelog/novedades-2026-07-04.md`, confirmada por Manolo.
+Cubre la revisión obligatoria por release mayor que marca el `CLAUDE.md`.
+
+### Corregido
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — **error factual**: la lección afirmaba que el acceso a Fable 5 y Mythos 5 seguía **suspendido** por la directiva de exportación de EE. UU. Reescrito con la cronología real y **asimétrica**: controles levantados el 30 jun; **Fable 5** disponible globalmente el 1 jul; **Mythos 5** aprobado el 26 jun y **solo para un conjunto de organizaciones de EE. UU.**. Reenfocado a la lección de fondo: "restaurado" no siempre significa "restaurado para todos".
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — misma afirmación obsoleta sobre la suspensión, corregida con idéntico matiz.
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — **snapshot incorrecto** en el ejemplo de buena práctica: `claude-haiku-4-5-20251010` → `claude-haiku-4-5-20251001` (2 apariciones). Añadido el **cambio de formato de ID desde la generación 4.6** (identificador sin fecha que ya es snapshot fijo), que faltaba y contradecía el ejemplo nuevo `claude-sonnet-5`. Lista de generaciones actualizada con 4.8 y 5.
+- `modulos/07-api-claude/04-system-parametros.md` — **imprecisión**: la lección decía que los parámetros de sampling "se eliminaron" / "ya no existen" (4 apariciones). Falso: siguen aceptándose con su valor por defecto; lo que devuelve 400 es **fijarlos a un valor distinto**. Corregidas las 4.
+- `modulos/05-prompt-engineering/09-extended-thinking.md` — contradicción interna sobre la generación 4.6: se afirmaba que el razonamiento ya era adaptativo y a la vez que `budget_tokens` estaba solo "obsoleto". Unificado: en 4.6 **funciona pero está deprecado**; el 400 es de 4.7 en adelante.
+- `modulos/05-prompt-engineering/08-prefill-formato.md` — **hueco de la revisión por release**: la lección lista los modelos donde el prefill devuelve 400 y **no incluía Sonnet 5**. Añadido.
+
+### Actualizado
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — añadido **Claude Sonnet 5** en la sección de Sonnet (1M de contexto, 128k de salida, precio introductorio 2 $/10 $ hasta el 31 ago 2026 → 3 $/15 $) con aviso sobre el tokenizador nuevo. Precisado que la generación 5 incluye también modelos con nomenclatura clásica.
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — Sonnet 5 incorporado como generación 5, con los **tres cambios de comportamiento** al migrar (dos errores 400 + adaptive thinking por defecto), enmarcados como matices de una actualización que Anthropic describe como *drop-in*.
+- `modulos/05-prompt-engineering/09-extended-thinking.md` — Sonnet 5 añadido a la lista de modelos donde `budget_tokens` da error 400; documentado que el **adaptive thinking viene activado por defecto** en Sonnet 5.
+- `modulos/07-api-claude/12-extended-thinking-api.md` — ídem, con nota de migración (el 400 no es un fallo silencioso), cómo apagar el razonamiento (`thinking: {type: "disabled"}`) y el aviso de que en Sonnet 5 el valor por defecto de `effort` es **`high`** en Claude API y Claude Code.
+- `modulos/07-api-claude/04-system-parametros.md` — Sonnet 5 añadido a los modelos donde fijar `temperature`/`top_p`/`top_k` a valores no por defecto devuelve 400.
+- `modulos/07-api-claude/17-costes.md` — **nueva sección 1b**: el precio por token no es comparable entre modelos con tokenizadores distintos. Sonnet 5 genera ~30 % más tokens para el mismo texto **frente a Sonnet 4.6**; se introduce la regla de comparar **coste por tarea** y el aviso sobre la caducidad del precio introductorio.
+- `modulos/01-fundamentos-ia/06-familia-modelos-claude.md` — precisado el alcance del tokenizador: el salto es frente a **Sonnet 4.6 y anteriores a Opus 4.7**; con Opus 4.7/4.8 y Fable 5 la escala es la misma y la comparación directa sí vale.
+
+### Notas
+- Módulos **03 y 06** revisados: no fijan versiones ni parámetros de modelo en el cuerpo (solo `modelo_referencia` en frontmatter), así que **no requerían cambios**. El contenido sensible a versiones vive en los módulos 01, 05 y 07.
+- Los datos se verificaron con el subagente `verificador-resultados` **dos veces**: antes de redactar (fuentes) y **después de editar** (contenido aplicado). La segunda pasada detectó 10 afirmaciones contradichas y 5 sin confirmar —parte preexistentes, parte introducidas en esta misma tanda—, todas corregidas antes de cerrar. Queda constancia porque es el motivo por el que la entrada "Corregido" es más larga que la de "Actualizado".
+
+### Pendiente de revisión humana
+Marcado por el verificador como material sensible que conviene que Manolo confirme:
+- La cronología de la directiva de control de exportación de EE. UU. (dato regulatorio + gobierno nombrado), en `01/06` y `01/07`.
+- Las cifras de precio de Sonnet 5, por si alguien las usa para presupuestar.
+- Que Mythos 5 es de acceso por invitación (Project Glasswing): el curso no lo aclara y un lector puede creer que es accesible. **No corregido en esta tanda** — texto preexistente, fuera del alcance de Sonnet 5.
+
+### ⚠️ Defecto preexistente detectado, PENDIENTE de decisión
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md`, **sección 4 completa** ("Alias vs snapshot fijo") y el "mal ejemplo" de la sección de ejemplo aplicado se apoyan en alias tipo `claude-opus-4-7-latest`, `claude-opus-latest` y `claude-haiku-latest`. **La documentación oficial no documenta ningún alias `-latest` para las generaciones 4.x/5.** La sección enseña una decisión ("usa `-latest` para prototipar, pinea para producción") construida sobre identificadores que probablemente no existen.
+- Es un defecto **anterior** a esta tanda y su arreglo no es cosmético: obliga a reescribir la sección más importante de la lección. Se deja documentado en vez de parcheado a medias. **Requiere el visto bueno de Manolo sobre cómo reenfocarla.**
+
+### Pendiente
+- Tanda 2: recursos de podcasts de `novedades-2026-07-06.md`.
+- Propuestas #3 (Claude Science → M11), #4 (Claude Tag → M03/04) y #5 (marco de jailbreaks → M13) del informe del 04 jul, aún sin aplicar.
+- Todo el informe `novedades-2026-07-20.md`, sin confirmar.
+
+---
+
 ## 2026-06-14 — Módulos 10, 11, 12 y 13 redactados (cierra el contenido principal del curso)
 
 ### Añadido

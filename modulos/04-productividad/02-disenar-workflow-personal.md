@@ -3,7 +3,7 @@ titulo: "Diseñar un workflow personal: plantilla de trabajo"
 modulo: "04-productividad"
 orden: 2
 creado: 2026-06-14
-revisado: 2026-06-14
+revisado: 2026-07-22
 modelo_referencia: "Claude Opus 4.8"
 estado: borrador
 tiempo_estudio_min: 30
@@ -74,6 +74,7 @@ Workflow "Acta de reunión":
 
 - `introduction-claude-cowork` (catálogo).
 - Módulo 04, lección 11 — biblioteca personal de prompts (donde guardarás tus workflows).
+- 🎙️ Inteligencia Artificial (Pocho Costa) — ["Un día entero en tu PyME usando IA, hora por hora"](https://pochocosta.com/podcast/un-dia-entero-en-tu-pyme-usando-ia-hora-por-hora/) (30 jun 2026) — recorre una jornada laboral completa en una pyme mostrando qué tareas puede asumir la IA (correos de clientes, cuadros de ventas). Buen contrapunto práctico a la teoría de workflows, y en español.
 
 ## Siguiente lección
 

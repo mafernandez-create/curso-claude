@@ -3,7 +3,7 @@ titulo: "Forzar el formato de respuesta (y el fin del prefill)"
 modulo: "05-prompt-engineering"
 orden: 8
 creado: 2026-06-14
-revisado: 2026-06-14
+revisado: 2026-07-20
 modelo_referencia: "Claude Opus 4.8"
 estado: borrador
 tiempo_estudio_min: 20
@@ -15,10 +15,10 @@ tiempo_estudio_min: 20
 
 Al terminar esta lección serás capaz de:
 
-- [ ] Entender qué era el **prefill** y **por qué ya no se usa** en los modelos actuales.
+- [ ] Entender qué era el **prefill** y **por qué ya no se usa** en los modelos de la línea actual.
 - [ ] Forzar el formato de salida con las técnicas vigentes: **instrucciones claras** y **salidas estructuradas**.
 
-> **⚠️ Actualización importante (2026):** esta lección se planificó cuando el *prefill* era la técnica estándar. **Ya no lo es.** En los modelos actuales de Claude (Opus 4.6 y posteriores, Opus 4.8, Sonnet 4.6, Fable 5), rellenar el inicio de la respuesta del asistente (*prefill*) **devuelve error**. La lección explica la alternativa correcta de hoy.
+> **⚠️ Actualización importante (julio 2026):** esta lección se planificó cuando el *prefill* era la técnica estándar. **Ya no lo es.** En los modelos actuales de Claude (Opus 4.6 y posteriores, Opus 4.8, Sonnet 4.6, **Sonnet 5**, Fable 5), rellenar el inicio de la respuesta del asistente (*prefill*) **devuelve error 400**. La lección explica la alternativa correcta de hoy.
 
 ## Prerrequisitos
 
@@ -32,7 +32,7 @@ A veces necesitas que la respuesta tenga **exactamente** un formato: solo JSON, 
 
 ### 1. Qué era el prefill (y por qué se menciona)
 
-El prefill consistía en escribir el principio de la respuesta del asistente (p. ej. `{` para forzar JSON) y dejar que Claude continuara. Funcionaba en modelos antiguos. **En los modelos actuales no está soportado** y produce un error, así que no lo uses.
+El prefill consistía en escribir el principio de la respuesta del asistente (p. ej. `{` para forzar JSON) y dejar que Claude continuara. Funcionaba en modelos antiguos. **En la línea Opus 4.6+ y Sonnet 4.6+ (incluido Sonnet 5) y en Fable 5 no está soportado** y produce un error 400, así que no lo uses. Haiku 4.5 es la excepción que confirma la regla: sigue admitiéndolo, pero no construyas sobre una técnica que el resto de la familia ya ha retirado.
 
 ### 2. Alternativa 1 — instrucciones claras (interfaz y API)
 
@@ -71,7 +71,7 @@ Texto: [pegar]
 
 ## Resumen en 3 frases
 
-1. El prefill quedó obsoleto: en los modelos actuales de Claude ya no funciona.
+1. El prefill quedó obsoleto: en la línea Opus 4.6+ / Sonnet 4.6+ (y Sonnet 5, Fable 5) devuelve error 400.
 2. Para forzar formato hoy: instrucciones claras (interfaz) y salidas estructuradas (API).
 3. Las *structured outputs* dan garantía de formato cuando trabajas por API.
 
@@ -87,3 +87,4 @@ Texto: [pegar]
 ## Fuentes
 
 - [docs.claude.com — structured outputs y migración de modelos](https://docs.claude.com) — consultado 2026-06-14.
+- [Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) — el prefill devuelve 400 también en Sonnet 5 — consultado 2026-07-20.

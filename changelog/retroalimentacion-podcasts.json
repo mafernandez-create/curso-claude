@@ -1,11 +1,14 @@
 {
   "descripcion": "Registro de episodios de podcast ya procesados por la rutina de retroalimentación dinámica del curso. La rutina semanal lo lee para proponer SOLO episodios nuevos, y lo actualiza tras cada ejecución. No se aplica nada al curso sin la confirmación de Manolo.",
   "fecha_corte_inicial": "2026-06-01",
-  "actualizado": "2026-06-14",
+  "actualizado": "2026-07-22",
   "podcasts": {
     "podcast-el-test-de-turing": {
       "rss": "https://anchor.fm/s/e1671d44/podcast/rss",
       "episodios_procesados": [
+        { "titulo": "GPT 5.6 vs Grok 4.5: ¿Cuál es mejor? Te sorprenderá (Ep. 162)", "fecha": "2026-07-16", "decision": "descartado", "motivo": "centrado en competidores (GPT 5.6, Grok 4.5), sin conexión con Claude ni con el temario" },
+        { "titulo": "Fable 5 y GPT 5.6 bloqueados. ¿Fin de los modelos frontera? (Ep. 161)", "fecha": "2026-06-30", "decision": "aplicado", "destino": "modulos/13-seguridad-etica/09-debate-regulatorio.md" },
+        { "titulo": "GLM 5.2: El Open Source que supera a GPT-5.5 en código (Ep. 160)", "fecha": "2026-06-25", "decision": "descartado", "motivo": "centrado en competidores, sin conexión directa con Claude ni con el temario" },
         { "titulo": "Claude Fable 5: El MEJOR modelo y una ESTAFA (Ep. 158)", "fecha": "2026-06-11", "decision": "propuesto" },
         { "titulo": "Opus 4.8: Lo analizamos a fondo ¿Mejora? (Ep. 157)", "fecha": "2026-06-03", "decision": "propuesto" },
         { "titulo": "Probamos Composer 2.5...y uff (Ep. 156)", "fecha": "2026-05-28", "decision": "propuesto" },
@@ -14,7 +17,12 @@
     },
     "podcast-ia-pocho-costa": {
       "rss": "https://pochocosta.com/feed/podcast/inteligencia-artificial/",
-      "episodios_procesados": []
+      "episodios_procesados": [
+        { "titulo": "IA sin humo: por qué no vas tan atrás como creés", "fecha": "2026-07-03", "decision": "aplicado", "destino": "modulos/04-productividad/01-ia-como-colaborador.md" },
+        { "titulo": "Un día entero en tu PyME usando IA, hora por hora", "fecha": "2026-06-30", "decision": "aplicado", "destino": "modulos/04-productividad/02-disenar-workflow-personal.md" },
+        { "titulo": "Mabel: sin código, le resuelve problemas a Pymes con IA", "fecha": "2026-06-26", "decision": "descartado", "motivo": "perfil de emprendedora; interés humano pero escasa aportación técnica al curso" },
+        { "titulo": "Claude Mythos, OpenAI y la economía de la IA", "fecha": "2026-06-22", "decision": "aplicado", "destino": "modulos/01-fundamentos-ia/06-familia-modelos-claude.md" }
+      ]
     }
   }
 }

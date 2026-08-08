@@ -5,8 +5,8 @@
 
 meta:
   version: "1.0.0"
-  ultima_revision: "2026-06-12"
-  total_recursos: 66
+  ultima_revision: "2026-07-22"
+  total_recursos: 67
 
 # ============================================================
 # 1. RECURSOS OFICIALES DE ANTHROPIC
@@ -65,6 +65,17 @@ oficial_anthropic:
     modulos_relacionados: [12]
     descripcion: "Para docentes y diseño instruccional."
     revisado: "2026-04-23"
+
+  - id: claude-for-teachers
+    nombre: "Claude for Teachers"
+    url: "https://www.anthropic.com/news/claude-for-teachers"
+    tipo: producto
+    idioma: en
+    gratis: true
+    disponibilidad: "Solo docentes K-12 verificados de EE. UU. Quien se registre antes del 2027-06-30 obtiene un año completo de acceso."
+    modulos_relacionados: [12]
+    descripcion: "Producto para docentes (jul 2026): planificación alineada a estándares, diferenciación por nivel, análisis de progreso, Claude Code y Cowork, y curso de AI fluency con Teach For America. NO disponible en España: se usa en el curso como referencia de diseño, no como herramienta."
+    revisado: "2026-07-22"
 
   - id: teaching-ai-fluency
     nombre: "Teaching AI Fluency"
@@ -607,7 +618,7 @@ creadores_espanol:
     relevancia: media
     modulos_relacionados: [01, 04]
     retroalimenta_curso: true  # la rutina semanal escanea su RSS en busca de episodios relevantes
-    revisado: "2026-06-14"
+    revisado: "2026-07-22"
 
   - id: podcast-ia-pocho-costa
     nombre: "Inteligencia Artificial (Pocho Costa)"
@@ -618,7 +629,7 @@ creadores_espanol:
     relevancia: media
     modulos_relacionados: [01, 04]
     retroalimenta_curso: true
-    revisado: "2026-06-14"
+    revisado: "2026-07-22"
 
 # ============================================================
 # 8. COMUNIDADES Y FOROS

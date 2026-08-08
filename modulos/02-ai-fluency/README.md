@@ -17,10 +17,10 @@ Desarrollar "alfabetización en IA": saber interactuar con sistemas como Claude 
 | 02 | [El framework de las 4 dimensiones (Anthropic)](02-framework-4-dimensiones.md) | borrador | 30 min |
 | 03 | [Delegación con criterio: qué tareas tienen sentido](03-delegacion.md) | borrador | 25 min |
 | 04 | [Descripción: cómo pedir con precisión](04-descripcion.md) | borrador | 30 min |
-| 05 | Discernimiento: cómo evaluar outputs | pendiente | 30 min |
-| 06 | Diligencia: uso responsable y ético | pendiente | 30 min |
-| 07 | Errores típicos de interacción y cómo detectarlos | pendiente | 25 min |
-| 08 | Casos aplicados: trabajo, estudio, creatividad | pendiente | 45 min |
+| 05 | [Discernimiento: cómo evaluar lo que te responde](05-discernimiento.md) | borrador | 30 min |
+| 06 | [Diligencia: uso responsable y ético](06-diligencia.md) | borrador | 30 min |
+| 07 | [Errores típicos de interacción y cómo detectarlos](07-errores-tipicos-interaccion.md) | borrador | 25 min |
+| 08 | [Casos aplicados: trabajo, estudio y creatividad](08-casos-aplicados.md) | borrador | 45 min |
 
 ## Recursos clave
 
