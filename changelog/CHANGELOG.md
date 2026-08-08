@@ -11,6 +11,26 @@ Tipos de entrada:
 
 ---
 
+## 2026-07-22 — Reescrita la sección de IDs y versiones (defecto de los alias `-latest`)
+
+Resuelve el **defecto preexistente** que quedó documentado y pendiente de decisión en la
+actualización de Sonnet 5: la sección "alias vs snapshot" de `01/07-versiones-modelos.md`
+se apoyaba en identificadores `-latest` que la documentación oficial no recoge.
+
+### Corregido
+- `modulos/01-fundamentos-ia/07-versiones-modelos.md` — **error factual sobre el esquema de IDs.** La lección enseñaba alias tipo `claude-opus-4-7-latest` / `claude-opus-latest` y presentaba `claude-opus-4-7` como un ID con fecha. Ninguna de las dos cosas es correcta según la doc oficial. Reescritas las secciones 3 y 4:
+  - **Dos formatos según generación.** Desde la 4.6, el ID va **sin fecha** (`claude-sonnet-5`, `claude-opus-4-8`) y **ya es un snapshot fijo** — Anthropic no cambia los pesos de un ID existente; una versión nueva sale con un ID nuevo. Antes de la 4.6, el ID lleva **fecha** (`claude-haiku-4-5-20251001`) y existe un **alias de conveniencia sin fecha** (`claude-haiku-4-5`) que sí se mueve al último snapshot.
+  - Los alias con sufijo **`-latest` no existen** en el esquema actual de Anthropic (sí existieron históricamente, p. ej. en Claude 3.5); la lección lo dice con esa cautela.
+  - Corregida la anatomía del ID (usaba `claude-opus-4-7-20260301`, formato inexistente para 4.7) y el ejemplo aplicado (usaba `claude-haiku-latest`, inexistente → ahora el alias real `claude-haiku-4-5`).
+  - Añadido el matiz de que fijar el ID congela los **pesos**, no la infraestructura de serving (router, clasificadores, muestreo), que puede alterar el comportamiento observable.
+  - Actualizados objetivos, ciclo de vida, errores comunes y resumen para que sean coherentes.
+
+### Notas
+- Verificado con `verificador-resultados` contra la doc oficial de model-ids-and-versions y models overview: **7 VERIFIED, 1 PROBABLE (la inexistencia de `-latest`, negativo universal, ya redactado con cautela), 0 contradichos.** Veredicto: listo para publicar.
+- Con esto se cierra el último punto pendiente que quedaba anotado en el PR de novedades de julio.
+
+---
+
 ## 2026-07-22 — Redactadas las 7 lecciones que faltaban (el curso queda completo en borrador)
 
 Con esto, las **161 lecciones del curso están redactadas**. No queda contenido pendiente
