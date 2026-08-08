@@ -24,3 +24,6 @@ venv/
 
 # Secretos: credenciales SMTP del digest de novedades (nunca en git)
 .env
+
+# Config local de Claude Code con rutas absolutas de esta máquina
+.claude/settings.json
