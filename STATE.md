@@ -15,13 +15,22 @@
   HTML legible en móvil (con los colores del Kit de Estilo) y envía por **SMTP** (local) o
   **Resend** (pensado para la rutina cloud). Probado: la lección 1/161 llegó a
   villabotijo@gmail.com el 2026-08-08.
-- ⏸️ Pendiente de Manolo: **confirmar que se lee bien en el iPhone** y decidir si el orden
-  arranca en el módulo 00 (guía del proyecto, 3 lecciones cortas) o directamente en el 01.
-- ⏸️ Pendiente después: **crear la rutina cloud**. Diseño ya decidido: cron diario
-  `0 5 * * *` (07:00 hora peninsular), repo público `mafernandez-create/curso-claude` como
-  source, entorno `env_017edvqXdEkfcyigtdZZUcJX`, envío por Resend copiando el patrón de las
-  rutinas existentes. El script ya está listo para ese modo.
-- Ritmo: 161 lecciones a una cada dos días ≈ **11 meses**.
+- ✅ Hecho: **rutina cloud creada** — `trig_01Wx398UDbyc57pGxxKrDZBL`,
+  "Curso de Claude — una lección cada dos días (07:00)". Cron diario `0 5 * * *` (UTC);
+  clona el repo público, ejecuta el script con `--desde 2026-08-08 --cada 2` y sale sin
+  hacer nada los días que no tocan.
+- 🔴 **DESACTIVADA a propósito** (`enabled: false`). Le falta la API key: el prompt lleva
+  el marcador `PEGA_AQUI_LA_KEY`. Manolo debe sustituirlo por la clave de Resend y activar
+  la rutina desde claude.ai → *Programado*. Se dejó así porque el clasificador de seguridad
+  bloquea (con razón) que un agente escriba credenciales en la configuración.
+- ⏸️ Pendiente de Manolo: **confirmar que se lee bien en el iPhone** (recibió la lección 1
+  el 2026-08-08). Si hay que retocar el CSS, se toca el script y la rutina lo recoge sola,
+  porque clona el repo en cada ejecución.
+- Ritmo: 161 lecciones a una cada dos días ≈ **11 meses**. El orden es el natural del repo:
+  módulo 00 (guía) → 01 → … → 13. Si Manolo prefiere arrancar en el 01, basta cambiar el
+  `--desde` o saltar índices.
+- ⚠️ El cron es UTC: `0 5` son las 07:00 en horario de verano y las **06:00 en invierno**.
+  Afecta igual a las demás rutinas.
 
 ## Completado recientemente
 
