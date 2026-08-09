@@ -4,7 +4,9 @@
 
 ## Última ejecución
 
-2026-08-08 · Completado el curso (161/161, borrador) y fusionado el PR #5. Después, arrancado el **envío de lecciones por correo** para poder estudiar desde el iPhone sin encender el Mac.
+2026-08-09 · Creada la rutina cloud que envía una lección cada dos días. Queda **desactivada** a la espera de que Manolo pegue la API key (ver abajo).
+
+2026-08-08 · Completado el curso (161/161, borrador) y fusionado el PR #5. Construido y probado el script de envío de lecciones por correo, para poder estudiar desde el iPhone sin encender el Mac.
 
 ## En curso
 
