@@ -4,7 +4,7 @@
 
 ## Última ejecución
 
-2026-08-11 · **Formato validado**: Manolo confirma que las lecciones se leen bien en el iPhone. No hay que retocar el HTML. Enviadas a mano las lecciones **1/161** (8 ago) y **2/161** (10 ago). Manolo va a activar él la rutina pegando la API key.
+2026-08-11 · **Rutina cloud activa y probada.** Se descubrió que la rutina creada por API no es visible en claude.ai, así que Manolo no podía pegarle la key. Se rediseñó para entregar la lección como **borrador de Gmail**, lo que elimina la necesidad de credencial. Ejecución de prueba correcta ("Hoy no tocaba lección"). Formato validado en iPhone; enviadas a mano las lecciones **1/161** (8 ago) y **2/161** (10 ago).
 
 2026-08-09 · Creada la rutina cloud que envía una lección cada dos días. Queda **desactivada** a la espera de que Manolo pegue la API key (ver abajo).
 
@@ -19,14 +19,13 @@
   HTML legible en móvil (con los colores del Kit de Estilo) y envía por **SMTP** (local) o
   **Resend** (pensado para la rutina cloud). Probado: la lección 1/161 llegó a
   villabotijo@gmail.com el 2026-08-08.
-- ✅ Hecho: **rutina cloud creada** — `trig_01Wx398UDbyc57pGxxKrDZBL`,
+- ✅ **Rutina cloud ACTIVA** — `trig_01Wx398UDbyc57pGxxKrDZBL`,
   "Curso de Claude — una lección cada dos días (07:00)". Cron diario `0 5 * * *` (UTC);
   clona el repo público, ejecuta el script con `--desde 2026-08-08 --cada 2` y sale sin
   hacer nada los días que no tocan.
-- 🔴 **DESACTIVADA a propósito** (`enabled: false`). Le falta la API key: el prompt lleva
-  el marcador `PEGA_AQUI_LA_KEY`. Manolo debe sustituirlo por la clave de Resend y activar
-  la rutina desde claude.ai → *Programado*. Se dejó así porque el clasificador de seguridad
-  bloquea (con razón) que un agente escriba credenciales en la configuración.
+- **Entrega por BORRADOR en Gmail**, no por correo enviado. La lección aparece en la carpeta
+  *Borradores* y se lee igual desde el iPhone. Se eligió así porque **elimina la necesidad
+  de API key**: el conector de Gmail no requiere credencial en el prompt.
 - ✅ **Formato validado** (2026-08-11): se lee bien en el iPhone, no hay que retocar el CSS.
   Si algún día hiciera falta, basta tocar el script: la rutina clona el repo en cada
   ejecución, así que lo recoge sola.
@@ -58,6 +57,18 @@
 - **Del informe del 20 jul quedan sin aplicar** (opcionales): reflexión sobre el uso (M04), valores por idioma (M05), papers J-space y GRAM (M13), y cambios menores de API.
 
 ## Lecciones aprendidas (aquí, no en el chat)
+
+- 2026-08-11 · **Las rutinas creadas por la API HTTP no aparecen en claude.ai.** La rutina
+  del curso (`created_via: http_api`) es invisible en *Tareas programadas*, mientras que las
+  creadas por el otro canal (`created_via: meta_mcp`) sí se ven, incluso pausadas. Funciona
+  igual, pero Manolo no puede verla ni editarla desde la web: para pausarla o cambiarla hay
+  que pedírselo a Claude. Tenerlo en cuenta antes de prometerle que "la edita él".
+- 2026-08-11 · **Un conector no siempre puede lo que parece.** El de Gmail crea borradores
+  pero **no envía**. Antes de diseñar sobre un conector, comprobar qué herramientas expone
+  de verdad. Aquí acabó siendo una ventaja: el borrador evita tener que manejar una API key.
+- 2026-08-11 · Las tareas de `mcp__scheduled-tasks__*` son **locales**: solo corren con la
+  app abierta en el Mac. No sirven para lo que Manolo necesita (independencia del Mac); para
+  eso, rutinas cloud.
 
 - 2026-08-08 · **Verificar la fuente no es verificar lo escrito.** Al aplicar el informe de Sonnet 5, las fuentes salieron 41/41 pero una segunda pasada de `verificador-resultados` sobre el propio diff encontró 10 afirmaciones contradichas (unas introducidas al redactar, otras preexistentes). Desde entonces: tras editar contenido, pasar el `git diff` por el verificador antes de cerrar.
 - 2026-08-08 · **`gh pr merge --delete-branch` puede fallar el paso local** si hay archivos sin trackear que colisionan con el merge, dejando el working tree en un estado confuso aunque el merge remoto haya ido bien. Comprobar `origin/main` antes de asustarse; sincronizar con `git merge --ff-only` tras resolver la colisión.
