@@ -4,6 +4,8 @@
 
 ## Última ejecución
 
+2026-08-11 · **Formato validado**: Manolo confirma que las lecciones se leen bien en el iPhone. No hay que retocar el HTML. Enviadas a mano las lecciones **1/161** (8 ago) y **2/161** (10 ago). Manolo va a activar él la rutina pegando la API key.
+
 2026-08-09 · Creada la rutina cloud que envía una lección cada dos días. Queda **desactivada** a la espera de que Manolo pegue la API key (ver abajo).
 
 2026-08-08 · Completado el curso (161/161, borrador) y fusionado el PR #5. Construido y probado el script de envío de lecciones por correo, para poder estudiar desde el iPhone sin encender el Mac.
@@ -25,9 +27,11 @@
   el marcador `PEGA_AQUI_LA_KEY`. Manolo debe sustituirlo por la clave de Resend y activar
   la rutina desde claude.ai → *Programado*. Se dejó así porque el clasificador de seguridad
   bloquea (con razón) que un agente escriba credenciales en la configuración.
-- ⏸️ Pendiente de Manolo: **confirmar que se lee bien en el iPhone** (recibió la lección 1
-  el 2026-08-08). Si hay que retocar el CSS, se toca el script y la rutina lo recoge sola,
-  porque clona el repo en cada ejecución.
+- ✅ **Formato validado** (2026-08-11): se lee bien en el iPhone, no hay que retocar el CSS.
+  Si algún día hiciera falta, basta tocar el script: la rutina clona el repo en cada
+  ejecución, así que lo recoge sola.
+- **Progreso de envíos:** lección 1 el 8 ago y lección 2 el 10 ago, ambas a mano desde el
+  Mac. La secuencia por fecha sigue cuadrando: el 12 ago toca la **lección 3**.
 - Ritmo: 161 lecciones a una cada dos días ≈ **11 meses**. El orden es el natural del repo:
   módulo 00 (guía) → 01 → … → 13. Si Manolo prefiere arrancar en el 01, basta cambiar el
   `--desde` o saltar índices.
